@@ -1,0 +1,47 @@
+<validationRules>
+
+	<validationRule name="reports" extends="standardForm" mode="error">
+	<parameter name="module" type="identifier" />
+	<parameter name="a_search_tag" type="string" />
+	<parameter name="a_new_tag" type="string" />
+	</validationRule>
+	
+	<!--validationRule name="report_by_period" extends="standardForm" mode="error">
+	<parameter name="module" type="identifier" />
+	<parameter name="arguments" type="ajax_ids_2" />
+	<parameter name="id" type="string"/>
+	<parameter name="dir" type="string"/>
+	</validationRule>
+
+	<validationRule name="get_report_by_period_val" extends="standardForm" mode="error">
+	<parameter name="module" type="identifier" />
+	<parameter name="id_report" type="identifier" />
+	<parameter name="period_type" type="identifier" />
+	<parameter name="report_type" type="identifier" />
+	<parameter name="the_month" type="mois" />
+	<parameter name="the_year" type="annee" />
+	<parameter name="dir" type="string"/>
+	</validationRule>
+
+	<validationRule name="users_logs" extends="standardForm" mode="error">
+	<parameter name="module" type="identifier" />
+	<parameter name="arguments" type="ajax_ids_2" />
+	<parameter name="dir" type="identifier"/>
+	</validationRule-->
+
+	<validationRule name="list_reports" extends="standardForm" mode="error">
+	<parameter name="module" type="identifier" />
+	<parameter name="group" type="identifier" />
+	</validationRule>
+
+	<validationRule name="groupreports_up_db" extends="standardForm" mode="error">
+	<parameter name="module" type="identifier" />
+	<parameter name="Submit" type="identifier" />
+	<parameter name="reports" type="string" />
+	</validationRule>
+
+	<validationRule name="admin_reports" extends="standardForm" mode="error">
+	<parameter name="module" type="identifier" />
+	</validationRule>
+
+</validationRules>

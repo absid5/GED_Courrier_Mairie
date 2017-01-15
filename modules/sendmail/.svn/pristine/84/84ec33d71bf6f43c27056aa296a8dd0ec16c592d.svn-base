@@ -1,0 +1,1 @@
+"C:\xampp\php\php.exe" "C:\xampp\htdocs\maarch_entreprise\modules\sendmail\batch\process_emails.php" -c "C:\xampp\htdocs\maarch_entreprise\modules\sendmail\batch\config\config.xml"

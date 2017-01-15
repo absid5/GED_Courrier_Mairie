@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<CONFIG>
+		<name>folder</name>
+		<comment>_FOLDERS_COMMENT</comment>
+		<file_prefix>fold</file_prefix>
+		<loaded>true</loaded>
+	</CONFIG>
+	<TABLENAME>
+		<fold_folders>folders</fold_folders>
+		<fold_folders_out>folders_out</fold_folders_out>
+		<fold_foldertypes>foldertypes</fold_foldertypes>
+		<fold_foldertypes_doctypes>foldertypes_doctypes</fold_foldertypes_doctypes>
+		<fold_foldertypes_indexes>foldertypes_indexes</fold_foldertypes_indexes>
+		<fold_foldertypes_doctypes_level1>foldertypes_doctypes_level1</fold_foldertypes_doctypes_level1>
+	</TABLENAME>
+    <VIEW>
+        <view_folders>view_folders</view_folders>
+    </VIEW>
+	<HISTORY>
+		<folderdel>true</folderdel>
+		<folderadd>true</folderadd>
+		<folderup>true</folderup>
+		<folderview>true</folderview>
+		<foldertypeadd>true</foldertypeadd>
+		<foldertypeup>true</foldertypeup>
+		<foldertypedel>true</foldertypedel>
+	</HISTORY>
+	<KEYWORDS>
+		<id>FOUT</id>
+		<label>_FOLDER_OUT</label>
+	</KEYWORDS>
+	<!--<KEYWORDS>
+		<id>VIEW</id>
+		<label>_VIEW</label>
+	</KEYWORDS>-->
+</root>

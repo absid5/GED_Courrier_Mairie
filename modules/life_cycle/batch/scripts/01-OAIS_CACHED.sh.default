@@ -1,0 +1,10 @@
+#!/bin/bash
+
+Mypath='/var/www/maarch/modules/life_cycle/batch'
+cd $Mypath
+Custompath='/var/www/maarch/modules/life_cycle/batch/config'
+
+for (( i=0; i < 3; i++ ));
+    do php $Mypath/fill_stack.php -c $Custompath/config.xml -coll res_coll -p FNTC -cy OAIS_CACHED
+done
+

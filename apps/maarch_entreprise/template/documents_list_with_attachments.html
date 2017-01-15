@@ -1,0 +1,216 @@
+<!--
+
+* basket_list and search_adv_list template
+*
+*
+* @package  Maarch LetterBox 3.0
+* @version 3.0
+* @since 10/2005
+* @license GPL
+* @author  Loïc Vinet  <dev@maarch.org>
+*
+
+
+
+
+Parts :
+    ##HEAD< : Begining of the head part
+    ##HEAD> : End of the head part
+
+    ##RESULT< : Begining of result list
+    ##RESULT> : End fo result list
+
+Functions :
+
+
+    ##cssLine|arg1|arg2##                   : load css style for line. arg1,arg2 : switch beetwin style on line one or line two
+    ##cssLineReload##                       : reload last css style loaded by cssLine
+    ##sortColumn|arg##                      : sort list. arg = sort;
+    ##defineLang|arg##                      : show label. arg = constant define in lang.php;
+    ##loadImage|arg1|arg2##                 : show loaded image; arg1= name of img file, arg2 = name of the module (if image in module)
+    ##loadValue|arg##                       : load value in the db; arg= column's value  identifier
+    ##showActionIcon|arg1|arg2|arg3|arg4##  : action icon. arg1 = label, arg2  = image , arg3 = action (javascript), arg4 = disabled rule
+    ##includeFile|arg1|arg2##               : include file. arg1 = name of the file, arg2  = name of the module (if file in module)
+    ##setListParameter|arg1|arg2##          : set parameter's value for actual list. arg1 = name of parameter, arg2  = new value
+    ##getListParameter|arg##                : get parameter's value for actual list. arg1 = name of parameter
+    ##ifStatement|arg1|arg2|arg3|arg4##     : allow conditional execution . arg1=condition, arg2= statement 1, arg3 = statement 2
+    ##isModuleLoaded|arg##                  : test if module is loaded. arg = module id
+    ##showDefaultAction##                   : display the default action name in basket 
+
+Mods 
+
+
+    ##radioButton##         : display radio
+    ##checkBox##            : display checkbox
+    ##checkUncheckAll##     : display checkbox for check/uncheck All
+    ##clickOnLine##         : action on click under the line
+    ##showIconDocument##    : view document icon
+    ##showIconDetails##     : view detail's page icon
+    ##getBusinessAppUrl##   : get business app url
+        
+         
+-->
+
+
+#!#TABLE
+<!-- ----------------------------------------------------------------------- -->
+    <table border="0" cellspacing="0" class="listing spec  zero_padding" id="extended_list" style ="padding: 0px;">
+
+#!#HEAD
+<!-- ----------------------------------------------------------------------- -->
+        <thead border ="1">
+            <tr>
+                <!--<th width="100%" colspan="2">
+                    <div align="center" style="border:1px solid; height:20px;margin-bottom:10px;padding-top:10px;vertical-align:middle;">
+						##checkUncheckAll##&nbsp;
+                        ##defineLang|_SORT_BY## :
+                        ##defineLang|_NUM_GED##            ##sortColumn|res_id##&nbsp;
+                        ##defineLang|_TYPE##               ##sortColumn|type_label##&nbsp;
+                        ##defineLang|_SUBJECT##            ##sortColumn|subject##&nbsp;
+                        ##defineLang|_DEST_USER##          ##sortColumn|dest_user##&nbsp;
+                        ##defineLang|_REG_DATE##           ##sortColumn|creation_date##&nbsp;
+                        ##defineLang|_PROCESS_LIMIT_DATE## ##sortColumn|process_limit_date##&nbsp;
+                        ##defineLang|_ENTITY##             ##sortColumn|entity_label##&nbsp;
+                        ##defineLang|_CATEGORY##           ##sortColumn|category_id##
+                        ##ifStatement|#isModuleLoaded|cases#===true|&nbsp;#defineLang|_CASE# #sortColumn|case_label#| ##
+                    </div>
+                </th>-->
+                <th width="120px;">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+                                    <tr>
+                <th style="text-align:center">##checkUncheckAll##<br/>##defineLang|_NUM_GED##<br/>##sortColumn|res_id##</th>
+                </tr>
+                </table>
+                </th>
+                        <th style="text-align:center" >
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+                                    <tr>
+                                        
+                                        <th style="font-size:9px;" width ="120px">##defineLang|_SUBJECT## / ##defineLang|_PRIORITY##<br/>##sortColumn|subject## / ##sortColumn|priority##</th>
+                                        <th style="font-size:9px;text-align:left;" width ="130px">##defineLang|_CATEGORY##<br/>##sortColumn|category_id##</th>
+                                        <th style="font-size:9px;" width ="140px" >##defineLang|_CREATION_DATE##<br/>##sortColumn|creation_date##</th>
+                                        <th style="font-size:9px;" width ="185px" >##defineLang|_PROCESS_LIMIT_DATE##<br/>##sortColumn|process_limit_date##</th>
+                                        <th style="font-size:9px;" width ="170px" >##defineLang|_ENTITY##<br/>##sortColumn|entity_label##</th>
+                                        <th style="font-size:9px;" width ="282px" >##defineLang|_TYPE## / ##defineLang|_CHRONO_NUMBER##<br/>##sortColumn|type_label## / ##sortColumn|alt_identifier##</th>
+                                        <th style="font-size:9px;" width ="50px" >##defineLang|_DEST_USER##<br/>##sortColumn|dest_user##</th>
+                                     
+                                    </tr>                         
+                            </table>
+                        </th>
+            </tr>
+        </thead>
+
+        <tbody>
+        
+#!#RESULT
+<!-- ----------------------------------------------------------------------- -->
+                <tr  class="##cssLine|col|white##"  title="##showDefaultAction##">
+
+                    <td width="10%" ##clickOnLine##>
+                        <!--<div align="center"><img src="##load_img|contact_maarch.gif##" alt="##loadValue|status##" title="##loadValue|status##"> </div>-->
+                        <div align="center" style ="color:#009DC5;">##loadValue|status####func_isConfidential##</div>
+                    </td>
+                    <td width="90%" align="center" style="padding : 0px; vertical-align:top" ##clickOnLine##>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+                                <tr>
+                                    <td width="65%"   style="font-size:14px;font-weight:bold;">##loadValue|subject##</td>
+                                    <td width="17.5%" style="font-size:14px;font-weight:bold;color:#5C7C89;font-style: italic;">
+                                        ##loadValue|alt_identifier##
+                                    </td>
+                                    <td width="17.5%">
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td style="text-align:right">##loadValue|exp_user_id####loadValue|is_multicontacts##</td>
+                                            </tr>
+
+                                            <tr><td> </td><td></td></tr>
+                                            <tr>
+                                                <td style="text-align:right">##loadValue|dest_user##</td>
+                                            </tr>
+											##ifStatement|'#loadValue|case_label#'!=null|<tr><td style="text-align:right"><b>#defineLang|_CASE# : </b>#loadValue|case_label#</td></tr>|##
+                                        </table>
+                                    </td>
+                                </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="##cssLineReload##" title="##showDefaultAction##">
+                        <!-- <td style="text-align:center" style="font-size:13px;" ##clickOnLine##>##ifStatement|'#loadValue|locker_user_id#' != null|<img src="#loadImage|cadenas_rouge.png#">|##  ##radioButton## ##checkBox##<b>##loadValue|res_id##</b></td> -->
+                        <td style="text-align:center" style="font-size:13px;" >##func_cadenas|'#loadValue|locker_user_id#'|'#loadValue|locker_time#'##  ##radioButton## ##checkBox##<b>##loadValue|res_id##</b></td>
+                        <td style="text-align:center" >
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+                                    <tr>
+                                        
+                                        <td style="font-size:10px;" width ="80px">##loadValue|priority##</td>
+                                        <td style="font-size:10px;text-align:right;" width ="30px" alt="##defineLang|_CATEGORY##" title="##defineLang|_CATEGORY##" ##clickOnLine##>##loadValue|category_img##</td>
+                                        <td style="font-size:10px;" width ="100px" >##loadValue|category_id##</td>
+                                        <td style="font-size:10px;text-align:right;" width ="30px" alt="##defineLang|_CREATION_DATE##" title="##defineLang|_CREATION_DATE##" ##clickOnLine##><i class="fa fa-calendar fa-2x"></i> </td>
+                                        <td style="font-size:10px;" width ="100px" >##loadValue|creation_date##</td>
+                                        <td style="font-size:10px;text-align:right;" width ="30px" alt="##defineLang|_PROCESS_LIMIT_DATE##" title="##defineLang|_PROCESS_LIMIT_DATE##" ##clickOnLine##><i class="fa fa-bell fa-2x"></i> </td>
+                                        <td style="font-size:10px;" width ="100px" >##loadValue|process_limit_date##</td>
+                                        <td style="font-size:10px;text-align:right;" width ="40px" alt="##defineLang|_ENTITY##" title="##defineLang|_ENTITY##" ##clickOnLine##><i class="fa fa-sitemap fa-2x"></i></td>
+                                        <td style="font-size:10px;" width ="110px" > ##loadValue|entity_label##</td>
+                                        <td style="font-size:10px;text-align:right" width ="30px"  alt="##defineLang|_TYPE##" title="##defineLang|_TYPE##" ##clickOnLine##><i class="fa fa-file fa-2x"></i>
+                                        <td style="font-size:10px;text-align:left"  width ="80px" >##loadValue|type_label##</td>
+                                        <td style="font-size:10px;" width ="50px">##func_bool_see_multi_contacts##</td>
+                                        <td style="font-size:10px;" width ="30px">##func_bool_see_notes##</td>
+                                        <td style="font-size:10px;" width ="30px">##showActionBasketsFA|#defineLang|_ATTACHMENTS#|paperclip|loadRepList('#loadValue|res_id#', 'baskets')|#loadValue|count_attachment# == 0##</td>
+                                        <td style="font-size:10px;" width ="30px">##showActionFA|#defineLang|_WF#|gear|loadDiffList('#loadValue|res_id#')##</td>
+                                        <td style="font-size:10px;" width ="30px" >##showIconDocument##</td>
+                                        <td style="font-size:10px;" width ="30px" >##showIconDetails##</td>
+                                    </tr>                         
+                            </table>
+                        </td>
+                </tr>
+			   <tr id="noteList_##loadValue|res_id##" name="noteList_##loadValue|res_id##" style="display: none; border-bottom: solid 1px black; background-color: white;" width="100%">
+					<td colspan="6" style="background-color: #f2f2f2;">
+						<div id="divNoteList_##loadValue|res_id##" align="center" style="color: grey;margin:10px;padding:10px;
+  border: 1px dashed #009DC5;">
+							<i class="fa fa-spinner fa-2x"></i><br />
+							##define_lang|_LOADING_INFORMATIONS##
+						</div>
+					</td>
+				</tr>	
+			   <tr id="contactsList_##loadValue|res_id##" name="contactsList_##loadValue|res_id##" style="display: none; border-bottom: solid 1px black; background-color: white;" width="100%">
+					<td colspan="6" style="background-color: #f2f2f2;">
+						<div id="divContactsList_##loadValue|res_id##" align="center" style="color: grey;margin:10px;padding:10px;border: 1px dashed #009DC5;">
+							<i class="fa fa-spinner fa-2x"></i><br />
+							##define_lang|_LOADING_INFORMATIONS##
+						</div>
+					</td>
+				</tr>	
+                <tr id="repList_##loadValue|res_id##" name="repList_##loadValue|res_id##" style="display: none; border-bottom: solid 1px black; background-color: #FFF;" width="100%">
+                    <td colspan="2" style="background-color: #f2f2f2;">
+                        <div id="divRepList_##loadValue|res_id##" align="center" style="color: grey;margin:10px;padding:10px;
+  border: 1px dashed #009DC5;">
+                            <i class="fa fa-spinner fa-2x"></i><br />
+                            ##defineLang|_LOADING_INFORMATIONS##
+                        </div>
+                    </td>
+                </tr>
+                <tr id="diffList_##loadValue|res_id##" name="diffList_##loadValue|res_id##" style="display: none; border-bottom: solid 1px black;" width="100%">
+                    <td colspan="2" style="background-color: #f2f2f2;">
+                        <div id="divDiffList_##loadValue|res_id##" align="center" style="color: grey;margin:10px;padding:10px;
+  border: 1px dashed #009DC5;">
+                            <i class="fa fa-spinner fa-2x"></i><br />
+                            ##defineLang|_LOADING_INFORMATIONS##
+                        </div>
+                    </td>
+                </tr>
+
+ #!#FOOTER
+ <!--   ----------------------------------------------------------------------- -->
+        </tbody>
+    </table>
+    <br/>
+
+<script>
+    $$('#container')[0].setAttribute('style', 'width: 90%; min-width: 1000px;');
+    $$('#content')[0].setAttribute('style', 'width: auto; min-width: 1000px;');
+    $$('#inner_content')[0].setAttribute('style', 'width: auto; min-width: 1000px;');
+    $$('table#extended_list')[0].setAttribute('style', 'width: 100%; min-width: 900px; margin: 0;');
+    /*
+    // liste condensée
+    $$('table.listing')[0].setAttribute('style', 'width: 100%; min-width: 900px;');
+    */
+</script>

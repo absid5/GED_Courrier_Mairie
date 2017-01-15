@@ -1,0 +1,42 @@
+<validationRules>
+	<validationRule name="lc_manage_policies" extends="standardForm" mode="error">
+    	<parameter name="module" type="identifier" />
+    	<parameter name="id" type="identifier" />
+		<parameter name="policy_name" type="string" />
+		<parameter name="policy_desc" type="string" />
+		<parameter name="submit" type="string" />
+		<parameter name="Submit" type="string" />
+    </validationRule>
+    <validationRule name="lc_manage_cycles" extends="standardForm" mode="error">
+    	<parameter name="module" type="identifier" />
+    	<parameter name="policy_id" type="identifier" />
+    	<parameter name="id" type="identifier" />
+		<parameter name="cycle_desc" type="string" />
+		<parameter name="sequence_number" type="integer" />
+		<parameter name="where_clause" type="string" />
+		<parameter name="break_key" type="identifier" />
+		<parameter name="validation_mode" type="identifier" />
+		<parameter name="submit" type="string" />
+		<parameter name="Submit" type="string" />
+    </validationRule>
+    <validationRule name="lc_manage_steps" extends="standardForm" mode="error">
+    	<parameter name="module" type="identifier" />
+    	<parameter name="policy_id" type="identifier" />
+    	<parameter name="cycle_id" type="identifier" />
+    	<parameter name="id" type="identifier" />
+		<parameter name="cycle_step_desc" type="string" />
+		<parameter name="docserver_type_id" type="identifier" />
+		<parameter name="step_operation" type="identifier" />
+		<parameter name="sequence_number" type="integer" />
+		<parameter name="submit" type="string" />
+		<parameter name="Submit" type="string" />
+    </validationRule>
+    <validationRule name="lc_ajax_search" extends="standardForm" mode="error">
+    	<parameter name="what" type="string" />
+    	<parameter name="module" type="identifier" />
+    </validationRule>
+    <validationRule name="lc_ajax_cycle_list" extends="standardForm" mode="error">
+    	<parameter name="policy_id" type="identifier" />
+    	<parameter name="module" type="identifier" />
+    </validationRule>
+</validationRules>

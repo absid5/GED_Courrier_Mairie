@@ -1,0 +1,45 @@
+<requestDefinitions>
+	<requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="manage_notifications_controler" >
+        <parameter name="page" value="manage_notifications_controler"/>
+        <parameter name="module" value="notifications"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="manage_notifications_controler" >
+        <parameter name="page" value="manage_notifications_controler"/>
+        <parameter name="module" value="notifications"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="manage_notifs_list_by_name" >
+        <parameter name="page" value="manage_notifs_list_by_name"/>
+        <parameter name="display" value="true"/>
+        <parameter name="module" value="notifications"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="load_diffusiontype_formcontent" >
+        <parameter name="page" value="load_diffusiontype_formcontent"/>
+        <parameter name="display" value="true"/>
+        <parameter name="module" value="notifications"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="load_attachfortype_formcontent" >
+        <parameter name="page" value="load_attachfortype_formcontent"/>
+        <parameter name="display" value="true"/>
+        <parameter name="module" value="notifications"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="schedule_notifications_controler" >
+        <parameter name="page" value="schedule_notifications_controler"/>
+        <parameter name="display" value="true"/>
+        <parameter name="module" value="notifications"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="load_diffusionproperties_formcontent" >
+        <parameter name="page" value="load_diffusionproperties_formcontent"/>
+        <parameter name="display" value="true"/>
+        <parameter name="module" value="notifications"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="load_attachforproperties_formcontent" >
+        <parameter name="page" value="load_attachforproperties_formcontent"/>
+        <parameter name="display" value="true"/>
+        <parameter name="module" value="notifications"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="create_notif_script" >
+        <parameter name="page" value="create_notif_script"/>
+        <parameter name="display" value="true"/>
+        <parameter name="module" value="notifications"/>
+    </requestDefinition>
+</requestDefinitions>

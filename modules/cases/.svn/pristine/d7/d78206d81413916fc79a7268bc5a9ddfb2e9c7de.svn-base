@@ -1,0 +1,61 @@
+<requestDefinitions>
+	<requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="detail_index_cases" >
+		<parameter name="page" value="detail_index_cases"/>
+		<parameter name="display" value="true"/>
+		<parameter name="module" value="cases"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="detail_index_cases" >
+		<parameter name="page" value="detail_index_cases"/>
+		<parameter name="display" value="true"/>
+		<parameter name="module" value="cases"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="create_case" >
+		<parameter name="page" value="create_case"/>
+		<parameter name="display" value="true"/>
+		<parameter name="module" value="cases"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="list_results_mlb_frame" >
+		<parameter name="page" value="list_results_mlb_frame"/>
+		<parameter name="display" value="true"/>
+		<parameter name="module" value="cases"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="cases_list" >
+		<parameter name="page" value="cases_list"/>
+		<parameter name="display" value="true"/>
+		<parameter name="module" value="cases"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="cases_list" >
+		<parameter name="page" value="cases_list_search_adv"/>
+		<parameter name="display" value="true"/>
+		<parameter name="module" value="cases"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="details" >
+		<parameter name="page" value="cases_details"/>
+		<parameter name="display" value="true"/>
+		<parameter name="module" value="cases"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="execute_attachement" >
+		<parameter name="page" value="execute_attachement"/>
+		<parameter name="display" value="true"/>
+		<parameter name="module" value="cases"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="details" >
+		<parameter name="page" value="details_cases"/>
+		<parameter name="module" value="cases"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="unlink_case" >
+		<parameter name="page" value="unlink_case"/>
+		<parameter name="display" value="true"/>
+		<parameter name="module" value="cases"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="db_close_case" >
+		<parameter name="page" value="db_close_case"/>
+		<parameter name="display" value="true"/>
+		<parameter name="module" value="cases"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="search_adv_for_cases" >
+		<parameter name="page" value="search_adv_for_cases"/>
+		<parameter name="display" value="true"/>
+		<parameter name="module" value="cases"/>
+    </requestDefinition>
+</requestDefinitions>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ROOT>
+    <CONFIG>
+        <Lang>fr</Lang> <!-- fr, en-->
+        <MaarchDirectory>/var/www/maarch/</MaarchDirectory>
+        <TmpDirectory>/var/www/maarch/modules/life_cycle/batch/tmp/</TmpDirectory>
+        <PathToCompressTool>C:\Program Files\7-Zip\7z.exe</PathToCompressTool>
+        <MaarchApps>maarch_entreprise</MaarchApps>
+        <LogLevel>INFO</LogLevel>  <!-- DEBUG, INFO, NOTICE, WARNING, ERROR-->
+        <DisplayedLogLevel>INFO</DisplayedLogLevel> <!-- DEBUG, INFO, NOTICE, WARNING, ERROR-->
+        <StackSizeLimit>10000</StackSizeLimit>
+        <CustomPath></CustomPath> <!-- path to the custom file to create pdi, ex : c:\xampp\htdocs\maarch_entreprise_trunk\custom\main_lagi\modules\life_cycle\batch\custom.php -->
+        <CustomLang></CustomLang> <!-- path to the custom language file, ex : /var/www/dggn/custom/DGGN/fr.php -->
+        <ApacheUserAndGroup>www-data:www-data</ApacheUserAndGroup>
+        <enableHistory>true</enableHistory>
+        <enableFingerprintControl>true</enableFingerprintControl>
+        <enablePdi>true</enablePdi>
+        <regExResId>(4|5)$</regExResId>
+        <startDateRecovery>false</startDateRecovery> <!-- false or date dd/mm/yyyy -->
+        <currentMonthOnly>false</currentMonthOnly> <!-- true or false -->
+    </CONFIG>
+    <CONFIG_BASE>
+        <databaseserver>127.0.0.1</databaseserver>
+        <databaseserverport>5432</databaseserverport>
+        <databasetype>POSTGRESQL</databasetype>
+        <databasename>maarch</databasename>
+        <databaseuser>maarch</databaseuser>
+        <databasepassword>maarch</databasepassword>
+    </CONFIG_BASE>
+    <COLLECTION>
+        <Id>res_coll</Id>
+        <Table>res_x</Table>
+        <View>res_view</View>
+        <Adr>adr_x</Adr>
+    </COLLECTION>
+    <LOG4PHP>
+        <enabled>true</enabled>
+        <Log4PhpLogger>loggerTechnique</Log4PhpLogger>
+        <Log4PhpBusinessCode>LifeCycle</Log4PhpBusinessCode>
+        <Log4PhpConfigPath>/var/www/maarch/apps/maarch_entreprise/xml/log4php.xml</Log4PhpConfigPath>
+    </LOG4PHP>
+    <ESIGN>
+        <enabledEsign>false</enabledEsign>
+        <configEsign>/var/www/maarch/modules/esign/xml/config_esign_from_lc.xml</configEsign>
+        <targetCycleEsign>OAIS_CACHED</targetCycleEsign>
+    </ESIGN>
+</ROOT>

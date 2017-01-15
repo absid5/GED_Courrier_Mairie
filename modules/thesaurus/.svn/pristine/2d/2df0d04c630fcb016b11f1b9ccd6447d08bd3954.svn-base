@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<CONFIG>
+		<name>thesaurus</name>
+		<comment>_THESAURUS_COMMENT</comment>
+		<file_prefix>thesaurus</file_prefix>
+		<loaded>true</loaded>
+	</CONFIG>
+	<TABLENAME>
+		<cases>thesaurus</cases>
+	</TABLENAME>
+	<HISTORY>
+		<thesaurusup>true</thesaurusup>
+		<thesaurusadd>true</thesaurusadd>
+		<thesaurusdel>true</thesaurusdel>
+		<thesauruslink>true</thesauruslink>
+		<thesaurusunlink>true</thesaurusunlink>
+	</HISTORY>
+</root>

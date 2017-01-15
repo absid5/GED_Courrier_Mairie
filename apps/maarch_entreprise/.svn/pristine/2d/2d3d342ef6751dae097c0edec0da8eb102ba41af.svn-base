@@ -1,0 +1,131 @@
+<br/>
+<div class="block">
+<div id="parameter" class="forms" style="width:400px;margin:auto;">
+  <h1>_PARAMETER</h1>
+  <datalist id="messages">
+    <option id='_ID_IS_MANDATORY' value="_ID_IS_MANDATORY">
+    <option id='_VALUE_IS_MANDATORY' value="_VALUE_IS_MANDATORY">
+    <option id='_INVALID_PARAMETER_ID' value="_INVALID_PARAMETER_ID">
+  </datalist> 
+  <input name="mode" id="mode" type="hidden" />
+  <p/>
+  <p>
+    <label for="id" style="" >_ID</label>
+    <input name="id" id="id" type="text" /><span class="red_asterisk"><i class="fa fa-star"></i></span>
+  </p>
+  <p>
+    <label for="type">_TYPE</label>
+    <select name="type" id="type" onChange="display_input_value();">
+      <option value="string" >_STRING</option>
+      <option value="int" >_INT</option>
+      <option value="date" >_DATE</option>
+    </select>
+    <span class="red_asterisk"><i class="fa fa-star"></i></span>
+  </p>
+  <p>
+    <label for="param_value_string">_VALUE</label>
+    <input name="param_value_string" id="param_value_string" type="text" style="display:none"/>
+    <input name="param_value_int" id="param_value_int" type="text" style="display:none"/>
+    <input name="param_value_date" id="param_value_date" type="text" style="display:none" onclick="showCalender(this);"/>
+  </p>
+  <p>
+    <label for="description">_DESC</label>
+    <textarea name="description" id="description" ></textarea>
+  </p>
+  <p class="buttons" style="text-align:center;">
+      <input type="button" value="_SUBMIT" class="button" onclick="save_parameter();" />&nbsp;
+      <input type="button" value="_CANCEL" id="cancel" class="button" />
+  </p>
+  <script type="text/javascript">
+    // Execution
+    //*************************************************************************
+    // If mode is DEL, direct call to save function
+    var mode = $('mode').value;
+    if(mode == 'del')
+      save_parameter();
+    
+    // Else display value and remain on view
+    display_input_value();  
+        
+    // Functions
+    //*************************************************************************
+    function display_input_value()
+    {
+      var type = $('type').value;
+      
+      $('param_value_string').style.display = 'none';
+      $('param_value_int').style.display = 'none';
+      $('param_value_date').style.display = 'none';
+      
+      $('param_value_' + type).style.display = 'block';
+    }
+    
+    function save_parameter()
+    {
+      var main_error = $('main_error'); 
+      
+      var mode = $('mode').value;
+      var id = $('id').value;
+      var type = $('type').value; 
+      var description = $('description').value; 
+      var param_value_string = $('param_value_string').value;
+      var param_value_int = $('param_value_int').value;
+      var param_value_date = $('param_value_date').value;
+      
+      // Control
+      //***********************************************************************
+      var valid = true;
+      main_error.innerHTML = '';
+      
+      if(id == '') {
+        main_error.innerHTML += "<br/>" + $('_ID_IS_MANDATORY').value;
+        valid = false;
+      }
+      if(
+        (type == 'string' && param_value_string == '')
+        || (type == 'int' && param_value_int == '')
+        || (type == 'date' && param_value_date == '')
+      ){
+        main_error.innerHTML += "<br/>" + $('_VALUE_IS_MANDATORY').value;
+        valid = false;
+      }
+      var token = id.match(/[\w_]+/g);
+      if(!token || token[0] != id) {
+          main_error.innerHTML += "<br/>" + $('_INVALID_PARAMETER_ID').value;
+          valid = false;     
+      }
+      
+      // Save
+      //***********************************************************************      
+      if(valid == true) {
+        new Ajax.Request(
+          'index.php?display=true&admin=parameters&page=admin_parameter_save',
+          {
+            method:'post',
+            parameters: 
+            { 
+              mode : mode,
+              id : id,
+              type : type,
+              description : description,
+              param_value_string : param_value_string,
+              param_value_int : param_value_int,
+              param_value_date : param_value_date
+            },
+            onSuccess: function(answer){
+              if(answer.responseText)
+                  main_error.innerHTML = answer.responseText;
+              else {
+                  goTo('index.php?admin=parameters&page=admin_parameters');
+              }
+            }
+          }
+        );
+      }
+      
+    }
+        
+  </script>
+</div>
+</div>
+

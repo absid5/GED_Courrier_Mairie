@@ -1,0 +1,28 @@
+CREATE TABLE FULLTEXT
+(
+  COLL_ID           VARCHAR2(32 BYTE)           NOT NULL,
+  RES_ID            NUMBER                      NOT NULL,
+  TEXT_TYPE         VARCHAR2(10 BYTE)           DEFAULT 'CON'                 ,
+  FULLTEXT_CONTENT  CLOB
+)
+PCTUSED    0
+PCTFREE    10
+INITRANS   1
+MAXTRANS   255
+STORAGE    (
+            INITIAL          64K
+            MINEXTENTS       1
+            MAXEXTENTS       2147483645
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+           )
+LOGGING 
+NOCOMPRESS 
+NOCACHE
+NOPARALLEL
+MONITORING;
+
+ALTER TABLE FULLTEXT ADD (
+  CONSTRAINT COLL_ID_RES_ID
+ PRIMARY KEY
+ (COLL_ID, RES_ID));

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+An action page is described in a ACTIONPAGE tag :
+    <ACTIONPAGE>
+        <ID>redirect</ID>  => Action identifier
+        <LABEL>_REDIRECTION</LABEL> => Action label, can be a language constant or not
+        <NAME>redirect</NAME> => name of the action page without the .php, here the action page is redirect.php
+        <ORIGIN>module</ORIGIN> => action origin : apps or module
+        <MODULE>entities</MODULE> => If origin is module, the module name
+        <KEYWORD>redirect</KEYWORD> => Keyword used for special parameters (tag not mandatory)
+        <FLAG_CREATE>false</FLAG_CREATE> => true if the action create a new ressource, false otherwise (we recommend to leave it at false except for the indexing action page)
+    </ACTIONPAGE>
+-->
+<ROOT>
+    <ACTIONPAGE>
+        <ID>send_docs_to_recommendation</ID>
+        <LABEL>_SEND_DOCS_TO_RECOMMENDATION</LABEL>
+        <NAME>send_docs_to_recommendation</NAME>
+        <ORIGIN>module</ORIGIN>
+        <MODULE>avis</MODULE>
+        <FLAG_CREATE>false</FLAG_CREATE>
+        <COLLECTIONS>
+            <COLL_ID>letterbox_coll</COLL_ID>
+        </COLLECTIONS>
+    </ACTIONPAGE>
+    <ACTIONPAGE>
+        <ID>validate_recommendation</ID>
+        <LABEL>_VALIDATE_RECOMMENDATION</LABEL>
+        <NAME>validate_recommendation</NAME>
+        <ORIGIN>module</ORIGIN>
+        <MODULE>avis</MODULE>
+        <FLAG_CREATE>false</FLAG_CREATE>
+        <COLLECTIONS>
+            <COLL_ID>letterbox_coll</COLL_ID>
+        </COLLECTIONS>
+    </ACTIONPAGE>
+    <ACTIONPAGE>
+        <ID>send_to_avis</ID>
+        <LABEL>_SEND_TO_AVIS_WF</LABEL>
+        <NAME>send_to_avis</NAME>
+        <ORIGIN>module</ORIGIN>
+        <MODULE>avis</MODULE>
+        <FLAG_CREATE>false</FLAG_CREATE>
+        <COLLECTIONS>
+            <COLL_ID>letterbox_coll</COLL_ID>
+        </COLLECTIONS>
+    </ACTIONPAGE>
+    <ACTIONPAGE>
+        <ID>avis_workflow</ID>
+        <LABEL>_PROCEED_WORKFLOW_AVIS</LABEL>
+        <NAME>avis_workflow</NAME>
+        <ORIGIN>module</ORIGIN>
+        <MODULE>avis</MODULE>
+        <FLAG_CREATE>false</FLAG_CREATE>
+        <COLLECTIONS>
+            <COLL_ID>letterbox_coll</COLL_ID>
+        </COLLECTIONS>
+    </ACTIONPAGE>
+    <ACTIONPAGE>
+        <ID>avis_workflow_simple</ID>
+        <LABEL>_PROCEED_WORKFLOW_AVIS_SIMPLE</LABEL>
+        <NAME>avis_simple</NAME>
+        <ORIGIN>module</ORIGIN>
+        <MODULE>avis</MODULE>
+        <FLAG_CREATE>false</FLAG_CREATE>
+        <COLLECTIONS>
+            <COLL_ID>letterbox_coll</COLL_ID>
+        </COLLECTIONS>
+    </ACTIONPAGE>
+</ROOT>

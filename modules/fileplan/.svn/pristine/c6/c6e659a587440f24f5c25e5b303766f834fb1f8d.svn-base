@@ -1,0 +1,39 @@
+/* Fileplan module */
+#fileplan_admin{
+	background:  url(static.php?module=fileplan&filename=manage_fileplan.gif) no-repeat 2px top;
+}
+/* menu */
+#menunav li#fileplan span span {
+	background-image: url(static.php?module=fileplan&filename=fileplan_off.gif);
+	text-align:left;
+}
+#menunav li#fileplan.on span span {
+	background-image: url(static.php?module=fileplan&filename=fileplan_on.gif);
+	text-align:left;
+}
+
+td#fileplan {
+  background: url(static.php?module=fileplan&filename=fileplan_off.gif) no-repeat;
+}
+
+input.fileplan_position {
+    width: 300px;
+}
+
+select.fileplan_position {
+    width: 300px;
+}
+
+.selected_link {
+  color: #FCC11A;
+}
+
+.tree_branch
+{
+  cursor: pointer;
+}
+
+li.separator {
+    border-bottom: 1px solid #CCCCCC;
+    margin-top: 10px;
+}

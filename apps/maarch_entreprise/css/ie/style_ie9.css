@@ -1,0 +1,177 @@
+input.small {
+    width: 17px;
+}
+
+input.button {
+    padding: 0.2em 0 0.2em 0.5em 0.9em;
+}
+
+#doctype {
+    height: 10em;
+}
+
+#logo {
+    margin: 0 0 20px 10px;
+}
+
+#help {
+    margin-top: 42px;
+    padding-bottom: 10px;
+}
+
+
+#content h1 {
+    height: 2.05em;
+    padding: 0;
+}
+
+
+
+#formlogin {
+    width: 265px;
+}
+
+#formlogin input {
+    width: 128px;
+}
+
+#formlogin .nota, #formlogin p.buttons {
+    margin-right: 12px;
+}
+
+#formlogin select {
+    width: 134px;
+}
+
+#post #content {
+    padding-top: 0;
+}
+
+#post_indexing input.textbox {
+    width: 155px;
+}
+
+#post_indexing input.small {
+    width: 17px;
+}
+
+#post_indexing div label {
+    margin-right: 1px;
+}
+
+#post_indexing div ul {
+    width: 30%;
+}
+
+#post_indexing .buttons {
+    padding-right: 11px;
+}
+
+#post #pdf iframe {
+    height: 665px;
+}
+
+#titless {
+    margin-left: 5px;
+}
+
+
+#group_box
+{
+    width: 360px;
+    height: 550px;
+    margin: 0 0px 0 0;
+}
+
+.frameform3 {
+    height: 370px;
+    width: 370px;
+}
+
+#choose_services table
+{
+text-align:left;
+width: 90%;
+}
+.multiple_list
+{
+    height: 250px;
+    width: 150px;
+}
+.multiple_list_entities
+{
+    height: 250px;
+    width: 150px;
+}
+
+.multiple_list_doctypes
+{
+    height: 250px;
+    width: 250px;
+}
+#calender {
+top:19px;
+}
+
+.listing, .spec {
+    margin: 10px 0px 0;
+    width: 970px;
+}
+
+.listingIndex {
+    margin: 0px 0px 0;
+    width: 400px;
+}
+
+#validright
+{
+    /*width: 47%;*/
+    padding-left: 5px;
+    padding-right: 5px;
+    vertical-align:top;
+    float: left;
+    /*margin: 0 0 1em 2em;*/
+    position: relative;
+}
+
+
+/*Automplete*/
+div.autocomplete {
+  position: absolute;
+  width: 500px;
+  background-color: white;
+  border: 1px solid #888;
+  padding: 0px;
+}
+
+div.autocompleteIndex {
+  margin-left: -10px;
+  margin-top: -10px;
+}
+
+div.autocomplete ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  min-height: 1px;
+  max-height: 800px;
+  overflow: none;
+}
+
+div.autocomplete ul li.selected {
+    background-color: #93D1E4;
+}
+
+div.autocomplete ul li {
+  list-style-type:none;
+  display: block;
+  margin: 0;
+  padding: 2px;
+  cursor: pointer;
+  text-align: left;
+}
+
+div.autocomplete ul li span.informal {
+    color: grey;
+}
+

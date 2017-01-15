@@ -1,0 +1,13 @@
+<validationRules>
+    <validationRule name="ajax_core_values" extends="standardForm" mode="error">
+        <parameter name="action_id" type="integer" />
+        <parameter name="coll_id" type="collection_list" />
+        <parameter name="module" type="identifier" />
+        <parameter name="req" type="identifier" />
+        <parameter name="table" type="res_table_list" />
+        <parameter name="form_values" type="string" />
+        <parameter name="values" type="string" />
+        <parameter name="form_to_check" type="identifier" />
+        <parameter name="new_status" type="identifier" />
+    </validationRule>
+</validationRules>

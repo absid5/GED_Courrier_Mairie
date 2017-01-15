@@ -1,0 +1,47 @@
+<br/>
+<div class="block">
+<div id="difflist_type" style="width: 460px;margin:auto;">
+  <div id="difflist_type_messages" style="color:red;">
+  </div>
+  <form id="difflist_type_form" method="POST" class="forms">
+    <input name="mode" id="mode" type="hidden" />
+    <p></p>
+    <p>
+      <label for="difflist_type_id">_DIFFLIST_TYPE_ID</label>
+      <input name="difflist_type_id" id="difflist_type_id" type="text" /><span class="red_asterisk"><i class="fa fa-star">&nbsp;</i></span>
+    </p>
+    <p>
+      <label for="difflist_type_label">_DIFFLIST_TYPE_LABEL</label>
+      <input name="difflist_type_label" id="difflist_type_label" type="text" /><span class="red_asterisk"><i class="fa fa-star">&nbsp;</i></span>
+    </p>
+    <span>
+      <label for="difflist_type_roles">_DIFFLIST_TYPE_ROLES</label>
+      <table>
+        <tr>
+          <td>
+            <select name="all_roles" id="all_roles" size="7" ondblclick='moveclick(document.forms["difflist_type_form"].elements["all_roles"], document.forms["difflist_type_form"].elements["selected_roles"]);' multiple="multiple" >
+            </select>
+          </td>
+          <td>
+            <input type="button" class="button" value="&gt;&gt;" onclick='Move(document.forms["difflist_type_form"].elements["all_roles"], document.forms["difflist_type_form"].elements["selected_roles"]);' />
+            <br/>
+            <input type="button" class="button" value="&lt;&lt;"  onclick='Move(document.forms["difflist_type_form"].elements["selected_roles"], document.forms["difflist_type_form"].elements["all_roles"]);' />
+          </td>
+          <td>
+            <select name="selected_roles" id="selected_roles" size="7" ondblclick='moveclick(document.forms["difflist_type_form"].elements["selected_roles"], document.forms["difflist_type_form"].elements["all_roles"]);' multiple="multiple" >
+            </select>
+          </td>
+        </tr>
+      </table>
+    </span>
+    <p>
+      <label for="allow_entities">_ALLOW_ENTITIES</label>
+      <input name="allow_entities" id="allow_entities" type="checkbox" value="Y" />
+    </p>
+    <p class="buttons" style="text-align:center;">
+        <input type="button" value="_SUBMIT" class="button" onclick="validate_difflist_type()" />&nbsp;
+        <input type="button" value="_CANCEL" id="cancel" class="button" />
+    </p>
+  </form>
+</div>
+</div>

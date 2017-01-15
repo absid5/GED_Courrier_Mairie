@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ROOT>
+	<DOCSERVERS>
+		<PATHTOCOMPRESSTOOL>C:\Program Files\7-Zip\7z.exe</PATHTOCOMPRESSTOOL>
+		<OAIS>
+			<MODE>NONE</MODE>
+			<MODE>AIP_1</MODE>
+		</OAIS>
+		<SIGN>
+			<MODE>NONE</MODE>
+			<MODE>EJBCA</MODE>
+		</SIGN>
+		<COMPRESS>
+			<MODE>NONE</MODE>
+			<MODE>7Z</MODE>
+			<MODE>ZIP</MODE>
+			<MODE>GZIP</MODE> <!--do a tar and gzip -->
+			<MODE>TAR</MODE>
+		</COMPRESS>
+		<META_TEMPLATE>
+			<MODE>NONE</MODE>
+			<MODE>OAIS_std.dtd</MODE>
+			<MODE>OAIS_maarch.dtd</MODE>
+			<MODE>OAIS_test.dtd</MODE>
+		</META_TEMPLATE>
+		<LOG_TEMPLATE>
+			<MODE>NONE</MODE>
+			<MODE>log_std.dtd</MODE>
+			<MODE>log_maarch.dtd</MODE>
+			<MODE>log_test.dtd</MODE>
+		</LOG_TEMPLATE>
+		<FINGERPRINT_MODE>
+			<MODE>NONE</MODE>
+			<MODE>MD5</MODE>
+			<MODE>SHA256</MODE>
+			<MODE>SHA512</MODE>
+			<MODE>SHA1</MODE>
+			<MODE>CRC32</MODE>
+			<MODE>ADLER32</MODE>
+		</FINGERPRINT_MODE>
+		<MAX_SIZE_LIMIT>500</MAX_SIZE_LIMIT> <!-- size in GB -->
+	</DOCSERVERS>
+</ROOT>

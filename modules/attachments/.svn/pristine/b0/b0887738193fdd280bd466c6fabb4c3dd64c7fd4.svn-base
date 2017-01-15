@@ -1,0 +1,7 @@
+/* menu */
+
+.transmissionDiv p {
+    margin-bottom: 10px;
+}
+
+/* admin modules board */

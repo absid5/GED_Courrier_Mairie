@@ -1,0 +1,47 @@
+<requestDefinitions>
+	<requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="sendmail_ajax_content" >
+        <parameter name="page" value="sendmail_ajax_content"/>
+        <parameter name="module" value="sendmail"/>
+        <parameter name="display" value="true" />
+    </requestDefinition> 
+	<requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="mail_form" >
+        <parameter name="page" value="mail_form"/>
+        <parameter name="module" value="sendmail"/>
+        <parameter name="display" value="true" />
+    </requestDefinition>
+	<requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="mail_form" >
+        <parameter name="page" value="mail_form"/>
+        <parameter name="module" value="sendmail"/>
+        <parameter name="display" value="true" />
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="mail_form" >
+        <parameter name="page" value="mail_form_to_contact"/>
+        <parameter name="module" value="sendmail"/>
+        <parameter name="display" value="true" />
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="mail_form" >
+        <parameter name="page" value="mail_form_to_contact"/>
+        <parameter name="module" value="sendmail"/>
+        <parameter name="display" value="true" />
+    </requestDefinition>
+	<requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="sendmail" >
+        <parameter name="page" value="sendmail"/>
+        <parameter name="module" value="sendmail"/>
+        <parameter name="display" value="true" />
+    </requestDefinition>
+	<requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="sendmail" >
+        <parameter name="page" value="sendmail"/>
+        <parameter name="module" value="sendmail"/>
+        <parameter name="display" value="true" />
+    </requestDefinition>
+	<requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="adress_comletion" >
+        <parameter name="page" value="adresss_autocomletion"/>
+        <parameter name="module" value="sendmail"/>
+        <parameter name="display" value="true" />
+    </requestDefinition> 
+
+</requestDefinitions>
+
+
+
+

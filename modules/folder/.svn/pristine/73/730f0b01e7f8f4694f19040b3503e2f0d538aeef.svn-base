@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ You can use all fields in the folder table excepts these :
+  * folders_system_id
+  * folder_id
+  * foldertype_id
+  * parent_id
+  * typist
+  * status
+  * folder_level
+  * creation_date
+  * folder_out_id
+  * is_complete
+  * is_folder_out
+  * last_modified_date
+-->
+<ROOT>
+	<INDEX>
+		<column>custom_t2</column>
+		<label>_STRING</label>
+		<type>string</type>
+		<img>default_string.gif</img>
+		<default_value>test</default_value>
+	</INDEX>
+	<INDEX>
+		<column>custom_t3</column>
+		<label>Couleur</label>
+		<type>string</type>
+		<img>default_string.gif</img>
+		<values_list> <!-- If id are numpbers, always start with 1, never with 0 -->
+			<value>
+				<id>1</id>
+				<label>Bleu</label>
+			</value>
+			<value>
+				<id>2</id>
+				<label>Blanc</label>
+			</value>
+			<value>
+				<id>3</id>
+				<label>Rouge</label>
+			</value>
+		</values_list>
+		<default_value>1</default_value>
+	</INDEX>
+	<INDEX>
+		<column>custom_d1</column>
+		<label>_DATE</label>
+		<type>date</type>
+		<img>default_date.gif</img>
+	</INDEX>
+	<INDEX>
+		<column>custom_n1</column>
+		<label>_INTEGER</label>
+		<type>integer</type>
+		<img>default_number.gif</img>
+	</INDEX>
+	<INDEX>
+		<column>custom_f1</column>
+		<label>_FLOAT</label>
+		<type>float</type>
+		<img>default_number.gif</img>
+	</INDEX>
+
+</ROOT>

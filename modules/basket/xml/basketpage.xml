@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ROOT>
+    <BASKETPAGE>
+        <ID>redirect_to_action</ID>
+        <LABEL>_REDIRECT_TO_ACTION</LABEL>
+        <NAME>redirect_to_action</NAME>
+        <ORIGIN>apps</ORIGIN>
+        <MODULE></MODULE>
+        <COLLECTIONS>
+            <COLL_ID>*</COLL_ID>
+        </COLLECTIONS>
+    </BASKETPAGE>
+    <!-- letters lists -->
+    <BASKETPAGE>
+        <ID>list_with_attachments</ID>
+        <LABEL>_DOCUMENTS_LIST_WITH_ATTACHMENTS</LABEL>
+        <NAME>documents_list_with_attachments</NAME>
+        <ORIGIN>apps</ORIGIN>
+        <MODULE></MODULE>
+        <COLLECTIONS>
+            <COLL_ID>letterbox_coll</COLL_ID>
+        </COLLECTIONS>
+    </BASKETPAGE>
+    <BASKETPAGE>
+        <ID>list_with_avis</ID>
+        <LABEL>_DOCUMENTS_LIST_WITH_AVIS</LABEL>
+        <NAME>documents_list_with_avis</NAME>
+        <ORIGIN>module</ORIGIN>
+        <MODULE>avis</MODULE>
+        <COLLECTIONS>
+            <COLL_ID>letterbox_coll</COLL_ID>
+        </COLLECTIONS>
+    </BASKETPAGE>
+    <BASKETPAGE>
+        <ID>list_copies</ID>
+        <LABEL>_DOCUMENTS_LIST_COPIES</LABEL>
+        <NAME>documents_list_copies</NAME>
+        <ORIGIN>apps</ORIGIN>
+        <MODULE></MODULE>
+        <COLLECTIONS>
+            <COLL_ID>letterbox_coll</COLL_ID>
+        </COLLECTIONS>
+    </BASKETPAGE>
+    <BASKETPAGE>
+        <ID>list_cases</ID>
+        <LABEL>_CASES_LIST</LABEL>
+        <NAME>cases_list</NAME>
+        <ORIGIN>module</ORIGIN>
+        <MODULE>cases</MODULE>
+        <COLLECTIONS>
+            <COLL_ID>letterbox_coll</COLL_ID>
+        </COLLECTIONS>
+    </BASKETPAGE>
+    <!-- folders lists -->
+    <BASKETPAGE>
+        <ID>list_folders</ID>
+        <LABEL>_FOLDERS_LIST</LABEL>
+        <NAME>folders_list</NAME>
+        <ORIGIN>module</ORIGIN>
+        <MODULE>folder</MODULE>
+        <COLLECTIONS>
+            <COLL_ID>*</COLL_ID>
+        </COLLECTIONS>
+    </BASKETPAGE>
+</ROOT>

@@ -1,0 +1,35 @@
+<validationRules>
+	<validationRule name="notes_ajax_content" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="coll_id" type="collection_list" />
+		<parameter name="identifier" type="integer" />
+		<parameter name="origin" type="identifier" />
+		<parameter name="size" type="size" />
+		<parameter name="cancel" type="identifier" />
+		<parameter name="entities_chosen" type="identifier" />
+		<parameter name="entitieslist" type="string" />
+		<parameter name="notes" type="string" />
+		<parameter name="templateNotes" type="identifier" />
+		<parameter name="valid" type="string" />
+		<parameter name="url" type="url" />
+		<parameter name="id" type="integer" />
+	</validationRule>
+	<validationRule name="notes" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="coll_id" type="collection_list" />
+		<parameter name="identifier" type="integer" />
+		<parameter name="filter" type="identifier" />
+		<parameter name="value" type="string" />
+		<parameter name="origin" type="identifier" />
+		<parameter name="size" type="size" />
+		<parameter name="url" type="url" />
+	</validationRule>
+	<validationRule name="note_details" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="coll_id" type="collection_list" />
+		<parameter name="modify" type="identifier" />
+		<parameter name="id" type="identifier" />
+		<parameter name="resid" type="integer" />
+		<parameter name="size" type="identifier" />
+	</validationRule>
+</validationRules>

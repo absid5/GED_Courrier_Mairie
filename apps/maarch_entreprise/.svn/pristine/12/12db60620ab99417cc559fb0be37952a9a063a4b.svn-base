@@ -1,0 +1,268 @@
+.floatl {
+    width: 980px;float: left;
+    margin: 0 2em 1em 0;
+    position: relative;
+}
+
+.listing, .spec {
+    margin: 10px 0px 0;
+    width: 980px;
+}
+
+.listingIndex {
+    margin: 0px 0px 0;
+    width: 400px;
+}
+
+#container {
+    width: 980px;
+    margin: 0 auto;
+    text-align: left;
+    min-height: 400px;
+    height: 80%;
+}
+
+#nav {
+    clear: both;
+    position: relative;
+    width: 99%;
+    margin-bottom: 0px;
+    margin-left: 1px;
+    height: 70px;
+    background: url(static.php?filename=bando_tete2.gif) repeat-x left top;
+    margin-top: 3px;
+    min-width: 980px;
+}
+
+#foot {
+    clear: both;
+    position: relative;
+    width: 100%;
+    margin-bottom: 0px;
+    height: 30px;
+    background: url(static.php?filename=bando_foot2.gif) repeat-x left top;
+    margin-top: 305px;
+    min-width: 980px;
+    float: left;
+}
+
+#content {
+    width: 980px;
+}
+
+#inner_content {
+    border-top: none;
+    border-bottom: none;
+    padding: 15px 0px 0px;
+    width: 980px;
+    min-height: 370px;
+    height: auto;
+    margin-left: 0px;
+}
+
+.frameforsearch {
+    background-color:#D1EDF3;
+    width:980px;
+    height:550px;
+}
+
+.tabricator
+{
+    background:                #93D1E4;
+    border:                    1px solid #000;
+    display:                   inline-block;
+    /*height:                    auto!important;*/
+    height: 650px;
+    width : 975px;
+    margin:                    0 auto 1em;
+    /*max-width:                 40em;*/
+    padding:                   5px 0 0 5px;
+}
+
+
+/***** PROTOHUDS *****/
+.protohud {
+    font-size:                 12px;
+    height:                    0;
+    margin:                    0;
+    padding:                   1px 16px 0 0;
+    position:                  absolute;
+    top:                       0px;
+    left:                      20px;
+    right:                     400px;
+    text-align:                right;
+
+    z-index:                   980;
+}
+.protohud .trig {
+    display:                   inline-block;
+    border:                    2px double #4a2c02;
+    border-top:                0;
+    color:                     #f5f5f5;
+    cursor:                    pointer;
+    font-weight:               bold;
+    letter-spacing:            0.1em;
+    margin:                    0 2px;
+    padding:                   10px 5px 2px 5px;
+    position:                  relative;
+    top:                       -8px;
+
+    z-index:                   980;
+    background:                #93D1E4;
+}
+
+div.lb1-layer{
+    text-align:center;
+    position:absolute;
+    display:none;
+    /*background:url(static.php?filename=lb1/fond2.png);*/
+    background:white;/*#555555;*/
+    /*background-color: transparent;*/
+    /*z-index:980;*/
+    top:0;
+    left:0;
+    /*width: 100%;
+    height: 100%;*/
+}
+
+#welcome_box_right{
+    border: 1px;
+    float: right;
+    width: 182px;
+    margin: 0 10px 0 13px;
+    display:inline;
+    /*position:absolute;*/
+}
+
+/*OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOLD*/
+
+input.small {
+    width: 17px;
+}
+
+input.button {
+    padding: 0.2em 0 0.2em 0.5em 0.9em;
+}
+
+#doctype {
+    height: 10em;
+}
+
+#logo {
+    margin: 0 0 20px 10px;
+}
+
+#help {
+    margin-top: 42px;
+    padding-bottom: 10px;
+}
+
+
+#content h1 {
+    height: 2.05em;
+    padding: 0;
+}
+
+
+
+#formlogin {
+    width: 265px;
+}
+
+#formlogin input {
+    width: 128px;
+}
+
+#formlogin .nota, #formlogin p.buttons {
+    margin-right: 12px;
+}
+
+#formlogin select {
+    width: 134px;
+}
+
+#post #content {
+    padding-top: 0;
+}
+
+#post_indexing input.textbox {
+    width: 155px;
+}
+
+#post_indexing input.small {
+    width: 17px;
+}
+
+#post_indexing div label {
+    margin-right: 1px;
+}
+
+#post_indexing div ul {
+    width: 30%;
+}
+
+#post_indexing .buttons {
+    padding-right: 11px;
+}
+
+#post #pdf iframe {
+    height: 665px;
+}
+
+#titless {
+    margin-left: 5px;
+}
+
+
+#group_box
+{
+    width: 360px;
+    height: 550px;
+    margin: 0 0px 0 0;
+}
+
+.frameform3 {
+    height: 370px;
+    width: 370px;
+}
+
+#choose_services table
+{
+text-align:left;
+width: 90%;
+}
+.multiple_list
+{
+    height: 250px;
+    width: 150px;
+}
+.multiple_list_entities
+{
+    height: 250px;
+    width: 150px;
+}
+
+.multiple_list_doctypes
+{
+    height: 250px;
+    width: 250px;
+}
+#calender {
+top:19px;
+}
+
+.listing, .spec {
+    margin: 10px 0px 0;
+    width: 970px;
+}
+
+#validright
+{
+    /*width: 47%;*/
+    padding-left: 5px;
+    padding-right: 5px;
+    vertical-align:top;
+    float: left;
+    /*margin: 0 0 1em 2em;*/
+    position: relative;
+}

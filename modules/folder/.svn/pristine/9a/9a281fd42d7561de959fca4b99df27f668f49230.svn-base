@@ -1,0 +1,95 @@
+<!--
+
+* basket_list and search_adv_list template
+*
+*
+* @package  Maarch LetterBox 3.0
+* @version 3.0
+* @since 10/2005
+* @license GPL
+* @author  Loïc Vinet  <dev@maarch.org>
+*
+
+
+
+
+Parts :
+    ##HEAD< : Begining of the head part
+    ##HEAD> : End of the head part
+
+    ##RESULT< : Begining of result list
+    ##RESULT> : End fo result list
+
+Functions :
+
+
+    ##cssLine|arg1|arg2##                   : load css style for line. arg1,arg2 : switch beetwin style on line one or line two
+    ##cssLineReload##                       : reload last css style loaded by cssLine
+    ##sortColumn|arg##                      : sort list. arg = sort;
+    ##defineLang|arg##                      : show label. arg = constant define in lang.php;
+    ##loadImage|arg1|arg2##                 : show loaded image; arg1= name of img file, arg2 = name of the module (if image in module)
+    ##loadValue|arg##                       : load value in the db; arg= column's value  identifier
+    ##showActionIcon|arg1|arg2|arg3|arg4##  : action icon. arg1 = label, arg2  = image , arg3 = action (javascript), arg4 = disabled rule
+    ##includeFile|arg1|arg2##               : include file. arg1 = name of the file, arg2  = name of the module (if file in module)
+    ##setListParameter|arg1|arg2##          : set parameter's value for actual list. arg1 = name of parameter, arg2  = new value
+    ##getListParameter|arg##                : get parameter's value for actual list. arg1 = name of parameter
+    ##ifStatement|arg1|arg2|arg3|arg4##     : allow conditional execution . arg1=condition, arg2= statement 1, arg3 = statement 2
+    ##isModuleLoaded|arg##                  : test if module is loaded. arg = module id
+
+Mods 
+
+
+    ##radioButton##         : display radio
+    ##checkBox##            : display checkbox
+    ##checkUncheckAll##     : display checkbox for check/uncheck All
+    ##clickOnLine##         : action on click under the line
+    ##showIconDocument##    : view document icon
+    ##showIconDetails##     : view detail's page icon
+    ##getBusinessAppUrl##   : get business app url
+		
+ 		 
+-->
+
+
+#!#TABLE
+<!-- ------------------------------------------------------------------------->
+    <table border="0" cellspacing="0" class="spec zero_padding">
+
+#!#HEAD
+<!-- ------------------------------------------------------------------------->
+        <thead border ="1">
+            <tr><th colspan="7" style="padding:0px;">##showSmallToolbar##</th></tr>
+            <tr>
+                <!--<th width ="1%" alt="##defineLang|_CHECK_ALL## / ##defineLang|_UNCHECK_ALL##"><input type="checkbox" id="checkUncheck" name="checkUncheck" value="" onclick="CheckUncheckAll(this);"></th>-->
+                <th width ="50x">   ##defineLang|_NUM_GED##     ##sortColumn|res_id##</th> 
+				<th>                ##defineLang|_CATEGORY##    ##sortColumn|category_id## </th>
+				<th>                ##defineLang|_TYPE##        ##sortColumn|type_label## </th>
+				<th>                ##defineLang|_SUBJECT##     ##sortColumn|subject##</th>
+				<th width ="100px"> ##defineLang|_REG_DATE##    ##sortColumn|creation_date##</th>
+				<th width ="100px"> ##defineLang|_DEST_USER##   ##sortColumn|dest_user##</th>
+				<th width ="10px">&nbsp;</th>
+				<th width ="10px">&nbsp;</th>
+            </tr>
+        </thead>
+
+        <tbody>
+        
+#!#RESULT
+<!-- ------------------------------------------------------------------------->
+                <tr  class="##cssLine|col|white##" >
+                    <!--<td>##checkBox##</td>-->
+                    <td>##loadValue|res_id##</td>
+                    <td>##loadValue|category_img##</td>
+                    <td>##loadValue|type_label##</td>
+                    <td>##loadValue|subject##</td>
+                    <td>##loadValue|creation_date##</td>
+                    <td>##loadValue|dest_user##</td>
+                    <td>##showIconDocument##</td>
+                    <td>##showIconDetails##</td>
+                </tr>
+
+ #!#FOOTER
+ <!--   ------------------------------------------------------------------------->
+        </tbody>
+    </table>
+

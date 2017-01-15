@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<MENU>
+		<id>entities_print_sep_mlb</id>
+		<libconst>_PRINT_SEPS</libconst>
+		<url>index.php?page=print_sep_mlb_form&amp;module=entities</url>
+		<style>fa fa-print</style>
+	</MENU>
+</root>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ROOT>
+    <CONFIG>
+        <Lang>fr</Lang> <!-- fr, en-->
+        <MaarchDirectory>C:\xampp\htdocs\mep12\</MaarchDirectory>
+        <MaarchApps>maarch_entreprise</MaarchApps>
+        <LogLevel>INFO</LogLevel> <!-- DEBUG, INFO, NOTICE, WARNING, ERROR-->
+        <DisplayedLogLevel>INFO</DisplayedLogLevel> <!-- DEBUG, INFO, NOTICE, WARNING, ERROR-->
+        <StackSizeLimit>10000</StackSizeLimit> <!-- on doc -->
+        <WhereClause>status = 'PUR' and current_date &gt;= custom_d1</WhereClause> <!-- use if PurgeMode = documents or both -->
+        <ExportFolder>c:\xampp\htdocs\mep12\modules\</ExportFolder>
+        <CleanContactsMoral>false</CleanContactsMoral> <!-- if true, remove useless moral contacts and addresses. use if PurgeMode = contacts or both -->
+        <CleanContactsNonMoral>false</CleanContactsNonMoral> <!-- if true, remove useless non moral contacts and addresses. use if PurgeMode = contacts or both -->
+        <PurgeMode>documents</PurgeMode> <!-- contacts, documents, both -->
+    </CONFIG>
+    <CONFIG_BASE>
+        <databaseserver>127.0.0.1</databaseserver>
+        <databaseserverport>5432</databaseserverport>
+        <databasetype>POSTGRESQL</databasetype>
+        <databasename>faed</databasename>
+        <databaseuser>maarch</databaseuser>
+        <databasepassword>maarch</databasepassword>
+    </CONFIG_BASE>
+    <COLLECTION>
+        <Id>res_coll</Id>
+        <Table>res_x</Table>
+        <View>res_view</View>
+        <ExtTable></ExtTable>
+        <VersionTable>res_version_letterbox</VersionTable>
+        <Adr>adr_x</Adr>
+    </COLLECTION>
+    <LOG4PHP>
+        <enabled>true</enabled>
+        <Log4PhpLogger>loggerTechnique</Log4PhpLogger>
+        <Log4PhpBusinessCode>life_cycle_purge</Log4PhpBusinessCode>
+        <Log4PhpConfigPath>C:\xampp\htdocs\mep12\custom\Faed_MinInt\apps\maarch_entreprise\xml\log4php.xml</Log4PhpConfigPath>
+    </LOG4PHP>
+</ROOT>

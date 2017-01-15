@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<CONFIG>
+		<name>notes</name>
+		<comment>_NOTES_COMMENT</comment>
+		<file_prefix>not</file_prefix>
+		<loaded>true</loaded>
+	</CONFIG>
+	<TABLENAME>
+		<not_notes>notes</not_notes>
+		<note_entities>note_entities</note_entities>
+	</TABLENAME>
+	<HISTORY>
+		<noteadd>true</noteadd>
+		<noteup>true</noteup>
+		<notedel>true</notedel>
+	</HISTORY>
+</root>

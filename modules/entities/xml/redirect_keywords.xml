@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<keyword>
+		<id>ALL_ENTITIES</id>
+		<label>_ALL_ENTITIES</label>
+	</keyword>
+	<keyword>
+		<id>ENTITIES_JUST_BELOW</id>
+		<label>_ENTITIES_JUST_BELOW</label>
+	</keyword>
+	<keyword>
+		<id>ENTITIES_BELOW</id>
+		<label>_ENTITIES_BELOW</label>
+	</keyword>
+	<keyword>
+		<id>ENTITIES_JUST_UP</id>
+		<label>_ENTITIES_JUST_UP</label>
+	</keyword>
+	<keyword>
+		<id>ALL_ENTITIES_BELOW</id>
+		<label>_ALL_ENTITIES_BELOW</label>
+	</keyword>
+	<keyword>
+		<id>MY_ENTITIES</id>
+		<label>_MY_ENTITIES</label>
+	</keyword>
+	<keyword>
+		<id>MY_PRIMARY_ENTITY</id>
+		<label>_MY_PRIMARY_ENTITY</label>
+	</keyword>
+	<keyword>
+		<id>SAME_LEVEL_ENTITIES</id>
+		<label>_SAME_LEVEL_ENTITIES</label>
+	</keyword>
+</root>

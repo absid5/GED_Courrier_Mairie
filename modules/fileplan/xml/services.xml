@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<SERVICE>
+		<id>admin_fileplan</id>
+		<name>_ADMIN_MODULE_FILEPLAN</name>
+		<comment>_ADMIN_MODULE_FILEPLAN_DESC</comment>
+		<servicepage>index.php?page=fileplan_admin&amp;module=fileplan&amp;load</servicepage>
+		<servicetype>admin</servicetype>
+		<system_service>false</system_service>
+		<style>fa fa-files-o</style>
+		<enabled>true</enabled>
+		<WHEREAMIUSED>
+			<page>admin.php</page>
+			<nature>listelement</nature>
+		</WHEREAMIUSED>
+	</SERVICE>
+<SERVICE>
+   <id>put_doc_in_fileplan</id>
+   <name>_PUT_DOC_IN_FILEPLAN</name>
+   <comment>_PUT_DOC_IN_FILEPLAN_COMMENT</comment>
+   <servicetype>use</servicetype>
+    <system_service>false</system_service>
+   <enabled>true</enabled>
+ </SERVICE>
+<SERVICE>
+   <id>fileplan</id> <!-- if servicetype = menu, this id must be equal to the id of the menu item -->
+   <name>_PERSONNAL_FILEPLAN</name>
+   <comment>_FILEPLAN_COMMENT</comment>
+   <servicetype>menu</servicetype>
+    <system_service>false</system_service>
+   <enabled>true</enabled>
+ </SERVICE>
+
+</root>

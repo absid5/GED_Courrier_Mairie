@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<CONFIG>
+		<name>reports</name>
+		<comment>_REPORTS_COMMENT</comment>
+		<file_prefix>reports</file_prefix>
+		<loaded>true</loaded>
+	</CONFIG>
+	<HISTORY>
+		<usergroupsreportsadd>true</usergroupsreportsadd>
+		<viewreport>true</viewreport>
+		<printreport>true</printreport>
+	</HISTORY>
+	<TABLENAME>
+		<usergroups_reports>usergroups_reports</usergroups_reports>
+	</TABLENAME>
+</root>

@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Maarch.js Unit test file</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <!--<script type="text/javascript" src="../../lib/prototype-1.7.js"></script>-->
+    <script type="text/javascript" src="../common.js"></script>
+    <script type="text/javascript">
+        var loader = new Loader();
+        loader.loadPrototype();
+        loader.loadMaarch();
+    </script>
+    <link rel="stylesheet" href="../../lib/tests/jasmine-1.0.1/jasmine.css" type="text/css" />
+    <script type="text/javascript" src="../../lib/tests/jasmine-1.0.1/jasmine.js"></script>
+    <script type="text/javascript" src="../../lib/tests/jasmine-1.0.1/jasmine-html.js"></script>
+    <script type="text/javascript" src="../../lib/tests/jasmine-dom/lib/jasmine-dom-fixtures.js"></script>
+    <script type="text/javascript" src="../../lib/tests/jasmine-dom/lib/jasmine-dom-matchers.js"></script>
+    <script type="text/javascript">
+    loader.loadSuites();
+
+	window.onload = function(){
+        var old_jasmine_rivialreporter = jasmine.TrivialReporter.prototype.reportRunnerResults;
+        jasmine.TrivialReporter.prototype.reportRunnerResults = function(runner){
+            if (typeof(window.top.getResult) == "function"){
+                var tmp = runner.results();
+                tmp["protover"] = Prototype.Version;
+                tmp["suite"] = loadedSuites[0];
+                window.top.getResult(tmp);
+            }
+            return old_jasmine_rivialreporter.bind(this)(runner);
+        };
+        jasmine.getEnv().addReporter(new jasmine.TrivialReporter());
+        jasmine.getEnv().execute();
+    };
+</script>
+</head>
+<body class="navigation">
+
+<h1>Maarch.js Unit Tests</h1>
+
+<div>
+	<strong>Versions:</strong><br/>
+	Maarch.js : <script ="text/javascript">document.write(Maarch.Version || "undefined");</script><br/>
+	Prototype : <script ="text/javascript">document.write(Prototype.Version || "undefined");</script><br/><br/>
+	<strong>Suites:</strong><br/>
+    <script ="text/javascript">document.write(loadedSuites.toString() || "undefined");</script><br/><br/>
+</div>
+
+
+
+</body>
+</html>

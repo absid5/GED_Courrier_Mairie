@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<TYPE>
+		<id>Direction</id>
+		<label>Direction</label>
+		<typelevel>all</typelevel>
+	</TYPE>
+	<TYPE>
+		<id>Service</id>
+		<label>Service</label>
+		<typelevel>all</typelevel>
+	</TYPE>
+	<TYPE>
+		<id>Bureau</id>
+		<label>Bureau</label>
+		<typelevel>all</typelevel>
+	</TYPE>
+</root>

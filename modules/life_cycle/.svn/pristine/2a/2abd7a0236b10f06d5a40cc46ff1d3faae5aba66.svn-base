@@ -1,0 +1,8 @@
+# tous les jours toutes les 2 heures de 0h a 20h du lundi au samedi lancement des batchs de cycle de vie OAIS_CACHED
+0 0-20/2 * * 1-6 maarch /var/www/maarch/modules/life_cycle/batch/scripts/01-OAIS_CACHED.sh
+
+# tous les samedi et dimanche toutes les 2 heures de 0h a 20h lancement des batchs de cycle de vie OAIS (purge des FASTHD) 
+0 0-20/2 * * 6-7 maarch /var/www/maarch/modules/life_cycle/batch/scripts/02-OAIS.sh
+
+# a 22h30 tous les jours nettoyage des logs et repertoire temporaire du cycle de vie
+30 22 * * * maarch /var/www/maarch/modules/life_cycle/batch/scripts/purge_logs_tmp.sh

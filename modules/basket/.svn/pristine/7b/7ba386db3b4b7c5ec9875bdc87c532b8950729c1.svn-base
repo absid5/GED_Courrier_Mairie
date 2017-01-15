@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<MENU>
+		<id>view_baskets</id>
+		<libconst>_VIEW_BASKETS</libconst>
+		<url>index.php?page=view_baskets&amp;module=basket</url>
+		<style>fa fa-inbox</style>
+	</MENU>
+</root>

@@ -1,0 +1,383 @@
+<?php
+/*
+*    Copyright 2008,2009 Maarch
+*
+*  This file is part of Maarch Framework.
+*
+*   Maarch Framework is free software: you can redistribute it and/or modify
+*   it under the terms of the GNU General Public License as published by
+*   the Free Software Foundation, either version 3 of the License, or
+*   (at your option) any later version.
+*
+*   Maarch Framework is distributed in the hope that it will be useful,
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*   GNU General Public License for more details.
+*
+*   You should have received a copy of the GNU General Public License
+*    along with Maarch Framework.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/**
+* @brief Modify a structure
+*
+*
+* @file
+* @author Claire Figueras <dev@maarch.org>
+* @date $date$
+* @version $Revision$
+* @ingroup admin
+*/
+require "core" . DIRECTORY_SEPARATOR . "class" . DIRECTORY_SEPARATOR
+    . "class_history.php";
+$core = new core_tools();
+if(!$core->test_admin('admin_contacts', 'apps', false)){
+	if(!$core->test_admin('my_contacts', 'apps', false)){
+		$core->test_admin('my_contacts_menu', 'apps');
+	}
+}
+$core->load_lang();
+
+$mode = "";
+if (isset($_GET['id']) && ! empty($_GET['id'])) {
+	$mode = 'up';
+	$_SESSION['m_admin']['mode'] = $mode;
+} else if (isset($_SESSION['m_admin']['mode']) && ! empty($_SESSION['m_admin']['mode'])){
+	$mode = $_SESSION['m_admin']['mode'];
+} else {
+	$_SESSION['CURRENT_ID_CONTACT_PURPOSE'] = '';
+	$_SESSION['CURRENT_DESC_CONTACT_PURPOSE'] = '';
+	if(isset($_GET['mode']) && ! empty($_GET['mode'])){
+		$mode = $_GET['mode'];
+		$_SESSION['m_admin']['mode'] = $mode;
+	}
+}
+
+/****************Management of the location bar  ************/
+$init = false;
+if (isset($_REQUEST['reinit']) && $_REQUEST['reinit'] == "true") {
+    $init = true;
+}
+$level = "";
+if (isset($_REQUEST['level']) && ($_REQUEST['level'] == 2
+    || $_REQUEST['level'] == 3 || $_REQUEST['level'] == 4
+    || $_REQUEST['level'] == 1)
+) {
+    $level = $_REQUEST['level'];
+}
+$pagePath = $_SESSION['config']['businessappurl'] . 'index.php?page=contact_purposes_up';
+if ($mode == "up") {
+	$pageLabel = _CONTACT_PURPOSE_MODIF;
+} else {
+	$pageLabel = _NEW_CONTACT_PURPOSE_ADDED;
+}
+$pageId = "contact_purposes_up";
+$core->manage_location_bar($pagePath, $pageLabel, $pageId, $init, $level);
+/***********************************************************/
+
+$db = new Database();
+
+$desc = "";
+$id = "";
+
+if (isset($_GET['id']) && ! empty($_GET['id'])) {
+	$id = $_GET['id'];
+	$stmt = $db->query(
+		"SELECT label FROM "
+	    . $_SESSION['tablename']['contact_purposes']
+	    . " WHERE id = ?", array($id)
+	);
+
+	$res = $stmt->fetchObject();
+	$desc = functions::show_string($res->label);
+	$_SESSION['CURRENT_ID_CONTACT_PURPOSE'] = $id;
+	$_SESSION['CURRENT_DESC_CONTACT_PURPOSE'] = $desc;
+}
+
+$erreur = "";
+if (isset($_REQUEST['valid'])) {
+	if (isset($_REQUEST['desc_contact_purposes'])
+	    && ! empty($_REQUEST['desc_contact_purposes'])
+	) {
+		$desc = $_REQUEST['desc_contact_purposes'];
+        $desc=str_replace(';', ' ', $desc);
+        $desc=str_replace('--', '-', $desc);
+	    $desc = $core->wash(
+	        $desc, 'no', _CONTACT_PURPOSE, 'yes', 0, 255
+	    );
+	    if($_SESSION['error'] <> ''){
+	    	$_SESSION['error'] = '';
+	    	$erreur .= _CONTACT_PURPOSE .' '. MUST_BE_LESS_THAN." 255 "._CHARACTERS;
+	    }
+	} else {
+		$erreur .= _CONTACT_PURPOSE_MISSING . ".<br/>";
+	}
+
+	if (empty($erreur)) {
+		if(utf8_encode(utf8_decode($desc)) != $desc) {
+			$desc = utf8_encode($desc);
+		}
+		$stmt = $db->query(
+			"SELECT * FROM ".$_SESSION['tablename']['contact_purposes']
+		    . " WHERE lower(label) = lower(?)",
+		    array($desc)
+		);
+
+		if ($stmt->rowCount() > 0 && $mode <> 'up') {
+			$erreur .= _THIS_CONTACT_PURPOSE . ' ' . _ALREADY_EXISTS ;
+		} else {
+			if ($mode == "up") {
+				$stmt = $db->query(
+					"SELECT * FROM ".$_SESSION['tablename']['contact_purposes']
+				    . " WHERE lower(label) = lower(?) and id <> ?",
+				    array($desc, $_REQUEST['ID_contact_purposes'])
+				);	
+				if($stmt->rowCount() > 0){
+					$erreur .= _THIS_CONTACT_PURPOSE . ' ' . _ALREADY_EXISTS ;
+				} else {
+					if (isset($_REQUEST['ID_contact_purposes'])
+					    && ! empty($_REQUEST['ID_contact_purposes'])
+					) {
+						$id = $_REQUEST['ID_contact_purposes'];
+						$db->query(
+							"UPDATE " . $_SESSION['tablename']['contact_purposes']
+						    . " set label = ?"
+						    . "WHERE id = ?",
+						    array($desc, $id)
+						);
+
+						if ($_SESSION['history']['contact_purposes_up'] == "true") {
+							$hist = new history();
+							$hist->add(
+							    $_SESSION['tablename']['contact_purposes'], $id,
+							    "UP", 'contact_purposes_up', _CONTACT_PURPOSE_MODIF . " " . strtolower(_NUM)
+							    . $id,
+							    $_SESSION['config']['databasetype']
+							);
+						}
+						$_SESSION['info'] .= _CONTACT_PURPOSE_MODIF . " : " . $id;
+					} else {
+						$erreur .= _ID_CONTACT_PURPOSE_PB . ".";
+					}
+				}
+			} else {
+				$desc = $_REQUEST['desc_contact_purposes'];
+				if(utf8_encode(utf8_decode($desc)) != $desc) {
+					$desc = utf8_encode($desc);
+				}
+		        $desc=str_replace(';', ' ', $desc);
+		        $desc=str_replace('--', '-', $desc);
+				$db->query(
+					"INSERT INTO "
+				    . $_SESSION['tablename']['contact_purposes']
+				    . " ( label) VALUES (?)",
+				array($desc)
+				);
+				$stmt = $db->query(
+					"SELECT id FROM "
+				    . $_SESSION['tablename']['contact_purposes']
+				    . " WHERE label = ?",
+				    array($desc)
+				);
+				$res = $stmt->fetchObject();
+				$id = $res->id;
+
+				if ($_SESSION['history']['contact_purposes_add'] == "true") {
+					$hist = new history();
+					$hist->add(
+					    $_SESSION['tablename']['contact_purposes'], $id,
+					    "ADD", 'contact_purposes_add', _NEW_CONTACT_PURPOSE_ADDED . " (" . $desc . ")",
+					    $_SESSION['config']['databasetype']
+					);
+
+				}
+				if($mode <> 'popup'){
+					$_SESSION['info'] .= _NEW_CONTACT_PURPOSE . " : " . $desc;
+				}
+			}
+		}
+	}
+	if (empty($erreur)) {
+		if($mode == 'popup'){
+			$stmt = $db->query(
+				"SELECT id, label FROM ".$_SESSION['tablename']['contact_purposes']
+			    . " WHERE label = ?",
+			    array($desc)
+			);
+			$res = $stmt->fetchObject();
+			?>
+				<script type="text/javascript">window.opener.$("new_id").value ="<?php functions::xecho(utf8_decode($res->label));?>";window.opener.$("contact_purposes").value ='<?php functions::xecho($res->id);?>';self.close();</script> 
+			<?php
+		} else {
+			unset($_SESSION['m_admin']);
+		?>
+			<script type="text/javascript">window.location.href="<?php echo $_SESSION['config']['businessappurl'];?>index.php?page=contact_purposes";</script> 
+		<?php
+		}
+		exit();
+	} else {
+		if($mode <> 'popup'){
+			$core->start_page_stat();
+			?>
+			<div id="header">
+		        <div id="nav">
+		            <div id="menu" onmouseover="ShowHideMenu('menunav','on');" onmouseout="ShowHideMenu('menunav','off');" class="off">
+		                <p>
+		                    <span style="background:url('data:image/png;base64,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');background-position: 10px 2px;background-size:25%;
+							background-repeat: no-repeat;
+							height: 30px;
+							font-weight: bold;
+							width: 85px;
+							display: block;
+							font-size: 23px;
+							padding-left: 65px;
+							padding-top: 4px;
+							color: #ffffff;">Menu</span>
+		                </p>
+		                <div id="menunav" style="display: none;">
+		                <?php
+		                echo '<div class="header_menu"></div>';
+		                echo '<div class="header_menu_blank">&nbsp;</div>';?>
+		                <ul  >
+		                    <?php
+		                    //here we building the maarch menu
+		                    $core->build_menu($_SESSION['menu']);
+		                   ?>
+		                </ul>
+		                     <?php
+		                    echo '<div class="header_menu_blank">&nbsp;</div>';
+		                    echo '<div class="footer_menu"><a style="color:white;" href="'.$_SESSION['config']['businessappurl'].'index.php?page=maarch_credits">';
+		                    echo ''._MAARCH_CREDITS.'</a></div>';?>
+		                </div>
+		            </div>
+	            <div><p id="ariane"><?php
+	            ?></p></div>
+	            <p id="gauchemenu"></p>
+	            <a href="index.php"><p id="logo"></p></a>
+	       </div>
+			</div>
+			<div id="container">
+			    <div id="content">
+			<?php
+			/****************Management of the location bar  ************/
+			$core->manage_location_bar($pagePath, $pageLabel, $pageId, $init, $level);
+			/***********************************************************/
+		}
+	}
+}
+
+$core->load_html();
+
+if ($mode == "up") {
+	$title = _CONTACT_PURPOSE_MODIF;
+} else {
+	$title = _NEW_CONTACT_PURPOSE_ADDED;
+}
+$core->load_header($title, true, false);
+$time = $core->get_session_time_expire();
+?>
+<!-- <body onload="setTimeout(window.close, <?php echo $time;?>*60*1000);window.resizeTo(700,700);"> -->
+<br/>
+
+<div class="error">
+<?php
+functions::xecho($erreur);
+$erreur = "";
+?>
+</div>
+<h1 class="tit">
+<?php
+if ($mode == "up") {
+	?><i class="fa fa-edit fa-2x"></i> <?php
+    echo _CONTACT_PURPOSE_MODIF;
+} else {
+	?><i class="fa fa-plus fa-2x"></i> <?php
+    echo _NEW_CONTACT_PURPOSE_ADDED;
+}
+?></h1>
+<div class="block">
+<br/>
+
+<br/>
+<form method="post" name="frmcontact_purposes" id="frmcontact_purposes" class="forms" action="<?php
+	echo $_SESSION['config']['businessappurl'];
+	?>index.php?display=true&page=contact_purposes_up">
+		<input type="hidden" name="display" value="true" />
+	    <input type="hidden" name="page" value="contact_purposes_up" />
+		<?php
+	if ($mode == "up") {
+	    ?>
+		<p>
+	    	<label><?php
+	    echo _ID . ' ' . _CONTACT_PURPOSE;
+	    ?> :</label>
+			<input type="text" class="readonly" name="ID_contact_purposes" value="<?php
+		functions::xecho($_SESSION['CURRENT_ID_CONTACT_PURPOSE']);
+		?>" readonly="readonly" />
+	     </p>
+	     <p>&nbsp;</p>
+		<?php
+	}
+	?>
+
+		<p>
+	    	<label>
+	    		<?php echo _CONTACT_PURPOSE;?> :
+	    	</label>
+		   <input 
+		   		type="text"  name="desc_contact_purposes" value="<?php functions::xecho($_SESSION['CURRENT_DESC_CONTACT_PURPOSE']);?>" 
+			/>
+	     </p>
+
+	<p class="buttons">
+		<input type="submit" name="valid" class="button" value="<?php
+	echo _VALIDATE;
+	?>" />
+		<input type="button" class="button"  name="cancel" value="<?php
+	echo _CANCEL;
+	?>" 
+	<?php 
+		if($mode == 'popup'){
+		?>
+			onclick="self.close();"
+		<?php
+		} else {
+		?>
+			onclick="javascript:window.location.href='<?php echo $_SESSION['config']['businessappurl'];?>index.php?page=contact_purposes';" 
+		<?php
+		}
+	?>
+		/>
+	<br/><br/>
+	<input type="hidden" name="mode" value="<?php echo $mode;?>"/>
+
+</form>
+
+</div>
+
+<div class="block_end">&nbsp;</div>
+<?php $core->load_js();?>
+</body>
+</html>
+
+<?php 
+if (isset($_REQUEST['valid']) && $mode <> 'popup') {
+?>
+		    <p id="footer">
+		        <?php
+		        if (isset($_SESSION['config']['showfooter'])
+		            && $_SESSION['config']['showfooter'] == 'true'
+		        ) {
+		            $core->load_footer();
+		        }
+		        ?>
+		    </p>
+		    <?php
+		    $_SESSION['error'] = '';
+		    $_SESSION['info'] = '';
+		    $core->view_debug();
+		    ?>
+		</div>
+	</div>
+<?php
+}

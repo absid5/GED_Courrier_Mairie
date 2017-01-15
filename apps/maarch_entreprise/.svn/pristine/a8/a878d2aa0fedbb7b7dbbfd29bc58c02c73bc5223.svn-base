@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ROOT>
+	<FEATURES>
+		<search_notes>true</search_notes> <!-- If true, activates the search on notes (warning : join in the query, must be desactivated if the search takes too much time) -->
+		<dest_to_copy_during_redirection>false</dest_to_copy_during_redirection> <!-- If true, the dest of the mail is automatically put in copy during redirection to another user or entity -->
+		<show_types_tree>true</show_types_tree> <!-- If true, types are displayed with their classification scheme -->
+		<watermark>
+			<enabled>true</enabled> <!-- If true, a watermark is applied on the document -->
+			<text>Copie conforme de [alt_identifier] le [date_now] [hour_now]</text> <!-- text with fusion fields [column_name] or [date_now], ex : [alt_identifier] with status [status] the [date_now] [hour_now]-->
+			<position>30,35,0,0.5</position> <!-- Setup position with X, Y, angle, opacity ; ex : 50,450,30,0.5 -->
+			<font>helvetica,10</font> <!-- Setup the font name and her size, ex: helvetica,10 -->
+			<text_color>20,192,30</text_color> <!-- Setup the color of the text, ex: 192,192,192 -->
+		</watermark>
+		<type_calendar>workingDay</type_calendar><!-- calendar or workingDay -->
+		<send_to_contact_with_mandatory_attachment>true</send_to_contact_with_mandatory_attachment><!-- if true, requirement to had a attachment, if false, no mandatory to had a attachment -->
+	</FEATURES>
+</ROOT>

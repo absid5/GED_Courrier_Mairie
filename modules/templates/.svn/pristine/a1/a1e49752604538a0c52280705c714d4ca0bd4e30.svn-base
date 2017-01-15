@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+<SERVICE>
+   <id>admin_templates</id>
+   <name>_ADMIN_TEMPLATES</name>
+   <comment>_ADMIN_TEMPLATES_DESC</comment>
+   <servicepage>index.php?page=templates_management_controler&amp;module=templates</servicepage>
+   <servicetype>admin</servicetype>
+   <system_service>false</system_service>
+   <style>fa fa-file-text-o</style>
+   <enabled>true</enabled>
+   <WHEREAMIUSED>
+     <page>admin.php</page>
+     <nature>listelement</nature>
+   </WHEREAMIUSED>
+ </SERVICE>
+ <SERVICE>
+   <id>param_templates_doctypes</id>
+   <name>_PARAM_TEMPLATES_DOCTYPES</name>
+   <comment>_PARAM_TEMPLATES_DOCTYPES_DESC</comment>
+   <servicepage>param_templates_doctypes.php</servicepage>
+   <servicetype>use</servicetype>
+   <system_service>true</system_service>
+   <enabled>true</enabled>
+   <WHEREAMIUSED>
+        <page>doctype_up</page>
+        <nature>include</nature>
+    </WHEREAMIUSED>
+   <WHEREAMIUSED>
+        <page>doctype_info</page>
+        <nature>include</nature>
+    </WHEREAMIUSED>
+   <WHEREAMIUSED>
+        <page>doctype_load_db</page>
+        <nature>include</nature>
+    </WHEREAMIUSED>
+     <WHEREAMIUSED>
+        <page>doctype_del</page>
+        <nature>include</nature>
+    </WHEREAMIUSED>
+ </SERVICE>
+  <SERVICE>
+   <id>doctype_template_use</id>
+   <name>_DOCTYPE_TEMPLATE_USE</name>
+   <comment>_DOCTYPE_TEMPLATE_USE_DESC</comment>
+   <servicepage>doctype_template_use.php</servicepage>
+   <servicetype>use</servicetype>
+   <system_service>true</system_service>
+   <enabled>true</enabled>
+    <WHEREAMIUSED>
+        <page>change_doctype.php</page>
+        <nature>include</nature>
+    </WHEREAMIUSED>
+   </SERVICE>
+</root>

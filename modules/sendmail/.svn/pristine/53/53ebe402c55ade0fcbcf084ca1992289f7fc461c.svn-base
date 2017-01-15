@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ROOT>
+	<externalEntityMail>
+		<defaultName>Prefecture</defaultName>
+		<targetEntityId></targetEntityId>  <!-- laisser vide pour que l'adresse soit utilisable par tout le monde. Dans ce cas, la balise defaultName sera prise en compte -->
+		<EntityMail>service.prefecture@gmail.com</EntityMail>
+	</externalEntityMail>
+	<externalEntityMail>
+		<targetEntityId>COU</targetEntityId>
+		<EntityMail>service.courrier@gmail.com</EntityMail>
+	</externalEntityMail>
+<!-- 	<externalEntityMail>
+		<targetEntityId>BEP</targetEntityId>
+		<EntityMail>mivili.bibibubeb@laposte.net</EntityMail>
+	</externalEntityMail> -->
+<!--	<externalEntityMail>
+		<targetEntityId>PJS</targetEntityId>
+		<EntityMail>nom.prenom@maarch.org</EntityMail>
+	</externalEntityMail>	-->
+</ROOT>

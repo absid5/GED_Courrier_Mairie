@@ -1,0 +1,21 @@
+<validationRules>
+	<validationRule name="getThesaurusParent" extends="standardForm" mode="error">
+		<parameter name="res_id" type="integer" />
+	</validationRule>
+    <validationRule name="getThesaurusChilds" extends="standardForm" mode="error">
+        <parameter name="thesaurus_id" type="integer" />
+    </validationRule>
+    <validationRule name="manageThesaurusListByName" extends="standardForm" mode="error">
+        <parameter name="what" type="string" />
+    </validationRule>
+    <validationRule name="autocompleteThesaurus" extends="standardForm" mode="error">
+        <parameter name="Input" type="string" />
+        <parameter name="table" type="contact_user_list" />
+        <parameter name="module" type="identifier" />
+        <parameter name="contact_type" type="string" />
+    </validationRule>
+    <validationRule name="getThesaurusInfo" extends="standardForm" mode="error">
+        <parameter name="thesaurus_name" type="string" />
+    </validationRule>
+</validationRules>
+

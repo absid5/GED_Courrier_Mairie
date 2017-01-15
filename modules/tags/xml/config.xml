@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<CONFIG>
+		<name>tags</name>
+		<comment>_TAGS_COMMENT</comment>
+		<file_prefix>tags</file_prefix>
+		<loaded>true</loaded>
+	</CONFIG>
+	<TABLENAME>
+		<cases>tags</cases>
+	</TABLENAME>
+	<HISTORY>
+		<tagup>true</tagup>
+		<tagadd>true</tagadd>
+		<tagdel>true</tagdel>
+		<taglink>true</taglink>
+		<tagunlink>true</tagunlink>
+	</HISTORY>
+</root>

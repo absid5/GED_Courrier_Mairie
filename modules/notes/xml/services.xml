@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+<SERVICE>
+   <id>manage_notes_doc</id>
+   <name>_MANAGE_NOTES</name>
+   <comment>_MANAGE_NOTES_DESC</comment>
+   <servicepage>notes_doc.php</servicepage>
+   <servicetype>use</servicetype>
+   <system_service>true</system_service>
+   <enabled>true</enabled>
+   <!--<WHEREAMIUSED>
+     <page>details_documents.php</page>
+     <nature>include</nature>
+   </WHEREAMIUSED>-->
+    <WHEREAMIUSED>
+     <page>details_invoices.php</page>
+     <nature>include</nature>
+   </WHEREAMIUSED>
+  <!--  <WHEREAMIUSED>
+     <page>res_type.php</page>
+     <nature>include</nature>
+   </WHEREAMIUSED>
+   <WHEREAMIUSED>
+     <page>process_frame.php</page>
+     <nature>include</nature>
+   </WHEREAMIUSED>-->
+ </SERVICE>
+<SERVICE>
+    <id>notes_restriction</id>
+    <name>_NOTES_RESTRICTION</name>
+    <comment>_NOTES_RESTRICTION</comment>
+    <servicetype>use</servicetype>
+    <system_service>false</system_service>
+    <enabled>true</enabled>
+</SERVICE>
+<!--<SERVICE>
+	Beta!!
+   <id>show_notes_list</id>
+   <name>_SHOW_NOTES_LIST</name>
+   <comment>_SHOW_NOTES_LIST</comment>
+   <servicepage>show_notes_list.php</servicepage>
+   <servicetype>use</servicetype>
+   <system_service>true</system_service>
+   <enabled>true</enabled>
+    <WHEREAMIUSED>
+     <page>welcome</page>
+     <nature>include</nature>
+   </WHEREAMIUSED>
+ </SERVICE>
+ -->
+</root>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+<!-- Items from the contacts table -->
+    <item>
+        <label>Contact externe: Civilité</label>
+        <var_name>[CONTACT_TITLE]</var_name>
+        <field>title</field>
+        <table>contacts</table>
+        <type>string</type>
+    </item>
+    <item>
+        <label>Contact externe: Nom</label>
+        <var_name>[CONTACT_LASTNAME]</var_name>
+        <field>lastname</field>
+        <table>contacts</table>
+        <type>string</type>
+    </item>
+    <item>
+        <label>Contact externe: Prénom</label>
+        <var_name>[CONTACT_FIRSTNAME]</var_name>
+        <field>firstname</field>
+        <table>contacts</table>
+        <type>string</type>
+    </item>
+    <item>
+        <label>Contact externe : Organisation</label>
+        <var_name>[CONTACT_SOCIETY]</var_name>
+        <field>society</field>
+        <table>contacts</table>
+        <type>string</type>
+    </item>
+    <item>
+        <label>Contact externe : Adresse N°</label>
+        <var_name>[CONTACT_ADRS_NUM]</var_name>
+        <field>address_num</field>
+        <table>contacts</table>
+        <type>string</type>
+    </item>
+    <item>
+        <label>Contact externe : Adresse Rue</label>
+        <var_name>[CONTACT_ADRS_STREET]</var_name>
+        <field>address_street</field>
+        <table>contacts</table>
+        <type>string</type>
+    </item>
+    <item>
+        <label>Contact externe : Adresse Complement</label>
+        <var_name>[CONTACT_ADRS_COMP]</var_name>
+        <field>address_complement</field>
+        <table>contacts</table>
+        <type>string</type>
+    </item>
+    <item>
+        <label>Contact externe : Adresse Ville</label>
+        <var_name>[CONTACT_ADRS_TOWN]</var_name>
+        <field>address_town</field>
+        <table>contacts</table>
+        <type>string</type>
+    </item>
+    <item>
+        <label>Contact externe : Adresse CP</label>
+        <var_name>[CONTACT_ADRS_PC]</var_name>
+        <field>address_postal_code</field>
+        <table>contacts</table>
+        <type>string</type>
+    </item>
+    <item>
+        <label>Contact externe : Adresse Pays</label>
+        <var_name>[CONTACT_ADRS_COUNTRY]</var_name>
+        <field>address_country</field>
+        <table>contacts</table>
+        <type>string</type>
+    </item>
+<!-- Items from the users table -->
+    <item>
+        <label>Contact interne: Nom</label>
+        <var_name>[USER_LASTNAME]</var_name>
+        <field>lastname</field>
+        <table>users</table>
+        <type>string</type>
+    </item>
+    <item>
+        <label>Contact interne: Prénom</label>
+        <var_name>[USER_FIRSTNAME]</var_name>
+        <field>firstname</field>
+        <table>users</table>
+        <type>string</type>
+    </item>
+<!-- Items from the entities table -->
+    <item>
+        <label>Courrier: Service Traitant</label>
+        <var_name>[DESTINATION]</var_name>
+        <field>entity_label</field>
+        <table>entities</table>
+        <type>string</type>
+    </item>
+<!-- Items from the collection view -->
+    <item>
+        <label>Courrier: Type de document</label>
+        <var_name>[DOCTYPE]</var_name>
+        <field>type_label</field>
+        <table>coll_view</table>
+        <type>string</type>
+    </item>
+    <item>
+        <label>Courrier: Catégorie</label>
+        <var_name>[CAT_ID]</var_name>
+        <field>category_id</field>
+        <table>coll_view</table>
+        <type>string</type>
+    </item>
+    <item>
+        <label>Courrier: Nature</label>
+        <var_name>[NATURE]</var_name>
+        <field>nature_id</field>
+        <table>coll_view</table>
+        <type>string</type>
+    </item>
+    <item>
+        <label>Courrier: Date d'arrivée</label>
+        <var_name>[ADMISSION_DATE]</var_name>
+        <field>admission_date</field>
+        <table>coll_view</table>
+        <type>date</type>
+    </item>
+    <item>
+        <label>Courrier: Date du courrier</label>
+        <var_name>[DOC_DATE]</var_name>
+        <field>doc_date</field>
+        <table>coll_view</table>
+        <type>date</type>
+    </item>
+    <item>
+        <label>Courrier: Date limite de traitement</label>
+        <var_name>[PROCESS_LIMIT_DATE]</var_name>
+        <field>process_limit_date</field>
+        <table>coll_view</table>
+        <type>date</type>
+    </item>
+    <item>
+        <label>Courrier: Notes de traitement</label>
+        <var_name>[PROCESS_NOTES]</var_name>
+        <field>process_notes</field>
+        <table>coll_view</table>
+        <type>string</type>
+    </item>
+    <item>
+        <label>Courrier: Date de clôture</label>
+        <var_name>[CLOSING_DATE]</var_name>
+        <field>closing_date</field>
+        <table>coll_view</table>
+        <type>date</type>
+    </item>
+    <item>
+        <label>Courrier: Objet</label>
+        <var_name>[SUBJECT]</var_name>
+        <field>subject</field>
+        <table>coll_view</table>
+        <type>string</type>
+    </item>
+    <item>
+        <label>Courrier: Numéro chrono</label>
+        <var_name>[CHRONO]</var_name>
+        <field>alt_identifier</field>
+        <table>coll_view</table>
+        <type>string</type>
+    </item>
+    <item>
+        <label>Document: Auteur</label>
+        <var_name>[AUTHOR]</var_name>
+        <field>author</field>
+        <table>coll_view</table>
+        <type>string</type>
+    </item>
+    <item>
+        <label>Document: Date d'enregistrement</label>
+        <var_name>[CREATION_DATE]</var_name>
+        <field>creation_date</field>
+        <table>coll_view</table>
+        <type>date</type>
+    </item>
+<!-- SPECIAL -->
+    <item>
+        <label>Special: Date du jour</label>
+        <var_name>[NOW]</var_name>
+    </item>
+    <item>
+        <label>Special: Nom du destinataire traitant</label>
+        <var_name>[CURRENT_USER_LASTNAME]</var_name>
+    </item>
+    <item>
+        <label>Special: Prénom du destinataire traitant</label>
+        <var_name>[CURRENT_USER_FIRSTNAME]</var_name>
+    </item>
+    <item>
+        <label>Special: Téléphone du destinataire traitant</label>
+        <var_name>[CURRENT_USER_PHONE]</var_name>
+    </item>
+    <item>
+        <label>Special: Mail du destinataire traitant</label>
+        <var_name>[CURRENT_USER_EMAIL]</var_name>
+    </item>
+    <item>
+        <label>Fusion: champ</label>
+        <var_name>{#mergefield.field}</var_name>
+    </item>
+    <item>
+        <label>Fusion: liste</label>
+        <var_name>{#mergelist.field}</var_name>
+    </item>
+    <item>
+        <label>Fusion: tableau</label>
+        <var_name>{#mergetable.field}</var_name>
+    </item>
+    <item>
+        <label>Fusion: traduction</label>
+        <var_name>{#translate._CONSTANT}</var_name>
+    </item>
+</root>

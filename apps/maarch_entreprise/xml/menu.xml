@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ROOT>
+    <MENU>
+        <id>admin</id>
+        <libconst>_ADMIN</libconst>
+        <url>index.php?page=admin</url>
+        <style>fa fa-cogs</style>
+    </MENU>
+    <MENU>
+        <id>my_contacts_menu</id>
+        <libconst>_MY_CONTACTS_MENU</libconst>
+        <url>index.php?page=my_contacts&amp;dir=my_contacts&amp;load</url>
+        <style>fa fa-book</style>
+    </MENU>
+    <MENU>
+        <id>create_contacts</id>
+        <libconst>_CREATE_CONTACTS</libconst>
+        <url>index.php?page=contacts_v2</url>
+        <style>fa fa-plus</style>
+    </MENU>
+<!-- LETTERBOX -->
+    <MENU>
+        <id>index_mlb</id>
+        <libconst>_INDEXING_MLB</libconst>
+        <url>index.php?page=view_baskets&amp;module=basket&amp;baskets=IndexingBasket</url>
+        <style>fa fa-plus</style>
+    </MENU>
+    <MENU>
+        <id>adv_search_mlb</id>
+        <libconst>_ADV_SEARCH_MLB</libconst>
+        <url>index.php?page=search_adv&amp;dir=indexing_searching</url>
+        <style>fa fa-search</style>
+    </MENU>
+    <MENU>
+        <id>search_contacts</id>
+        <libconst>_SEARCH_CONTACTS</libconst>
+        <url>index.php?page=search_contacts&amp;dir=indexing_searching</url>
+        <style>fa fa-search</style>
+    </MENU>
+</ROOT>

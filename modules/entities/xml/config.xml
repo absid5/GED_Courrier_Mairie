@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<CONFIG>
+		<name>entities</name>
+		<comment>_ENTITIES_COMMENT</comment>
+		<file_prefix>not</file_prefix>
+		<loaded>true</loaded>
+	</CONFIG>
+	<TABLENAME>
+		<ent_entities>entities</ent_entities>
+		<ent_users_entities>users_entities</ent_users_entities>
+		<ent_listmodels>listmodels</ent_listmodels>
+		<ent_listinstance>listinstance</ent_listinstance>
+		<ent_groupbasket_redirect>groupbasket_redirect</ent_groupbasket_redirect>
+	</TABLENAME>
+	<HISTORY>
+		<entityadd>true</entityadd>
+		<entityup>true</entityup>
+		<entitydel>true</entitydel>
+		<entityval>true</entityval>
+		<entityban>true</entityban>
+	</HISTORY>
+</root>

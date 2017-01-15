@@ -1,0 +1,27 @@
+#modalSaveAvisModel{
+	padding-top:20px;
+	z-index: 1050;
+	width: 300px;
+	height: 80px;
+	border: 2px solid #000;
+	display: none;
+	position: absolute;
+	background-color: #DEEDF3;
+	left: 40%;
+	top: 10%;
+	text-align: center;
+}
+
+#modalSaveAvisModelPopup{
+	padding-top:20px;
+	z-index: 1050;
+	width: 300px;
+	height: 80px;
+	border: 2px solid #000;
+	display: none;
+	position: absolute;
+	background-color: #DEEDF3;
+	left: 40%;
+	top: 10%;
+	text-align: center;
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<CONFIG>
+		<name>attachments</name>
+		<comment>_ATTACHMENTS_COMMENT</comment>
+		<file_prefix>attach</file_prefix>
+		<convertPdf>true</convertPdf> <!-- true = applet DIS, false = applet Maarch -->
+		<vbs_convert_path></vbs_convert_path> <!-- Path to VBS file if necessary. ex: C:\Program Files (x86)\Outils SPM\DOC2PDF_VBS.vbs . Default : %HOME_DIR%\maarchTmp\DOC2PDF_VBS.vbs -->
+		<useExeConvert>false</useExeConvert>
+		<loaded>true</loaded>
+		<watermark>
+			<enabled>false</enabled> <!-- If true, a watermark is applied on the document -->
+			<text>Copie conforme de [title] au statut [status] le [date_now] [hour_now]</text> <!-- text with fusion fields [column_name] or [date_now], ex : [alt_identifier] with status [status] the [date_now] [hour_now]-->
+			<position>5,15,0,0.5</position> <!-- Setup position with X, Y, angle, opacity ; ex : 50,450,30,0.5 -->
+			<font>helvetica,10</font> <!-- Setup the font name and her size, ex: helvetica,10 -->
+			<text_color>20,192,30</text_color> <!-- Setup the color of the text, ex: 192,192,192 -->
+		</watermark>
+	</CONFIG>
+	<TABLENAME>
+		<attach_res_attachments>res_attachments</attach_res_attachments>
+	</TABLENAME>
+	<HISTORY>
+		<attachadd>true</attachadd>
+		<attachup>true</attachup>
+		<attachdel>true</attachdel>
+		<attachview>true</attachview>
+	</HISTORY>
+</root>

@@ -1,0 +1,15 @@
+<dataTypes>
+	<dataType name="entities_table_list" base="string">
+		<enumeration value="listinstance" />
+    </dataType>
+    <dataType name="annee" base="graph">
+      <pattern value="/^[0-9]{4}+$/" />
+    </dataType>
+
+    <dataType name="mois" base="graph">
+      <pattern value="/^[0-9]{2}+$/" />
+    </dataType>
+    <dataType name="ajax_ids_2" base="graph">
+      <pattern value="/^[\w#\$]+$/" />
+    </dataType>
+</dataTypes>

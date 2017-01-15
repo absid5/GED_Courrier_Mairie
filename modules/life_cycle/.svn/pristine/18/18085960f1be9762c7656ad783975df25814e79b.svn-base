@@ -1,0 +1,5 @@
+
+cd c:\xampp\htdocs\maarch_trunk\modules\life_cycle\batch\
+
+"C:\xampp\php\php.exe" "extract_data.php" -c "c:\xampp\htdocs\maarch_trunk\custom\spm_miviludes\modules\life_cycle\batch\config\config_extract_data.xml" -coll "letterbox_coll" 
+

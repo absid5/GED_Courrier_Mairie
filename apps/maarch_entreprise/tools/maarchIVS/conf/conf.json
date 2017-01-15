@@ -1,0 +1,65 @@
+{
+  "requestDefinitions" : [
+    {
+      "method" : "GET",
+      "path" : "/maarchIVS/example.php",
+      "validationRule" : "example",
+      "parameters" : [
+        {
+          "name" : "param1"
+        }
+      ]
+    }
+  ],
+  "validationRules" : [
+    {
+      "name" : "example",
+      "extends" : "baseExample",
+      "parameters" : [
+        {
+          "name" : "param2",
+          "type" : "short_word"
+        },
+        {
+          "name" : "param3",
+          "type" : "integer",
+          "restriction" : {
+            "totalDigit" : 3
+          }
+        }
+		{
+          "name" : "param4",
+          "type" : "integer",
+          "restriction" : {
+            "totalDigit" : 3
+          }
+        }
+      ]
+    },
+    {
+      "name" : "baseExample",
+      "parameters" : [
+        {
+          "name" : "param1",
+          "type" : "string"
+        }
+      ]
+    }
+  ],
+  "dataTypes" : [
+    {
+      "name" : "short_word",
+      "base" : "word",
+      "restriction" : {
+        "pattern" : "/^\\w{1,5}$/"
+      }
+    },
+    {
+      "name" : "word",
+      "base" : "string",
+      "restriction" : {
+        "pattern" : "/^\\w+$/"
+      }
+    }
+  ]
+}

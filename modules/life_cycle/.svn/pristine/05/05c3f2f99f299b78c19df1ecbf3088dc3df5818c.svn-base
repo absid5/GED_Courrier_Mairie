@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<CONFIG>
+		<name>life_cycle</name>
+		<comment>_LIFE_CYCLE_COMMENT</comment>
+		<file_prefix>lc</file_prefix>
+		<loaded>true</loaded>
+	</CONFIG>
+	<TABLENAME>
+		<lc_policies>lc_policies</lc_policies>
+		<lc_cycles>lc_cycles</lc_cycles>
+		<lc_cycle_steps>lc_cycle_steps</lc_cycle_steps>
+		<lc_stack>lc_stack</lc_stack>
+	</TABLENAME>
+	<HISTORY>
+		<lcadd>true</lcadd>
+		<lcup>true</lcup>
+		<lcdel>true</lcdel>
+	</HISTORY>
+</root>

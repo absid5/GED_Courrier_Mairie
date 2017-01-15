@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <config>
+        <!-- Appel la class_<type_ldap> en fonction du type d'annuaire -->
+        <type_ldap>adLDAP</type_ldap>
+        <!-- Prefixe les group_id de letterbox par -->
+        <group_prefix_ldap>LDAP</group_prefix_ldap>
+        <!-- nom / ip du serveur ldap -->
+        <domain>192.168.1.1</domain>
+        <!-- prefixe les logins si saisi -->
+        <prefix_login>MAARCH</prefix_login>
+        <!-- login admnistrateur du domaine -->
+        <login_admin>Administrateur</login_admin>
+        <!-- mot de passe administrateur annuaire ldap -->
+        <pass>ThePassword</pass>
+        <!-- cryptage de la communication ( true or false) -->
+        <ssl>false</ssl>
+        <!--Nombre de logs avant purge (si purge_log == 0 alors les logs ne sont jamais purges)  -->
+        <purge_log>1</purge_log>
+        <!-- Import des users qui n'appartiennent a aucun groupe -->
+        <lost_users>false</lost_users>
+        <!-- Si LDAP est desactive alors le pass de chaque utilisateur est son login -->
+        <pass_is_login>true</pass_is_login>
+    </config>
+    
+   <!-- Est utile uniquement pour la synchroniqation des donnees -->
+    <config_base>
+        <databaseserver>localhost</databaseserver>
+        <databaseserverport>5432</databaseserverport>
+        <databasetype>POSTGRESQL</databasetype>
+        <databasename>maarch_entreprise</databasename>
+        <databaseuser>postgres</databaseuser>
+        <databasepassword>maarch</databasepassword>
+    </config_base>
+    <mapping>
+        <user ext_id="objectguid">
+            <user_id>samaccountname</user_id>
+            <firstname>givenname</firstname>
+            <lastname>sn</lastname>
+            <phone>telephonenumber</phone>
+            <mail>mail</mail>
+            <fonction>title</fonction>
+            <enabled>useraccountcontrol</enabled><!--Depend du type d'annuaire-->
+            <user_entity role="">memberof</user_entity>
+        </user>
+        <entity>
+            <ldap_id>objectguid</ldap_id>
+            <entity_label>samaccountname</entity_label>
+            <parent_entity>memberof</parent_entity>
+        </entity>
+    </mapping>
+    <filter>
+        <!-- Chemin ou se trouve les utilisateurs de l'application -->
+         <dn id="OU=Utilisateurs,DC=maarch,DC=com" type="users">
+            <user>(cn=*)</user>
+            <group>(cn=*)</group>
+        </dn>
+
+        <!-- Chemin ou se trouve les entités de l'application -->
+        <dn id="OU=Services,DC=maarch,DC=com" type="entities">
+            <user>(cn=*)</user>
+            <group>(cn=*)</group>
+        </dn>
+    </filter>
+</root>

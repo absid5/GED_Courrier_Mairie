@@ -1,0 +1,129 @@
+<validationRules>
+    <validationRule name="fo_ajax_get_folder" extends="standardForm" mode="error">
+      <parameter name="id_subfolder" type="integer" />
+      <parameter name="folders_system_id" type="integer" />
+      <parameter name="FOLDER_TREE" type="boolean" />
+      <parameter name="FOLDER_TREE_DOCS" type="boolean" />
+      <parameter name="FOLDER_TREE_RESET" type="boolean" />
+      <parameter name="AUTOFOLDERS_TREE" type="boolean" />
+      <parameter name="AUTOFOLDER_FOLDERS" type="boolean" />
+      <parameter name="AUTOFOLDER_FOLDER_DOCS" type="boolean" />
+      <parameter name="path_folder" type="string" />
+      <parameter name="folder_level" type="string" />
+      <parameter name="id" type="identifier" />
+    </validationRule>
+    <validationRule name="fo_ajax_get_project" extends="standardForm" mode="error">
+      <parameter name="id_market" type="integer" />
+    </validationRule>
+    <validationRule name="fo_autocomplete_folders" extends="standardForm" mode="error">
+      <parameter name="Input" type="string" />
+      <parameter name="mode" type="identifier" />
+    </validationRule>
+    <validationRule name="fo_choose_doctypes" extends="standardForm" mode="error">
+      <parameter name="doctypes" type="string" />
+      <parameter name="doctypeslist" type="string" />
+    </validationRule>
+    <validationRule name="fo_create_folder_get_folder_index" extends="standardForm" mode="error">
+      <parameter name="foldertype_id" type="integer" />
+    </validationRule>
+    <validationRule name="fo_documents_list_in_details" extends="standardForm" mode="error">
+      <parameter name="listid" type="integer" />
+      <parameter name="url" type="url" />
+    </validationRule>
+    <validationRule name="fo_documents_list_in_folder" extends="standardForm" mode="error">
+      <parameter name="id" type="integer" />
+      <parameter name="coll_id" type="collection_list" />
+    </validationRule>
+      <validationRule name="fo_folder_history" extends="standardForm" mode="error">
+      <parameter name="id" type="integer" />
+      <parameter name="size" type="string" />
+      <parameter name="load" type="string" />
+    </validationRule>
+    <validationRule name="fo_folders_list_by_id" extends="standardForm" mode="error">
+      <parameter name="Input" type="string" />
+    </validationRule>
+    <validationRule name="fo_folders_list_by_name" extends="standardForm" mode="error">
+      <parameter name="folder" type="string" />
+    </validationRule>
+    <validationRule name="fo_foldertype_add" extends="standardForm" mode="error" />
+    <validationRule name="fo_foldertype_form" extends="standardForm" mode="error">
+      <parameter name="id" type="identifier" />
+      <parameter name="foldertypeId" type="identifier" />
+      <parameter name="collection" type="collection_list" />
+      <parameter name="collection_show" type="string" />
+      <parameter name="comment" type="string" />
+      <parameter name="desc" type="string" />
+      <parameter name="fields" type="identifier" />
+      <parameter name="mandatory_fields" type="identifier" />
+      <parameter name="Submit" type="string" />
+    </validationRule>
+    <validationRule name="fo_foldertype_del" extends="standardForm" mode="error">
+      <parameter name="id" type="integer" />
+    </validationRule>
+    <validationRule name="fo_foldertype_list_by_name" extends="standardForm" mode="error" />
+    <validationRule name="fo_foldertypes" extends="standardForm" mode="error">
+      <parameter name="id" type="integer" />
+    </validationRule>
+    <validationRule name="fo_foldertype_up" extends="standardForm" mode="error">
+      <parameter name="id" type="integer" />
+    </validationRule>
+    <validationRule name="fo_get_folder_search_index" extends="standardForm" mode="error">
+      <parameter name="foldertype_id" type="integer" />
+    </validationRule>
+    <validationRule name="fo_get_foldertypes" extends="standardForm" mode="error">
+      <parameter name="coll_id" type="collection_list" />
+    </validationRule>
+    <validationRule name="fo_get_folder_view_stats_val" extends="standardForm" mode="error">
+      <parameter name="type_report" type="identifier" />
+      <parameter name="user" type="login" />
+      <parameter name="date_start" type="datefr" />
+      <parameter name="date_fin" type="datefr" />
+    </validationRule>
+    <validationRule name="fo_get_tree_info" extends="standardForm" mode="error">
+      <parameter name="tree_id" type="identifier" />
+      <parameter name="project" type="string" />
+    </validationRule>
+    <validationRule name="fo_list_doc" extends="standardForm" mode="error">
+      <parameter name="listid" type="string" />
+    </validationRule>
+    <validationRule name="fo_manage_create_folder" extends="standardForm" mode="error">
+      <parameter name="folder_id" type="string" />
+      <parameter name="folder_name" type="string" />
+      <parameter name="folder_parent" type="integer" />
+      <parameter name="foldertype" type="integer" />
+      <parameter name="custom_*" type="string" />
+      <parameter name="folder_dest" type="bool" />
+      <parameter name="validate" type="string" />
+      <parameter name="iframe" type="bool" />
+    </validationRule>
+    <validationRule name="fo_search_adv_folder_result" extends="standardForm" mode="error">
+      <parameter name="coll_id" type="collection_list" />
+      <parameter name="creation_date_start" type="datefr" />
+      <parameter name="creation_date_end" type="datefr" />
+      <parameter name="custom_*" type="string" />
+      <parameter name="folder_id" type="string" />
+      <parameter name="folder_name" type="string" />
+      <parameter name="foldertype_id" type="integer" />
+      <parameter name="imageField" type="string" />
+    </validationRule>
+    <validationRule name="fo_select_user_report" extends="standardForm" mode="error">
+      <parameter name="field" type="string" />
+    </validationRule>
+    <validationRule name="fo_show_folder" extends="standardForm" mode="error">
+      <parameter name="id" type="integer" />
+      <parameter name="system_id" type="integer" />
+      <parameter name="typîst" type="login" />
+      <parameter name="status" type="identifier" />
+      <parameter name="folder_id" type="string" />
+      <parameter name="folder_name" type="string" />
+      <parameter name="folder_parent" type="integer" />
+      <parameter name="foldertype_id" type="integer" />
+      <parameter name="foldertype" type="string" />
+      <parameter name="folder_dest" type="bool" />
+      <parameter name="custom_*" type="string" />
+      <parameter name="creation_date" type="datefr" />
+      <parameter name="modification_date" type="datefr" />
+      <parameter name="update_folder" type="string" />
+      <parameter name="delete_folder" type="string" />
+    </validationRule>
+</validationRules>

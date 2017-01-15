@@ -1,0 +1,56 @@
+<!--
+/**
+*   Copyright 2008-2013 Maarch
+*
+*  This file is part of Maarch Framework.
+*
+*   Maarch Framework is free software: you can redistribute it and/or modify
+*   it under the terms of the GNU General Public License as published by
+*   the Free Software Foundation, either version 3 of the License, or
+*   (at your option) any later version.
+*
+*   Maarch Framework is distributed in the hope that it will be useful,
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*   GNU General Public License for more details.
+*
+*   You should have received a copy of the GNU General Public License
+*    along with Maarch Framework.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/**
+* @brief Welcome page template (french)
+* 
+* @file
+* @author  Loïc Vinet  <dev@maarch.org>
+* @author  Claire Figueras  <dev@maarch.org>
+* @date $date$
+* @version $Revision$
+* @ingroup apps
+*/
+-->
+<!--<table id="welcome_table" summary="">
+    <tr>
+        <td width="35%">&nbsp;</td>
+        <td align="left" valign="top">
+            <span id="welcome_title">
+                <em>Bienvenue dans <strong>Maarch</strong> version 1.5,
+                <strong>la solution open source unique</strong> regroupant :
+                </em>
+            </span>
+        </td>
+    </tr>
+    <tr>
+        <td width="35%">&nbsp;</td>
+        <td align="left" valign="top">
+            <span id="welcome_title">
+                <ul>
+                        <li>- <strong>S</strong>ystème d'<strong>A</strong>rchivage <strong>E</strong>lectronique <strong>(SAE)</strong></li>
+                        <li>- <strong>G</strong>estion <strong>E</strong>lectronique de <strong>C</strong>ourriers <strong>(GEC)</strong></li>
+                        <li>- <strong>G</strong>estion <strong>E</strong>lectronique de <strong>D</strong>ocuments <strong>(GED)</strong></li>
+                </ul>
+            </span>
+        </td>
+    </tr>
+</table>-->
+

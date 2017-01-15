@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ROOT>
+    <!-- Warning : if you disable this logger
+    you won't be able to see the historical in the application -->
+    <METHOD>
+        <ID>database</ID>
+        <ENABLED>true</ENABLED>
+    </METHOD>
+    <METHOD>
+        <ID>log4php</ID>
+        <ENABLED>false</ENABLED>
+        <!-- Corresponding to the log4php.xml file, this is the functionnal logger -->
+        <LOGGER_NAME_TECH>loggerTechnique</LOGGER_NAME_TECH>
+        <!-- Corresponding to the log4php.xml file, this is the technical logger -->
+        <LOGGER_NAME_FUNC>loggerFonctionnel</LOGGER_NAME_FUNC>
+        <!-- WHERE is the table used by the code -->
+        <!-- ID is the login ID -->
+        <!-- HOW is the event type -->
+        <!-- WHAT is the event description -->
+        <!-- ID_MODULE is the module id -->
+        <!-- REMOTE_IP is the user IP -->
+        <APPLI_LOG_FORMAT>[%RESULT%][%CODE_METIER%][%WHERE%][%ID%][%HOW%][%USER%][%WHAT%][%ID_MODULE%][%REMOTE_IP%]</APPLI_LOG_FORMAT>
+        <CODE_METIER>MAARCH</CODE_METIER>
+    </METHOD>
+</ROOT>

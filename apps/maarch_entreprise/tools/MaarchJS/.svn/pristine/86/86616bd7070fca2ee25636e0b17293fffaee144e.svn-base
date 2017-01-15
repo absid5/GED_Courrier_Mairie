@@ -1,0 +1,86 @@
+#!/usr/bin/env ruby
+require 'rubygems'
+require 'oyster'
+require File.dirname(__FILE__) + '/../lib/pdoc'
+require 'yaml'
+
+spec = Oyster.spec do
+  name "pdoc -- Inline comment parser and JavaScript documentation generator"
+  author "Tobie Langel <tobie.langel@gmail.com>"
+  
+  synopsis <<-EOS
+    pdoc [-o OUTPUT_DIR] [-t TEMPLATE_DIR] SOURCE_FILES
+    pdoc [OPTIONS] -d SOURCE_DIRECTORY
+  EOS
+  
+  string :directory,
+         :desc => "Directory to search for JavaScript files. Will take all *.js " +
+                  "files from the given directory (including subdirectories) and use " +
+                  "them to generate documentation. This option takes precedence over " +
+                  "SOURCE_FILES."
+  
+  string :output,
+         :desc => "Directory in which to dump output files",
+         :default => "pdoc"
+  
+  string :templates,
+         :desc => "Directory containing template files"
+  
+  string :params,
+         :desc => "File containing parameters tot pass to runner",
+         :default => nil
+  
+  subcommand :'copy-templates' do
+    synopsis <<-EOS
+      pdoc copy-templates TYPE DESTINATION
+    EOS
+    
+    description <<-EOS
+      PDoc includes a set of default templates for each type of output generator.
+      This command lets you extract a set of these templates into a local directory
+      so you can tweak it to suit your needs. Be sure to specify your set of
+      templates next time you run pdoc.
+    EOS
+  end
+end
+
+begin; options = spec.parse
+rescue Oyster::HelpRendered; exit
+end
+
+if command = options[:'copy-templates']
+  args = command[:unclaimed]
+  PDoc.copy_templates(args[0], File.expand_path(args[1]))
+  exit
+end
+
+files = (d = options[:directory]) ?
+        Dir["#{d}/**/*.js"].map(&File.method(:expand_path)) :
+        options[:unclaimed].dup
+
+tmp = {:destination => options[:output], :templates => options[:templates]}
+
+unless options[:params].nil?
+    params_yaml = YAML.load_file( options[:params] );
+    params = {}
+    if params_yaml["destination"]; params[:destination] = params_yaml["destination"]; end
+    if params_yaml["templates"]; params[:templates] = params_yaml["templates"]; end
+    #if params_yaml["index_page"]; params[:index_page] = params_yaml["index_page"]; end
+    if params_yaml["src_code_href"]; params[:src_code_href] = params_yaml["src_code_href"]; end
+    if params_yaml["pretty_urls"]; params[:pretty_urls] = params_yaml["pretty_urls"]; end
+    if params_yaml["name"]; params[:name] = params_yaml["name"]; end
+    if params_yaml["short_name"]; params[:short_name] = params_yaml["short_name"]; end
+    if params_yaml["home_url"]; params[:home_url] = params_yaml["home_url"]; end
+    if params_yaml["doc_url"]; params[:doc_url] = params_yaml["doc_url"]; end
+    if params_yaml["version"]; params[:version] = params_yaml["version"]; end
+    if params_yaml["copyright_notice"]; params[:copyright_notice] = params_yaml["copyright_notice"]; end
+    if params_yaml["syntax_highlighter"] == "pygments"; params[:syntax_highlighter] = :pygments; end
+    if params_yaml["syntax_highlighter"] == "coderay"; params[:syntax_highlighter] = :coderay; end
+    tmp = tmp.merge(params)
+end
+
+files << tmp
+
+
+
+PDoc::Runner.new(*files).run

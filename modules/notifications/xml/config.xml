@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<CONFIG>
+		<name>notifications</name>
+		<comment>_NOTIFICATIONS</comment>
+		<file_prefix>notif</file_prefix>
+		<loaded>true</loaded>
+	</CONFIG>
+</root>

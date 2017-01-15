@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+    <message id='entities_list' level='0'>
+        <text lang='fr'>Liste des entités : %1$d entités</text>
+        <text lang='en'>Entities list : %1$d entities</text>
+    </message>
+    <message id='entities_create' level='0'>
+        <text lang='fr'>Création d'une entité</text>
+        <text lang='en'>Entity creation</text>
+    </message>
+    <message id='entities_read' level='0'>
+        <text lang='fr'>Détail d'une entité</text>
+        <text lang='en'>Entity read</text>
+    </message>
+    <message id='entities_update' level='0'>
+        <text lang='fr'>Modification d'une entité</text>
+        <text lang='en'>Entity update</text>
+    </message>
+    <message id='entities.entity_id' level='0'>
+        <text lang='fr'>Identifiant</text>
+        <text lang='en'>Id</text>
+    </message>
+    <message id='entities.entity_label' level='0'>
+        <text lang='fr'>Nom</text>
+        <text lang='en'>Name</text>
+    </message>
+    <message id='entities.short_label' level='0'>
+        <text lang='fr'>Nom court</text>
+        <text lang='en'>Short name</text>
+    </message>
+    <message id='entities.enabled' level='0'>
+        <text lang='fr'>Autorisé</text>
+        <text lang='en'>Enabled</text>
+    </message>
+    <message id='entities.adrs_1' level='0'>
+        <text lang='fr'>Adresse 1</text>
+        <text lang='en'>Adress 1</text>
+    </message>
+    <message id='entities.adrs_2' level='0'>
+        <text lang='fr'>Adresse 2</text>
+        <text lang='en'>Adress 2</text>
+    </message>
+    <message id='entities.adrs_3' level='0'>
+        <text lang='fr'>Adresse 3</text>
+        <text lang='en'>Adress 3</text>
+    </message>
+    <message id='entities.zipcode' level='0'>
+        <text lang='fr'>Code postal</text>
+        <text lang='en'>Zipcode</text>
+    </message>
+    <message id='entities.city' level='0'>
+        <text lang='fr'>Ville</text>
+        <text lang='en'>City</text>
+    </message>
+    <message id='entities.country' level='0'>
+        <text lang='fr'>Pays</text>
+        <text lang='en'>Country</text>
+    </message>
+    <message id='entities.email' level='0'>
+        <text lang='fr'>Email</text>
+        <text lang='en'>Email</text>
+    </message>
+    <message id='entities.business_id' level='0'>
+        <text lang='fr'>Identifiant légal (SIREN, ...)</text>
+        <text lang='en'>Business ID</text>
+    </message>
+    <message id='entities.parent_entity_id' level='0'>
+        <text lang='fr'>Entité parente</text>
+        <text lang='en'>Parent Entity</text>
+    </message>
+    <message id='entities.entity_type' level='0'>
+        <text lang='fr'>Type d'entité</text>
+        <text lang='en'>Entity type</text>
+    </message>
+    <message id='entities.is_archival' level='0'>
+        <text lang='fr'>Service d'archive</text>
+        <text lang='en'>Archival entity</text>
+    </message>
+    <message id='entities.is_originating' level='0'>
+        <text lang='fr'>Service d'origine</text>
+        <text lang='en'>Originating entity</text>
+    </message>
+    <message id='entities.is_transferring' level='0'>
+        <text lang='fr'>Service versant</text>
+        <text lang='en'>Transferring entity</text>
+    </message>
+    <message id='entities.is_controlling' level='0'>
+        <text lang='fr'>Service de contrôle</text>
+        <text lang='en'>Control entity</text>
+    </message>
+    <message id='entities.entity_typeBis' level='0'>
+        <text lang='fr'>5.1.1 Type d'entité</text>
+        <text lang='en'>5.1.1 Entity type</text>
+    </message>
+    <message id='entities.entity_labelBis' level='0'>
+        <text lang='fr'>5.1.2 Forme autorisée du nom</text>
+        <text lang='en'>5.1.2 Name entry</text>
+    </message>
+    <message id='entities.parallel_forms_of_names' level='0'>
+        <text lang='fr'>5.1.3 Forme(s) parallèle(s) du nom</text>
+        <text lang='en'>5.1.3 Name entry parallel</text>
+    </message>
+    <message id='entities.other_normalized_names' level='0'>
+        <text lang='fr'>5.1.4 Autres formes normalisées</text>
+        <text lang='en'>5.1.4 Other normalized names</text>
+    </message>
+    <message id='entities.other_names' level='0'>
+        <text lang='fr'>5.1.5 Autres formes</text>
+        <text lang='en'>5.1.5 Other names</text>
+    </message>
+    <message id='entities.entity_IdBis' level='0'>
+        <text lang='fr'>5.1.6 Numéro d'imatriculation</text>
+        <text lang='en'>5.1.6 Entity Id</text>
+    </message>
+    <message id='entities.oldest_date' level='0'>
+        <text lang='fr'>5.2.1 Date d'existance début</text>
+        <text lang='en'>5.2.1 Oldest date</text>
+    </message>
+    <message id='entities.latest_date' level='0'>
+        <text lang='fr'>5.2.1 Date d'existance fin</text>
+        <text lang='en'>5.2.1 Lastest date</text>
+    </message>
+    <message id='entities.history' level='0'>
+        <text lang='fr'>5.2.2 Histoire</text>
+        <text lang='en'>5.2.2 History</text>
+    </message>
+    <message id='entities.places' level='0'>
+        <text lang='fr'>5.2.3 Lieux</text>
+        <text lang='en'>5.2.3 Places</text>
+    </message>
+    <message id='entities.legal_status' level='0'>
+        <text lang='fr'>5.2.4 Statut juridique</text>
+        <text lang='en'>5.2.4 Legal status</text>
+    </message>
+    <message id='entities.activities' level='0'>
+        <text lang='fr'>5.2.5 Fonctions et activités</text>
+        <text lang='en'>5.2.5 Activities</text>
+    </message>
+    <message id='entities.mandates' level='0'>
+        <text lang='fr'>5.2.6 Textes de réfèrence</text>
+        <text lang='en'>5.2.6 Mandates</text>
+    </message>
+    <message id='entities.structure' level='0'>
+        <text lang='fr'>5.2.7 Organisation interne / Généalogie</text>
+        <text lang='en'>5.2.7 Mandates</text>
+    </message>
+    <message id='entities.context' level='0'>
+        <text lang='fr'>5.2.8 Contexte général</text>
+        <text lang='en'>5.2.8 Context</text>
+    </message>
+    <message id='entities.record_id' level='0'>
+        <text lang='fr'>5.4.1 Code d'identification</text>
+        <text lang='en'>5.4.1 Record ID</text>
+    </message>
+    <message id='entities.institution_id' level='0'>
+        <text lang='fr'>5.4.2 Service responsable</text>
+        <text lang='en'>5.4.2 Institution ID</text>
+    </message>
+    <message id='entities.rules' level='0'>
+        <text lang='fr'>5.4.3 Règles et conventions</text>
+        <text lang='en'>5.4.3 Rules</text>
+    </message>
+    <message id='entities.status' level='0'>
+        <text lang='fr'>5.4.4 Niveau d'élaboration</text>
+        <text lang='en'>5.4.4 Status</text>
+    </message>
+    <message id='entities.detail_level' level='0'>
+        <text lang='fr'>5.4.5 Niveau de détail</text>
+        <text lang='en'>5.4.5 Detail level</text>
+    </message>
+    <message id='entities.maintenance_dates' level='0'>
+        <text lang='fr'>5.4.6 Dates de modification</text>
+        <text lang='en'>5.4.6 Maintenance dates</text>
+    </message>
+    <message id='entities.language' level='0'>
+        <text lang='fr'>5.4.7 Langue</text>
+        <text lang='en'>5.4.7 Language</text>
+    </message>
+    <message id='entities.sources' level='0'>
+        <text lang='fr'>5.4.8 Sources</text>
+        <text lang='en'>5.4.8 Sources</text>
+    </message>
+    <message id='entities.maintenance_notes' level='0'>
+        <text lang='fr'>5.4.9 Notes</text>
+        <text lang='en'>5.4.9 Notes</text>
+    </message>
+    <message id='entities.error.path_template.unapproachable' level='3'>
+        <text lang='fr'>'path_template' Chemin inexistant</text>
+    </message>
+    <message id='entities.error.path_template.no_rights' level='3'>
+        <text lang='fr'>'path_template' Droits insuffisants sur le répertoire</text>
+    </message>
+    <message id='entities.error.adr_priority_number.duplicate' level='3'>
+        <text lang='fr'>'adr_priority_number' La priorité d'adressage %1$s existe déjà pour ce type de zone de stockage</text>
+    </message>
+    <message id='entities.error.priority_number.duplicate' level='3'>
+        <text lang='fr'>'priority_number' La priorité %1$d existe déjà pour ce type de zone de stockage</text>
+    </message>
+</messages>

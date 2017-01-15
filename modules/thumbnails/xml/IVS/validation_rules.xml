@@ -1,0 +1,7 @@
+<validationRules>
+    <validationRule name="get_thumbnails" extends="standardForm" mode="error">
+      <parameter name="coll_id" type="collection_list" />
+      <parameter name="res_id" type="integer" />
+      <parameter name="module" type="identifier" />
+    </validationRule>
+</validationRules>

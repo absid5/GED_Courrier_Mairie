@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+<SERVICE>
+   <id>admin</id> <!-- if servicetype = menu, this id must be equal to the id of the menu item -->
+   <name>_ADMIN</name>
+   <comment>_ADMIN</comment>
+   <servicetype>menu</servicetype>
+   <system_service>false</system_service>
+   <enabled>true</enabled>
+ </SERVICE>
+<SERVICE>
+   <id>adv_search_mlb</id> <!-- if servicetype = menu, this id must be equal to the id of the menu item -->
+   <name>_ADV_SEARCH_MLB</name>
+   <comment>_ADV_SEARCH_MLB</comment>
+   <servicetype>menu</servicetype>
+   <system_service>false</system_service>
+   <enabled>true</enabled>
+ </SERVICE>
+<SERVICE>
+   <id>index_mlb</id> <!-- if servicetype = menu, this id must be equal to the id of the menu item -->
+   <name>_INDEXING_MLB</name>
+   <comment>_INDEXING_MLB</comment>
+   <servicetype>menu</servicetype>
+   <system_service>false</system_service>
+   <enabled>true</enabled>
+ </SERVICE>
+ <SERVICE>
+   <id>search_contacts</id> <!-- if servicetype = menu, this id must be equal to the id of the menu item -->
+   <name>_SEARCH_CONTACTS</name>
+   <comment>_SEARCH_CONTACTS</comment>
+   <servicetype>menu</servicetype>
+   <system_service>false</system_service>
+   <enabled>true</enabled>
+ </SERVICE>
+<SERVICE>
+   <id>admin_users</id>
+   <name>_ADMIN_USERS</name>
+   <comment>_ADMIN_USERS_DESC</comment>
+   <servicepage>index.php?page=users_management_controler&amp;admin=users&amp;mode=list</servicepage>
+   <servicetype>admin</servicetype>
+   <system_service>false</system_service>
+   <style>fa fa-user</style>
+   <enabled>true</enabled>
+ </SERVICE>
+ <SERVICE>
+   <id>admin_groups</id>
+   <name>_ADMIN_GROUPS</name>
+   <comment>_ADMIN_GROUPS_DESC</comment>
+   <servicepage>index.php?page=usergroups_management_controler&amp;mode=list&amp;admin=groups</servicepage>
+   <servicetype>admin</servicetype>
+   <system_service>false</system_service>
+   <style>fa fa-users</style>
+   <enabled>true</enabled>
+ </SERVICE>
+ <SERVICE>
+   <id>admin_architecture</id>
+   <name>_ADMIN_ARCHITECTURE</name>
+   <comment>_ADMIN_ARCHITECTURE_DESC</comment>
+   <servicepage>index.php?page=admin_archi&amp;admin=architecture</servicepage>
+   <servicetype>admin</servicetype>
+   <system_service>false</system_service>
+   <style>fa fa-suitcase</style>
+   <enabled>true</enabled>
+ </SERVICE>
+ <SERVICE>
+   <id>view_history</id>
+   <name>_VIEW_HISTORY</name>
+   <comment>_VIEW_HISTORY_DESC</comment>
+   <servicepage>index.php?page=history&amp;admin=history</servicepage>
+   <servicetype>admin</servicetype>
+   <system_service>false</system_service>
+   <style>fa fa-history</style>
+   <enabled>true</enabled>
+ </SERVICE>
+ <SERVICE>
+   <id>view_history_batch</id>
+   <name>_VIEW_HISTORY_BATCH</name>
+   <comment>_VIEW_HISTORY_BATCH_DESC</comment>
+   <servicepage>index.php?page=history_batch&amp;admin=history_batch</servicepage>
+   <servicetype>admin</servicetype>
+   <system_service>false</system_service>
+   <style>fa fa-history</style>
+   <enabled>true</enabled>
+ </SERVICE>
+ <!--<SERVICE>
+   <id>xml_param_services</id>
+   <name>_XML_PARAM_SERVICE</name>
+   <comment>_XML_PARAM_SERVICE_DESC</comment>
+   <servicepage>index.php?page=xml_param_services&amp;admin=maarch_config_tool</servicepage>
+   <servicetype>admin</servicetype>
+   <system_service>false</system_service>
+   <style>xml_param_services</style>
+   <enabled>true</enabled>
+ </SERVICE>-->
+ <SERVICE>
+   <id>admin_status</id>
+   <name>_ADMIN_STATUS</name>
+   <comment>_ADMIN_STATUS_DESC</comment>
+   <servicepage>index.php?page=status_management_controler&amp;mode=list&amp;admin=status</servicepage>
+   <servicetype>admin</servicetype>
+   <style>fa fa-check-circle</style>
+   <system_service>false</system_service>
+   <enabled>true</enabled>
+ </SERVICE>
+  <SERVICE>
+   <id>admin_actions</id>
+   <name>_ADMIN_ACTIONS</name>
+   <comment>_ADMIN_ACTIONS_DESC</comment>
+   <servicepage>index.php?page=action_management_controler&amp;mode=list&amp;admin=action</servicepage>
+   <servicetype>admin</servicetype>
+   <style>fa fa-exchange</style>
+   <system_service>false</system_service>
+   <enabled>true</enabled>
+ </SERVICE>
+ <SERVICE>
+   <id>param_mlb_doctypes</id>
+   <name>_PARAM_MLB_DOCTYPES</name>
+   <comment>_PARAM_MLB_DOCTYPES_DESC</comment>
+   <servicepage>param_mlb_doctypes.php</servicepage>
+   <servicetype>use</servicetype>
+   <system_service>true</system_service>
+   <enabled>true</enabled>
+   <WHEREAMIUSED>
+        <page>doctype_up</page>
+        <nature>include</nature>
+    </WHEREAMIUSED>
+   <WHEREAMIUSED>
+        <page>doctype_info</page>
+        <nature>include</nature>
+    </WHEREAMIUSED>
+   <WHEREAMIUSED>
+        <page>doctype_load_db</page>
+        <nature>include</nature>
+    </WHEREAMIUSED>
+     <WHEREAMIUSED>
+        <page>doctype_del</page>
+        <nature>include</nature>
+    </WHEREAMIUSED>
+ </SERVICE>
+ <SERVICE>
+   <id>welcome_text_load</id>
+   <name>_WELCOME_TEXT_LOAD</name>
+   <comment>_WELCOME_TEXT_LOAD</comment>
+   <servicepage>welcome_text_load.php</servicepage>
+   <servicetype>use</servicetype>
+   <system_service>true</system_service>
+   <enabled>true</enabled>
+   <WHEREAMIUSED>
+        <page>welcome.php</page>
+        <nature>include</nature>
+    </WHEREAMIUSED>
+</SERVICE>
+<SERVICE>
+   <id>quicklaunch</id>
+   <name>_QUICKLAUNCH</name>
+   <comment>_QUICKLAUNCH</comment>
+   <servicepage>quicklaunch.php</servicepage>
+   <servicetype>use</servicetype>
+   <system_service>true</system_service>
+   <enabled>true</enabled>
+   <WHEREAMIUSED>
+        <page>welcome.php</page>
+        <nature>include</nature>
+    </WHEREAMIUSED>
+</SERVICE>
+<SERVICE>
+   <id>admin_contacts</id>
+   <name>_ADMIN_CONTACTS</name>
+   <comment>_ADMIN_CONTACTS_DESC</comment>
+   <!-- <servicepage>index.php?page=contacts&amp;admin=contacts</servicepage> -->
+   <servicepage>index.php?page=admin_contacts&amp;admin=contacts</servicepage>
+   <servicetype>admin</servicetype>
+   <style>fa fa-book</style>
+   <system_service>false</system_service>
+   <enabled>true</enabled>
+ </SERVICE>
+ <SERVICE>
+   <id>my_contacts</id> <!-- if servicetype = menu, this id must be equal to the id of the menu item -->
+   <name>_MY_CONTACTS</name>
+   <comment>_MY_CONTACTS</comment>
+   <servicetype>use</servicetype>
+   <system_service>false</system_service>
+   <enabled>true</enabled>
+ </SERVICE>
+ <SERVICE>
+   <id>my_contacts_menu</id> <!-- if servicetype = menu, this id must be equal to the id of the menu item -->
+   <name>_MY_CONTACTS_MENU</name>
+   <comment>_MY_CONTACTS_MENU</comment>
+   <servicetype>menu</servicetype>
+   <system_service>false</system_service>
+   <enabled>true</enabled>
+ </SERVICE>
+  <SERVICE>
+   <id>create_contacts</id> <!-- if servicetype = menu, this id must be equal to the id of the menu item -->
+   <name>_CREATE_CONTACTS</name>
+   <comment>_CREATE_CONTACTS</comment>
+   <servicetype>menu</servicetype>
+   <system_service>false</system_service>
+   <enabled>true</enabled>
+ </SERVICE>
+ <SERVICE>
+   <id>update_contacts</id> <!-- if servicetype = menu, this id must be equal to the id of the menu item -->
+   <name>_UPDATE_CONTACTS</name>
+   <comment>_UPDATE_CONTACTS</comment>
+   <servicetype>use</servicetype>
+   <system_service>false</system_service>
+   <enabled>true</enabled>
+ </SERVICE>
+ <SERVICE>
+   <id>reopen_mail</id> <!-- if servicetype = menu, this id must be equal to the id of the menu item -->
+   <name>_REOPEN_MAIL</name>
+   <comment>_REOPEN_MAIL_DESC</comment>
+  <servicepage>index.php?page=reopen_mail&amp;admin=reopen_mail</servicepage>
+   <servicetype>admin</servicetype>
+   <style>fa fa-envelope-square</style>
+   <system_service>false</system_service>
+   <enabled>true</enabled>
+ </SERVICE>
+ <SERVICE>
+   <id>admin_docservers</id>
+   <name>_ADMIN_DOCSERVERS</name>
+   <comment>_ADMIN_DOCSERVERS_DESC</comment>
+   <servicepage>index.php?page=admin_docservers&amp;admin=docservers&amp;mode=list</servicepage>
+   <servicetype>admin</servicetype>
+   <system_service>false</system_service>
+   <style>fa fa-hdd-o</style>
+   <enabled>true</enabled>
+ </SERVICE>
+ <SERVICE>
+   <id>view_technical_infos</id>
+   <name>_VIEW_TECHNICAL_INFORMATIONS</name>
+   <comment>_VIEW_TECHNICAL_INFORMATIONS</comment>
+   <servicepage>view_technical_infos.php</servicepage>
+   <servicetype>use</servicetype>
+   <system_service>false</system_service>
+   <enabled>true</enabled>
+   <WHEREAMIUSED>
+        <page>details.php</page>
+        <nature>include</nature>
+    </WHEREAMIUSED>
+ </SERVICE>
+   <SERVICE>
+   <id>view_doc_history</id>
+   <name>_VIEW_DOC_HISTORY</name>
+   <comment>_VIEW_HISTORY_DESC</comment>
+   <!-- <servicepage>index.php?page=history&amp;admin=history</servicepage> -->
+   <servicetype>use</servicetype>
+   <system_service>false</system_service>
+   <!-- <style>view_history</style> -->
+   <enabled>true</enabled>
+   <WHEREAMIUSED>
+        <page>details.php</page>
+        <!-- <nature>include</nature> -->
+    </WHEREAMIUSED>
+ </SERVICE>
+ <SERVICE>
+   <id>put_in_validation</id>
+   <name>_PUT_DOC_ON_VALIDATION_FROM_DETAILS</name>
+   <comment>_PUT_DOC_ON_VALIDATION_FROM_DETAILS</comment>
+   <servicepage>none.php</servicepage>
+   <servicetype>use</servicetype>
+   <system_service>false</system_service>
+   <enabled>true</enabled>
+   <WHEREAMIUSED>
+        <page>details.php</page>
+        <nature>include</nature>
+    </WHEREAMIUSED>
+ </SERVICE>
+<SERVICE>
+   <id>load_statuses_session</id>
+   <name>_LOAD_STATUSES_SESSION</name>
+   <comment>_LOAD_STATUSES_SESSION</comment>
+   <servicepage>load_statuses_session.php</servicepage>
+   <servicetype>use</servicetype>
+   <system_service>true</system_service>
+   <enabled>true</enabled>
+    <WHEREAMIUSED>
+        <page>basket_up.php</page>
+        <nature>include</nature>
+    </WHEREAMIUSED>
+    <WHEREAMIUSED>
+        <page>basket_add.php</page>
+        <nature>include</nature>
+    </WHEREAMIUSED>
+ </SERVICE>
+<SERVICE>
+   <id>param_index_statuses</id>
+   <name>_PARAM_AVAILABLE_STATUS_ON_GROUP_BASKETS</name>
+   <comment>_PARAM_AVAILABLE_STATUS_ON_GROUP_BASKETS</comment>
+   <servicepage>param_index_statuses.php</servicepage>
+   <servicetype>use</servicetype>
+   <system_service>true</system_service>
+   <enabled>true</enabled>
+   <WHEREAMIUSED>
+        <page>groupbasket_popup.php</page>
+        <nature>include</nature>
+    </WHEREAMIUSED>
+    <WHEREAMIUSED>
+        <page>manage_group_basket.php</page>
+        <nature>include</nature>
+    </WHEREAMIUSED>
+    <WHEREAMIUSED>
+        <page>load_groupbasket</page>
+        <nature>include</nature>
+    </WHEREAMIUSED>
+    <WHEREAMIUSED>
+        <page>load_groupbasket_db</page>
+        <nature>include</nature>
+    </WHEREAMIUSED>
+ </SERVICE>
+<SERVICE>
+   <id>add_links</id>
+   <name>_ADD_LINKS</name>
+   <comment>_ADD_LINKS</comment>
+   <servicepage>add_links.php</servicepage>
+   <servicetype>use</servicetype>
+   <system_service>false</system_service>
+   <enabled>true</enabled>
+   <WHEREAMIUSED>
+        <page>details.php</page>
+        <nature>include</nature>
+    </WHEREAMIUSED>
+ </SERVICE>
+ <SERVICE>
+   <id>admin_parameters</id>
+   <name>_ADMIN_PARAMETERS</name>
+   <comment>_ADMIN_PARAMETERS</comment>
+   <servicepage>index.php?page=admin_parameters&amp;admin=parameters</servicepage>
+   <servicetype>admin</servicetype>
+   <style>fa fa-wrench</style>
+   <system_service>false</system_service>
+   <enabled>true</enabled>
+ </SERVICE>
+ <SERVICE>
+    <id>admin_priorities</id>
+    <name>_ADMIN_PRIORITIES</name>
+    <comment>_ADMIN_PRIORITIES</comment>
+    <servicepage>index.php?page=admin_priorities&amp;admin=priorities</servicepage>
+    <servicetype>admin</servicetype>
+    <style>fa fa-clock-o</style>
+    <system_service>false</system_service>
+    <enabled>true</enabled>
+ </SERVICE>
+ <SERVICE>
+   <id>print_details</id>
+   <name>_PRINT_DETAILS_SERVICE</name>
+   <comment>_PRINT_DETAILS_SERVICE</comment>
+   <servicepage>print_details.php</servicepage>
+   <servicetype>use</servicetype>
+   <system_service>false</system_service>
+   <enabled>true</enabled>
+   <WHEREAMIUSED>
+        <page>details.php</page>
+        <nature>include</nature>
+    </WHEREAMIUSED>
+ </SERVICE>
+ <SERVICE>
+   <id>print_doc_details_from_list</id>
+   <name>_PRINT_DOC_DETAILS_FROM_LIST</name>
+   <comment>_PRINT_DOC_DETAILS_FROM_LIST</comment>
+   <servicepage>print.php</servicepage>
+   <servicetype>use</servicetype>
+   <system_service>false</system_service>
+   <enabled>true</enabled>
+ </SERVICE>
+</root>

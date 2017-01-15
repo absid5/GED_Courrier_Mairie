@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<SERVICE>
+		<id>admin_reports</id>
+		<name>_ADMIN_REPORTS</name>
+		<comment>_ADMIN_REPORTS_DESC</comment>
+		<servicepage>index.php?page=admin_reports&amp;module=reports</servicepage>
+		<servicetype>admin</servicetype>
+		<system_service>false</system_service>
+		<style>fa fa-area-chart</style>
+		<enabled>true</enabled>
+		<WHEREAMIUSED>
+			<page>admin.php</page>
+			<nature>listelement</nature>
+		</WHEREAMIUSED>
+	</SERVICE>
+	<SERVICE>
+		<id>reports</id>
+		<name>_REPORTS</name>
+		<comment>_REPORTS_DESC</comment>
+		<servicetype>menu</servicetype>
+		<system_service>false</system_service>
+		<enabled>true</enabled>
+	</SERVICE>
+	<SERVICE>
+		<id>show_reports</id>
+		<name>_REPORTS</name>
+		<comment>_REPORTS_DESC</comment>
+		<servicepage>reports_frame.php</servicepage>
+		<servicetype>use</servicetype>
+		<system_service>true</system_service>
+		<enabled>true</enabled>
+		<WHEREAMIUSED>
+			<page>details_invoices.php</page>
+			<nature>include</nature>
+		</WHEREAMIUSED>
+	</SERVICE>
+</root>

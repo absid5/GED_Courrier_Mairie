@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <indexing_cycles>
+        <cycle>
+            <policy_id>FNTC</policy_id>
+            <cycle_id>INIT</cycle_id>
+        </cycle>
+    </indexing_cycles>
+    <frozen_cycles>
+        <cycle>
+            <policy_id>FNTC</policy_id>
+            <cycle_id>OAIS</cycle_id>
+        </cycle>
+    </frozen_cycles>
+</root>

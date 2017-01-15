@@ -1,0 +1,3 @@
+<validationRule name="includedExample" >
+  <parameter name="param5" type="integer" />
+</validationRule>

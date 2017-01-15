@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ROOT>  <!-- If id are numbers, always start with 1, never with 0 -->
+<!--    
+    <INDEX>   
+        <column>custom_t6</column>
+        <label>Utilisateur contributeur</label>
+        <type>string</type>
+        <img>user</img> 
+        <table>
+            <table_name>users</table_name>
+            <foreign_key>user_id</foreign_key>
+            <foreign_label>lastname</foreign_label>
+            <where_clause>enabled = 'Y'</where_clause>
+            <order>order by lastname</order>
+        </table>
+        <default_value></default_value>
+    </INDEX>
+-->
+    <INDEX>
+        <column>custom_t1</column>
+        <label>PO#</label>
+        <type>string</type>
+        <img>arrow-right</img>
+    </INDEX>
+    <INDEX>
+        <column>custom_t2</column>
+        <label>Imput</label>
+        <type>string</type>
+        <img>arrow-right</img>
+    </INDEX>
+    <INDEX>
+        <column>custom_f1</column>
+        <label>Mnt</label>
+        <type>float</type>
+        <img>arrow-right</img>
+    </INDEX>
+    <INDEX>
+        <column>custom_t3</column>
+        <label>Id/Matricule</label>
+        <type>string</type>
+        <img>arrow-right</img>
+    </INDEX>
+<!--
+    <INDEX>
+        <column>custom_t2</column>
+        <label>_CUSTOM_T2</label>
+        <type>string</type>
+        <img>default_string.gif</img>
+        <values_list> 
+            <value>
+                <id>1</id>
+                <label>Règlement</label>
+            </value>
+            <value>
+                <id>2</id>
+                <label>Pas de règlement</label>
+            </value>
+        </values_list>
+        <default_value>1</default_value>
+    </INDEX>
+    <INDEX>
+        <column>custom_d1</column>
+        <label>_CUSTOM_D1</label>
+        <type>date</type>
+        <img>default_date.gif</img>
+    </INDEX>
+    
+    <INDEX>
+        <column>custom_f1</column>
+        <label>_CUSTOM_F1</label>
+        <type>float</type>
+        <img>default_number.gif</img>
+    </INDEX>
+-->
+<!--<INDEX>   
+        <column>custom_t2</column>   
+        <label>champ 2</label>
+        <type>string</type>
+        <img>default_string.gif</img> 
+        <values_list> 
+            <value>
+                <id>1</id>
+                <label>Contrôle externe</label>
+            </value>
+            <value>
+                <id>2</id>
+                <label>Autocontrôle</label>
+            </value>
+        </values_list>
+        <default_value>1</default_value>
+    </INDEX>
+    <INDEX>   
+        <column>custom_t3</column>
+        <label>champ 3</label>
+        <type>string</type>
+        <img>default_string.gif</img> 
+        <table>
+            <table_name>ma_table</table_name>
+            <foreign_key>ma_table_id</foreign_key>
+            <foreign_label>ma_table_label</foreign_label>
+            <where_clause>enabled = 'Y'</where_clause>
+            <order>order by ma_table_label</order>
+        </table>
+        <default_value>5678</default_value>
+    </INDEX>-->
+</ROOT>

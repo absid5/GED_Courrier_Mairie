@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ROOT>
+    <CONFIG>
+        <name>sendmail</name>
+        <comment>_SENDMAIL</comment>
+        <file_prefix>sm</file_prefix>
+        <loaded>true</loaded>
+    </CONFIG>
+    <STATUS>
+        <STS><ID>D</ID><LABEL>_EMAIL_DRAFT</LABEL><IMG>draft.png</IMG></STS>
+        <STS><ID>W</ID><LABEL>_EMAIL_WAIT</LABEL><IMG>wait.png</IMG></STS>
+        <STS><ID>I</ID><LABEL>_EMAIL_IN_PROGRESS</LABEL><IMG>in_progress.png</IMG></STS>
+        <STS><ID>S</ID><LABEL>_EMAIL_SENT</LABEL><IMG>sent.png</IMG></STS>
+        <STS><ID>E</ID><LABEL>_EMAIL_ERROR</LABEL><IMG>error.png</IMG></STS>
+    </STATUS>
+    <HISTORY>
+        <mailadd>true</mailadd>
+        <mailup>true</mailup>
+        <maildel>true</maildel>
+    </HISTORY>
+</ROOT>

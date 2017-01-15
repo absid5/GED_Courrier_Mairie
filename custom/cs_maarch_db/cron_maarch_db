@@ -1,0 +1,38 @@
+
+
+####################################################################################
+#                                                                                  #
+#                                                                                  #
+#                                       maarch_db                                      #
+#                                                                                  #
+#                                                                                  #
+####################################################################################
+
+
+######################THUMBNAILS####################################################
+* * * * *       C:\xampp\htdocs\maarch_courrier/custom/cs_maarch_db/modules/thumbnails/scripts/launch_batch_thumbnails.sh
+15 12 1 * *        rm -Rf C:\xampp\htdocs\maarch_courrier/modules/thumbnails/log/*.log
+
+######################notification#################################################
+
+15 10 * * *     C:\xampp\htdocs\maarch_courrier/custom/cs_maarch_db/modules/notifications/batch/scripts/nct-ncc-and-anc.sh
+15 15 * * *     C:\xampp\htdocs\maarch_courrier/custom/cs_maarch_db/modules/notifications/batch/scripts/nct-ncc-and-anc.sh
+15 12 * * *     C:\xampp\htdocs\maarch_courrier/custom/cs_maarch_db/modules/notifications/batch/scripts/nct-ncc-and-anc.sh
+
+
+30 10 * * *     C:\xampp\htdocs\maarch_courrier/custom/cs_maarch_db/modules/notifications/batch/scripts/sendmail.sh
+30 15 * * *     C:\xampp\htdocs\maarch_courrier/custom/cs_maarch_db/modules/notifications/batch/scripts/sendmail.sh
+30 12 * * *     C:\xampp\htdocs\maarch_courrier/custom/cs_maarch_db/modules/notifications/batch/scripts/sendmail.sh
+
+10 12 1 * *        rm -Rf C:\xampp\htdocs\maarch_courrier/modules/notifications/batch/logs/process_event_stack/*.log
+11 12 1 * *        rm -Rf C:\xampp\htdocs\maarch_courrier/modules/notifications/batch/logs/process_email_stack/*.log
+######################sendmail####################################################
+
+* * * * *       C:\xampp\htdocs\maarch_courrier/custom/cs_maarch_db/modules/sendmail/batch/scripts/sendmail.sh >/dev/null 2>&1
+
+0 12 1 * *     rm -Rf C:\xampp\htdocs\maarch_courrier/modules/sendmail/batch/logs/*.log
+
+######################fulltext###################################################
+
+* * * * *       C:\xampp\htdocs\maarch_courrier/custom/cs_maarch_db/modules/full_text/scripts/launch_fulltext.sh
+20 12 1 * *        rm -Rf C:\xampp\htdocs\maarch_courrier/modules/full_text/log/*.log

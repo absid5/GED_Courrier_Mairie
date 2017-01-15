@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<inputValidation xmlns:xi="http://www.w3.org/2001/XInclude">
+<requestDefinitions>
+
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="saveAvisWF" >
+      <parameter name="display" value="true"/>
+      <parameter name="module" value="avis"/>
+      <parameter name="page" value="saveAvisWF"/> 
+    </requestDefinition>
+	<requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="resetAvisWF" >
+      <parameter name="display" value="true"/>
+      <parameter name="module" value="avis"/>
+      <parameter name="page" value="resetAvisWF"/> 
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="load_listmodel_Avis" >
+        <parameter name="page" value="load_listmodel_Avis"/>
+        <parameter name="module" value="Avis"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="load_listmodel_Avis" >
+        <parameter name="page" value="load_listmodel_Avis"/>
+        <parameter name="module" value="Avis"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="getAvisModelByTitle" >
+      <parameter name="display" value="true"/>
+      <parameter name="module" value="avis"/>
+      <parameter name="page" value="getAvisModelByTitle"/> 
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="saveAvisModel" >
+        <parameter name="page" value="saveAvisModel"/>
+        <parameter name="module" value="Avis"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="saveAvisModel" >
+        <parameter name="page" value="saveAvisModel"/>
+        <parameter name="module" value="Avis"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="saveAvisWF" >
+        <parameter name="page" value="saveAvisWF"/>
+        <parameter name="module" value="Avis"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="sign_ans" >
+        <parameter name="page" value="sign_ans"/>
+        <parameter name="module" value="Avis"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="sign_ans" >
+        <parameter name="page" value="sign_ans"/>
+        <parameter name="module" value="Avis"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="update_AvisPage" >
+        <parameter name="page" value="update_AvisPage"/>
+        <parameter name="module" value="Avis"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="update_AvisPage" >
+        <parameter name="page" value="update_AvisPage"/>
+        <parameter name="module" value="Avis"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="view_pdf_attachement" >
+        <parameter name="page" value="view_pdf_attachement"/>
+        <parameter name="module" value="Avis"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="view_pdf_attachement" >
+        <parameter name="page" value="view_pdf_attachement"/>
+        <parameter name="module" value="Avis"/>
+    </requestDefinition>
+</requestDefinitions>
+</inputValidation>

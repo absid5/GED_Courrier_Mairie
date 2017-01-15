@@ -1,0 +1,23 @@
+<ROOT>
+	<CONFIG>
+		<CONFIG_NAME>create_tnl_letterbox</CONFIG_NAME> 
+		<MaarchDirectory>/var/www/maarch/</MaarchDirectory>
+		<TABLE_NAME>res_attachments</TABLE_NAME> <!-- Table a surveiller pour les documents à convertir -->
+		<COLLECTION>letterbox_coll</COLLECTION> 
+		<MAX_BATCH_SIZE>500</MAX_BATCH_SIZE> <!-- Nombre d'occurences max pour les conversions -->
+	</CONFIG>
+	<CONFIG_BASE>
+        <databaseserver>localhost</databaseserver>
+        <databaseserverport>5432</databaseserverport>
+        <databasetype>POSTGRESQL</databasetype>
+        <databasename>maarch</databasename>
+        <databaseuser>maarch</databaseuser>
+        <databasepassword>maarch</databasepassword>
+    </CONFIG_BASE>
+    <LOG4PHP>
+        <enabled>true</enabled>
+        <Log4PhpLogger>loggerTechnique</Log4PhpLogger>
+        <Log4PhpBusinessCode>thumbnails</Log4PhpBusinessCode>
+        <Log4PhpConfigPath>/var/www/html/maarch/apps/maarch_entreprise/xml/log4php.xml</Log4PhpConfigPath>
+    </LOG4PHP>
+</ROOT>

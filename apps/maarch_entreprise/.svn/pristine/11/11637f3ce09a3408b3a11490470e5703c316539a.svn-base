@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ROOT>
+    <!--
+        letterbox_coll
+    -->
+    <letterbox_coll>
+        <FIELD>
+            <LIBELLE>Num GED</LIBELLE>
+            <DATABASE_FIELD>res_view_letterbox.res_id</DATABASE_FIELD>
+        </FIELD>
+        <!-- line 1 -->
+        <FIELD>
+            <LIBELLE>Catégorie du courrier</LIBELLE>
+            <DATABASE_FIELD>category_id</DATABASE_FIELD>
+        </FIELD>
+        <FIELD>
+            <LIBELLE>Priorité</LIBELLE>
+            <DATABASE_FIELD>priority</DATABASE_FIELD>
+        </FIELD>
+        <!-- line 2 -->
+        <FIELD>
+            <LIBELLE>Date d'arrivée</LIBELLE>
+            <DATABASE_FIELD>admission_date</DATABASE_FIELD>
+        </FIELD>
+        <FIELD>
+            <LIBELLE>Date limite de traitement</LIBELLE>
+            <DATABASE_FIELD>process_limit_date</DATABASE_FIELD>
+        </FIELD>
+        <!-- line 3 -->
+        <FIELD>
+            <LIBELLE>Date de création</LIBELLE>
+            <DATABASE_FIELD>creation_date</DATABASE_FIELD>
+        </FIELD>
+        <FIELD>
+            <LIBELLE>Nature du courrier</LIBELLE>
+            <DATABASE_FIELD>nature_id</DATABASE_FIELD>
+        </FIELD>
+        <!-- line 4 -->
+        <FIELD>
+            <LIBELLE>Date du document</LIBELLE>
+            <DATABASE_FIELD>doc_date</DATABASE_FIELD>
+        </FIELD>
+        <FIELD>
+            <LIBELLE>Type de courrier</LIBELLE>
+            <DATABASE_FIELD>type_label</DATABASE_FIELD>
+        </FIELD>
+        <!-- line 5 -->
+        <FIELD>
+            <LIBELLE>Dossier</LIBELLE>
+            <DATABASE_FIELD>folder_name</DATABASE_FIELD>
+        </FIELD>
+        <!-- line 6 -->
+        <FIELD>
+            <LIBELLE>Statut</LIBELLE>
+            <DATABASE_FIELD>status</DATABASE_FIELD>
+        </FIELD>
+        <FIELD>
+            <LIBELLE>Num chrono</LIBELLE>
+            <DATABASE_FIELD>alt_identifier</DATABASE_FIELD>
+        </FIELD>
+        <!-- other infos-->
+        <FIELD>
+            <LIBELLE>Nom de l'entité primaire de l'utilisateur ayant enregistré le courrier</LIBELLE>
+            <DATABASE_FIELD>initiator</DATABASE_FIELD>
+        </FIELD>
+        <FIELD>
+            <LIBELLE>ID de l'expéditeur</LIBELLE>
+            <DATABASE_FIELD>contact_id</DATABASE_FIELD>
+        </FIELD>
+        <FIELD>
+            <LIBELLE>Prénom de l'expéditeur</LIBELLE>
+            <DATABASE_FIELD>contact_firstname</DATABASE_FIELD>
+        </FIELD>
+        <FIELD>
+            <LIBELLE>Nom de l'expéditeur</LIBELLE>
+            <DATABASE_FIELD>contact_lastname</DATABASE_FIELD>
+        </FIELD>
+        <FIELD>
+            <LIBELLE>Société de l'expéditeur</LIBELLE>
+            <DATABASE_FIELD>contact_society</DATABASE_FIELD>
+        </FIELD>
+        <FIELD>
+            <LIBELLE>Nom du contact interne</LIBELLE>
+            <DATABASE_FIELD>user_lastname</DATABASE_FIELD>
+        </FIELD>
+        <FIELD>
+            <LIBELLE>Prénom du contact interne</LIBELLE>
+            <DATABASE_FIELD>user_firstname</DATABASE_FIELD>
+        </FIELD>
+        <FIELD>
+            <LIBELLE>Service destinataire</LIBELLE>
+            <DATABASE_FIELD>entity_label</DATABASE_FIELD>
+        </FIELD>
+        <FIELD>
+            <LIBELLE>Destinataire principal</LIBELLE>
+            <DATABASE_FIELD>dest_user</DATABASE_FIELD>
+        </FIELD>
+        <FIELD>
+            <LIBELLE>Objet</LIBELLE>
+            <DATABASE_FIELD>subject</DATABASE_FIELD>
+        </FIELD>
+        <FIELD>
+            <LIBELLE>Responsable de versement</LIBELLE>
+            <DATABASE_FIELD>typist</DATABASE_FIELD>
+        </FIELD>
+        <FUNCTIONS>
+            <FUNCTION>
+                <LIBELLE>Contacts multiples</LIBELLE>
+                <CALL>retrieve_multi_contacts</CALL>
+            </FUNCTION>
+            <FUNCTION>
+                <LIBELLE>Services en copie</LIBELLE>
+                <CALL>retrieve_copies</CALL>
+            </FUNCTION>
+            <FUNCTION>
+                <LIBELLE>Notes libres</LIBELLE>
+                <CALL>free_notes</CALL>
+            </FUNCTION>
+            <FUNCTION>
+                <LIBELLE>Notes</LIBELLE>
+                <CALL>retrieve_notes</CALL>
+            </FUNCTION>
+        </FUNCTIONS>
+    </letterbox_coll>
+</ROOT>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<MENU>
+		<id>create_folder</id>
+		<libconst>_CREATE_FOLDER</libconst>
+		<url>index.php?page=create_folder_form&amp;module=folder</url>
+		<style>fa fa-folder-open</style>
+	</MENU>
+	<MENU>
+		<id>folder_search</id>
+		<libconst>_FOLDER_SEARCH</libconst>
+		<url>index.php?page=search_adv_folder&amp;module=folder</url>
+		<style>fa fa-folder</style>
+	</MENU>
+	<MENU>
+		<id>view_folder_tree</id>
+		<libconst>_VIEW_FOLDER_TREE</libconst>
+		<url>index.php?page=search_folder_tree&amp;module=folder</url>
+		<style>fa fa-code-fork</style>
+	</MENU>
+</root>

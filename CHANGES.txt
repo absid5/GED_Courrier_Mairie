@@ -1,0 +1,109 @@
+﻿
+======================================
+VERSION FRANÇAISE
+======================================
+
+Wiki : http://wiki.maarch.org/Maarch_Courrier
+
+
+CONTRIBUTEURS DE CETTE VERSION :
+
+    Services du Premier Ministre
+    Ville de Bezons
+
+
+Effort de R&D entre la version 1.5.1 et la version 1.6 : ~500 jours-hommes
+
+
+Saisine par Voie Électronique (SVE) :
+
+    Ajout du mode de traitement pour un type de document
+    Priorité par défaut pour un mode de traitement
+    Association d'un mode de traitement à un type d'attachement
+    Modèles de documents spécifiques SVA/SVR
+    Action d'envoi d'AR de prise en charge
+    Pavés de signature des courriels paramétrables par profil
+
+
+Ergonomie :
+
+    Remplacement des objets listes de choix (zone de recherche intégrée)
+    Refonte écran de traitement
+    Remplacement des titres d'onglets par des icônes
+    Mise en évidence du courrier confidentiel ou signalé
+    Gestion améliorée des couleurs en fonction de la priorité
+
+
+Indexation :
+
+    Catégorie "GED" pour le classement simplifié de documents de référence
+    Courrier Départ Spontané revu : accès direct à la création de pièces après validation de la notice
+    Champ complémentaire thésaurus
+
+
+Module Thesaurus :
+
+    Intégration d'un thesaurus hiérarchique administrable
+
+
+Administration :
+
+    Écran d'administration des priorités
+    Modèles de listes de demande d'avis
+
+
+Workflow :
+
+    Circuit de demande d'avis parallèle
+    Circuit de demande d'avis séquentiel en mode visa
+    Refonte de l'écran parapheur : escamotage / extension des panneaux
+    "Désignature" des courriers
+
+
+Recherche :
+
+    Recherche rapide sur n° de chrono
+    Recherche plein texte sur les pièces-jointes
+    Recherche plein texte normalisée : abstraction des accents, de la casse
+    Rendu visuel pour les courriers confidentiels ou signalés
+
+
+Transmissions :
+
+    Gestion de la cohérence des transmissions
+    Ajout de mots-clés pour le publipostage
+
+
+Contacts :
+
+    Aides à la saisie
+    Refonte de l'assistant dédoublonnage
+
+
+Java :
+
+    Remplacement de l'applet par une application Java Web Start en prévision de la fin annoncée des plugins NPAPI
+    Fiabilisation de l'édition des documents
+    Désactivation du timeout de session pendant l'édition en ligne
+
+
+Installeur et jeu de démo :
+
+    Création et paramétrage des tâches planifiées à l'installation
+    Import automatique des modèles et tampon de signature pour la démo
+
+
+Autres :
+
+    Imagettes sur courrier départ spontané
+    Notifications sur bannettes (complémentaires aux notifications sur événements)
+    Implémentation WS CMIS (server side)
+    Impression de séparateurs QRCode
+    Compatibilité PHP 7
+
+======================================
+ENGLISH VERSION
+======================================
+
+
+Soon...

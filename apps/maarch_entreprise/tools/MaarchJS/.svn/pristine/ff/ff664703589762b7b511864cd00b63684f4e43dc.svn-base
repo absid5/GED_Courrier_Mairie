@@ -1,0 +1,152 @@
+.MaarchTreeRoot {
+
+    ul {
+        list-style-type: none;
+        margin-left:8px;
+        padding-left:9px;
+
+        ul {
+            border-left: dotted 1px gray;
+        }
+    }
+
+    li {
+        background: {
+            color: inherit;
+            repeat: no-repeat;
+            position: top left;
+        }
+
+        img {
+            display: none;
+            width : 18px;
+            height : 18px;
+        }
+
+        &:last-child {
+
+            ul {
+                border-left: none;
+            }
+        }
+
+        img {
+            vertical-align: middle;
+        }
+    }
+}
+
+.mt_opened {
+    ul {
+        display: block;
+    }
+
+    & > span {
+        /* Dossier ouvert  */
+        .mt_fopened {
+            display: inline;
+        }
+
+        /* Dossier ouvert : enfants potentiels */
+        .mt_minus {
+            display: inline;
+        }
+    }
+}
+
+.mt_closed {
+    ul {
+        display: none;
+    }
+
+
+    & > span {
+        /* Dossier fermé  */
+        .mt_fclosed {
+            display: inline;
+        }
+
+        /* Dossier fermé : enfants potentiels */
+        .mt_plus {
+            display: inline;
+        }
+    }
+}
+
+/* Dernier niveau : feuille (pas d'enfants) */
+.mt_leaf {
+    & > span {
+        .mt_none {
+            display: inline;
+        }
+        .mt_minus {
+            display: none;
+        }
+        .mt_plus {
+            display: none;
+        }
+    }
+}
+
+.mt_selected > span {
+    background-color: rgba(0, 0, 255, 0.2);
+    border: 1px solid blue;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+/************
+ * Hacks IE *
+ ************/
+
+#IE6 {
+    /* Simulation of :last-child pseudo-class */
+    .MaarchTreeRoot li ul {
+        border-left: expression(this.parentNode.nextSibling==null ? 'none' : 'inherit');
+    }
+
+    /* simulation os immediate child selector (>)  + rgba() */
+    .mt_selected {
+        span {
+            zoom: 1;
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#330000FF, endColorstr=#330000FF);
+            border: 1px solid blue;
+        }
+        li span {
+            filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+            border: none;
+        }
+    }
+
+    /* simulation os immediate child selector (>) */
+    .mt_fopened {
+        display: expression(/mt_opened/.test(this.parentNode.parentNode.className) ? "inline" : "none");
+    }
+    .mt_fclosed {
+        display: expression(/mt_closed/.test(this.parentNode.parentNode.className) ? "inline" : "none");
+    }
+    .mt_minus {
+        display: expression((/mt_closed/.test(this.parentNode.parentNode.className) || /mt_leaf/.test(this.parentNode.parentNode.className)) ? "none" : "inline");
+    }
+    .mt_plus {
+        display: expression((/mt_opened/.test(this.parentNode.parentNode.className) || /mt_leaf/.test(this.parentNode.parentNode.className)) ? "none" : "inline");
+    }
+    .mt_none {
+        display: expression(/mt_leaf/.test(this.parentNode.parentNode.className) ? "inline" : "none");
+    }
+}
+
+#IE7 {
+    /* Simulation of :last-child pseudo-class */
+    .MaarchTreeRoot li ul {
+        border-left: expression(this.parentNode.nextSibling==null ? 'none' : 'inherit');
+    }
+
+    /* Simulation of rgba() */
+    .mt_selected > span {
+        zoom: 1;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#330000FF, endColorstr=#330000FF);
+    }
+
+}
+

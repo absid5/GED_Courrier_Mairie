@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<SERVICE>
+			<id>admin_notif</id>
+			<name>_ADMIN_NOTIFICATIONS</name>
+			<comment>_ADMIN_NOTIFICATIONS_DESC</comment>
+			<!--servicepage>index.php?page=admin_notif&amp;module=notifications</servicepage-->
+			<servicepage>index.php?page=manage_notifications_controler&amp;module=notifications&amp;mode=list</servicepage>
+			<servicetype>admin</servicetype>
+			<system_service>false</system_service>
+			<style>fa fa-bell</style>
+			<enabled>true</enabled>
+			<WHEREAMIUSED>
+				<page>admin.php</page>
+				<nature>listelement</nature>
+			</WHEREAMIUSED>
+	</SERVICE>
+</root>

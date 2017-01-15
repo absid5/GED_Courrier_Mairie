@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<SERVICE>
+		<id>admin_thesaurus</id>
+		<name>_ADMIN_THESAURUS</name>
+		<comment>_ADMIN_THESAURUS_DESC</comment>
+		<servicepage>index.php?page=manage_thesaurus_list_controller&amp;module=thesaurus</servicepage>
+		<servicetype>admin</servicetype>
+		<system_service>false</system_service>
+		<style>fa fa-bookmark-o</style>
+		<enabled>true</enabled>
+		<WHEREAMIUSED>
+			<page>admin.php</page>
+			<nature>listelement</nature>
+		</WHEREAMIUSED>
+	</SERVICE>
+	<SERVICE>
+	   <id>thesaurus_view</id>
+	   <name>_THESAURUS_VIEW</name>
+	   <comment>_THESAURUS_VIEW_DESC</comment>
+	   <servicepage>thesaurus_view.php</servicepage>
+	   <servicetype>use</servicetype>
+	   <system_service>false</system_service>
+	   <enabled>true</enabled>
+	   <WHEREAMIUSED>
+	     <page>process.php</page>
+	     <nature>include</nature>
+	   </WHEREAMIUSED>
+	   <WHEREAMIUSED>
+	     <page>index_mlb.php</page>
+	     <nature>include</nature>
+	   </WHEREAMIUSED>
+	</SERVICE> 
+	<SERVICE>
+	   <id>add_thesaurus_to_res</id>
+	   <name>_ADD_THESAURUS_TO_RES</name>
+	   <comment>_ADD_THESAURUS_TO_RES_DESC</comment>
+	   <servicepage>thesaurus_controller.php</servicepage>
+	   <servicetype>use</servicetype>
+	   <system_service>false</system_service>
+	   <enabled>true</enabled>
+	   <WHEREAMIUSED>
+	     <page>process.php</page>
+	     <nature>include</nature>
+	   </WHEREAMIUSED>
+	   <WHEREAMIUSED>
+	     <page>validation.php</page>
+	     <nature>include</nature>
+	   </WHEREAMIUSED> <WHEREAMIUSED>
+	     <page>details.php</page>
+	     <nature>include</nature>
+	   </WHEREAMIUSED>
+	</SERVICE>
+</root>

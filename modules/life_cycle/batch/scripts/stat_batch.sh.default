@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cd /var/www/html/maarch_trunk/modules/life_cycle/batch/
+
+php "extract_data.php" -c "/var/www/html/maarch_trunk/modules/life_cycle/batch/config/config_extract_data.xml" -coll "letterbox_coll" 

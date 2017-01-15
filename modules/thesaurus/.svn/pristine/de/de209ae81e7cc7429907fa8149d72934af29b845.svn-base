@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<inputValidation xmlns:xi="http://www.w3.org/2001/XInclude">
+<requestDefinitions>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="getThesaurusParent" >
+      <parameter name="display" value="true"/>
+      <parameter name="module" value="thesaurus"/>
+      <parameter name="page" value="get_thesaurus_parent"/> 
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="getThesaurusParent" >
+      <parameter name="display" value="true"/>
+      <parameter name="module" value="thesaurus"/>
+      <parameter name="page" value="get_thesaurus_parent"/> 
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="getThesaurusChilds" >
+      <parameter name="display" value="true"/>
+      <parameter name="module" value="thesaurus"/>
+      <parameter name="page" value="get_thesaurus_childs"/> 
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="getThesaurusChilds" >
+      <parameter name="display" value="true"/>
+      <parameter name="module" value="thesaurus"/>
+      <parameter name="page" value="get_thesaurus_childs"/> 
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="manageThesaurusListByName" >
+      <parameter name="display" value="true"/>
+      <parameter name="module" value="thesaurus"/>
+      <parameter name="page" value="manage_thesaurus_list_by_name"/> 
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="manageThesaurusListByName" >
+      <parameter name="display" value="true"/>
+      <parameter name="module" value="thesaurus"/>
+      <parameter name="page" value="manage_thesaurus_list_by_name"/> 
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="autocompleteThesaurus" >
+      <parameter name="display" value="true"/>
+      <parameter name="module" value="thesaurus"/>
+      <parameter name="page" value="autocomplete_thesaurus"/> 
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="autocompleteThesaurus" >
+      <parameter name="display" value="true"/>
+      <parameter name="module" value="thesaurus"/>
+      <parameter name="page" value="autocomplete_thesaurus"/> 
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="getThesaurusInfo" >
+      <parameter name="display" value="true"/>
+      <parameter name="module" value="thesaurus"/>
+      <parameter name="page" value="get_thesaurus_info"/> 
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="getThesaurusInfo" >
+      <parameter name="display" value="true"/>
+      <parameter name="module" value="thesaurus"/>
+      <parameter name="page" value="get_thesaurus_info"/> 
+    </requestDefinition>
+</requestDefinitions>
+</inputValidation>

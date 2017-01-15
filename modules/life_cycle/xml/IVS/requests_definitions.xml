@@ -1,0 +1,34 @@
+<requestDefinitions>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="lc_manage_policies" >
+        <parameter name="page" value="lc_policies_management_controler"/>
+        <parameter name="module" value="life_cycle"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="lc_manage_cycles" >
+        <parameter name="page" value="lc_cycles_management_controler"/>
+        <parameter name="module" value="life_cycle"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="lc_manage_steps" >
+        <parameter name="page" value="lc_cycle_steps_management_controler"/>
+        <parameter name="module" value="life_cycle"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="lc_ajax_search" >
+        <parameter name="page" value="lc_policies_list_by_id"/>
+        <parameter name="module" value="life_cycle"/>
+        <parameter name="display" value="false"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="lc_ajax_search" >
+        <parameter name="page" value="lc_cycles_list_by_id"/>
+        <parameter name="module" value="life_cycle"/>
+        <parameter name="display" value="false"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="lc_ajax_search" >
+        <parameter name="page" value="lc_cycle_steps_list_by_id"/>
+        <parameter name="module" value="life_cycle"/>
+        <parameter name="display" value="false"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="lc_ajax_cycle_list" >
+        <parameter name="page" value="change_cycle_list"/>
+        <parameter name="module" value="life_cycle"/>
+        <parameter name="display" value="true"/>
+    </requestDefinition>
+</requestDefinitions>

@@ -1,0 +1,75 @@
+<!--
+
+* list attachments
+*
+*
+* @package  Maarch Entreprise 1.5
+* @version 1.5
+* @since 11/2014
+* @license GPL
+*
+
+
+
+Parts :
+    ##HEAD< : Begining of the head part
+    ##HEAD> : End of the head part
+
+    ##RESULT< : Begining of result list
+    ##RESULT> : End fo result list
+
+Functions :
+
+
+    ##cssLine|arg1|arg2##                   : load css style for line. arg1,arg2 : switch beetwin style on line one or line two
+    ##cssLineReload##                       : reload last css style loaded by cssLine
+    ##sortColumn|arg##                      : sort list. arg = sort;
+    ##defineLang|arg##                      : show label. arg = constant define in lang.php;
+    ##loadImage|arg1|arg2##                 : show loaded image; arg1= name of img file, arg2 = name of the module (if image in module)
+    ##loadValue|arg##                       : load value in the db; arg= column's value  identifier
+    ##showActionIcon|arg1|arg2|arg3|arg4##  : action icon. arg1 = label, arg2  = image , arg3 = action (javascript), arg4 = disabled rule
+    ##includeFile|arg1|arg2##               : include file. arg1 = name of the file, arg2  = name of the module (if file in module)
+    ##setListParameter|arg1|arg2##          : set parameter's value for actual list. arg1 = name of parameter, arg2  = new value
+    ##getListParameter|arg##                : get parameter's value for actual list. arg1 = name of parameter
+    ##ifStatement|arg1|arg2|arg3|arg4##     : allow conditional execution . arg1=condition, arg2= statement 1, arg3 = statement 2
+    ##isModuleLoaded|arg##                  : test if module is loaded. arg = module id
+
+Mods 
+
+
+    ##radioButton##         : display radio
+    ##checkBox##            : display checkbox
+    ##checkUncheckAll##     : display checkbox for check/uncheck All
+    ##clickOnLine##         : action on click under the line
+    ##showIconDocument##    : view document icon
+    ##showIconDetails##     : view detail's page icon
+    ##getBusinessAppUrl##   : get business app url
+    
+
+-->
+
+
+#!#TABLE
+<!-- ----------------------------------------------------------------------- -->
+        <table border="0" cellspacing="0" class="listing spec zero_padding" id='test'  style="width: 100%; margin: 0;">
+
+
+
+            <tbody>
+#!#RESULT
+<!-- ----------------------------------------------------------------------- -->
+
+                    <tr  class="##cssLine|col|white ##" >
+                 
+                        <td style="text-align:left">##showIconDocument## </td>
+                        <!--td style="text-align:left">##loadValue|res_id##</td-->
+                        <td style="text-align:left;width:250px;">##loadValue|subject## </td>
+                        <td >##loadValue|alt_identifier##</td>
+                        <td style="text-align:left">##loadValue|creation_date##</td>
+                        <td style="font-size:10px;">##showIconDetails##</td>
+                    </tr>
+
+ #!#FOOTER
+ <!--   ----------------------------------------------------------------------- -->
+            </tbody>
+        </table>

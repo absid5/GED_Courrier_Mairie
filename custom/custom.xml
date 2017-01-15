@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<custom>
+		<custom_id>cs_maarch_db</custom_id>
+		<ip></ip>
+		<external_domain></external_domain>
+		<domain></domain>
+		<path>maarch_courrier</path>
+	</custom>
+</root>

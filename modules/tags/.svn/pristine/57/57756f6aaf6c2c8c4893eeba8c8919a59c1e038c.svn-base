@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<SERVICE>
+		<id>admin_tag</id>
+		<name>_ADMIN_TAGS</name>
+		<comment>_ADMIN_TAGS_DESC</comment>
+		<servicepage>index.php?page=manage_tag_list_controller&amp;module=tags</servicepage>
+		<servicetype>admin</servicetype>
+		<system_service>false</system_service>
+		<style>fa fa-tags</style>
+		<enabled>true</enabled>
+		<WHEREAMIUSED>
+			<page>admin.php</page>
+			<nature>listelement</nature>
+		</WHEREAMIUSED>
+	</SERVICE>
+	
+	<SERVICE>
+	   <id>tag_view</id>
+	   <name>_TAG_VIEW</name>
+	   <comment>_TAG_VIEW_DESC</comment>
+	   <servicepage>tag_view.php</servicepage>
+	   <servicetype>use</servicetype>
+	   <system_service>false</system_service>
+	   <enabled>true</enabled>
+	   <WHEREAMIUSED>
+	     <page>process.php</page>
+	     <nature>include</nature>
+	   </WHEREAMIUSED>
+	   <WHEREAMIUSED>
+	     <page>index_mlb.php</page>
+	     <nature>include</nature>
+	   </WHEREAMIUSED>
+	</SERVICE>
+
+	<SERVICE>
+	   <id>create_tag</id>
+	   <name>_CREATE_TAG</name>
+	   <comment>_CREATE_TAG_DESC</comment>
+	   <servicepage>tag_view.php</servicepage>
+	   <servicetype>use</servicetype>
+	   <system_service>false</system_service>
+	   <enabled>true</enabled>
+	   <WHEREAMIUSED>
+	     <page>validation.php</page>
+	     <nature>include</nature>
+	   </WHEREAMIUSED>
+	   <WHEREAMIUSED>
+	     <page>details.php</page>
+	     <nature>include</nature>
+	   </WHEREAMIUSED>
+	</SERVICE>
+	 
+	<SERVICE>
+	   <id>add_tag_to_res</id>
+	   <name>_ADD_TAG_TO_RES</name>
+	   <comment>_ADD_TAG_TO_RES_DESC</comment>
+	   <servicepage>tag_controller.php</servicepage>
+	   <servicetype>use</servicetype>
+	   <system_service>false</system_service>
+	   <enabled>true</enabled>
+	   <WHEREAMIUSED>
+	     <page>process.php</page>
+	     <nature>include</nature>
+	   </WHEREAMIUSED>
+	   <WHEREAMIUSED>
+	     <page>validation.php</page>
+	     <nature>include</nature>
+	   </WHEREAMIUSED> <WHEREAMIUSED>
+	     <page>details.php</page>
+	     <nature>include</nature>
+	   </WHEREAMIUSED>
+	</SERVICE>
+	<SERVICE>
+	   <id>delete_tag_to_res</id>
+	   <name>_DELETE_TAG_TO_RES</name>
+	   <comment>_DELETE_TAG_TO_RES_DESC</comment>
+	   <servicepage>tag_controller.php</servicepage>
+	   <servicetype>use</servicetype>
+	   <system_service>false</system_service>
+	   <enabled>true</enabled>
+	   <WHEREAMIUSED>
+	     <page>process.php</page>
+	     <nature>include</nature>
+	   </WHEREAMIUSED>
+	   <WHEREAMIUSED>
+	     <page>validation.php</page>
+	     <nature>include</nature>
+	   </WHEREAMIUSED> <WHEREAMIUSED>
+	     <page>details.php</page>
+	     <nature>include</nature>
+	   </WHEREAMIUSED>
+	</SERVICE>
+	<!--<SERVICE>
+	   <id>new_tags_in_library_rights</id>
+	   <name>_NEW_TAG_IN_LIBRARY_RIGHTS</name>
+	   <comment>_NEW_TAG_IN_LIBRARY_RIGHTS_DESC</comment>
+	   <servicepage>tag_controller.php</servicepage>
+	   <servicetype>use</servicetype>
+	   <system_service>false</system_service>
+	   <enabled>true</enabled>
+	   <WHEREAMIUSED>
+	     <page>process.php</page>
+	     <nature>include</nature>
+	   </WHEREAMIUSED>
+	   <WHEREAMIUSED>
+	     <page>validation.php</page>
+	     <nature>include</nature>
+	   </WHEREAMIUSED> <WHEREAMIUSED>
+	     <page>details.php</page>
+	     <nature>include</nature>
+	   </WHEREAMIUSED>
+	</SERVICE>-->
+</root>

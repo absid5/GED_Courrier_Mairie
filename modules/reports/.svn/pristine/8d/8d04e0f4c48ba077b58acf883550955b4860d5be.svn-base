@@ -1,0 +1,21 @@
+/* menu */
+#menunav li#reports span span {
+	background-image: url(static.php?module=reports&filename=menu_reports_off.gif);
+}
+#menunav li#reports.on span span {
+	background-image: url(static.php?module=reports&filename=menu_reports_on.gif);
+}
+td#reports {
+  background: url(static.php?module=reports&filename=menu_reports_off.gif) no-repeat;
+}
+
+/* admin modules board */
+#admin_reports{
+	background: url(static.php?module=reports&filename=manage_reports.gif) no-repeat 2px top;
+}
+
+.reports_list li
+{
+	list-style-type:disc;
+	margin-left: 10px;
+}

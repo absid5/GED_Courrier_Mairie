@@ -1,0 +1,18 @@
+<dataTypes>
+	<dataType name="cm_table_list" base="string">
+      <enumeration value="res_letterbox" />
+      <enumeration value="res_business" />
+      <enumeration value="res_x" />
+      <enumeration value="res_attachments" />
+      <enumeration value="mlb_coll_ext" />
+      <enumeration value="business_coll_ext" />
+      <enumeration value="res_version_letterbox" />
+      <enumeration value="res_version_business" />
+      <enumeration value="res_version_x" />
+      <enumeration value="res_view_attachments" />
+      <enumeration value="res_view" />
+      <enumeration value="res_view_letterbox" />
+      <enumeration value="res_view_business" />
+      <enumeration value="templates" />
+    </dataType>
+</dataTypes>

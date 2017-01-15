@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ROOT>
+    <CONFIG>
+        <defaultlanguage>fr</defaultlanguage>
+        <default_timezone>Europe/Paris</default_timezone>
+    </CONFIG>
+    <BUSINESSAPPS>
+        <appid>maarch_entreprise</appid> <!-- same name as the app directory -->
+        <comment>_MAARCH_ENTREPRISE</comment>
+    </BUSINESSAPPS>
+    <TABLENAME>
+        <actions>actions</actions>
+        <authors>authors</authors>
+        <docservers>docservers</docservers>
+        <doctypes>doctypes</doctypes>
+        <extdocserver>ext_docserver</extdocserver>
+        <fulltext>fulltext</fulltext>
+        <groupsecurity>groupsecurity</groupsecurity>
+        <history>history</history>
+        <history_batch>history_batch</history_batch>
+        <param>parameters</param>
+        <resgroups>resgroups</resgroups>
+        <resgroupcontent>resgroup_content</resgroupcontent>
+        <security>security</security>
+        <status>status</status>
+        <usergroups>usergroups</usergroups>
+        <usergroupcontent>usergroup_content</usergroupcontent>
+        <usergroups_services>usergroups_services</usergroups_services>
+        <users>users</users>
+    </TABLENAME>
+</ROOT>

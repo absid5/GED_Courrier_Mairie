@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ROOT>
+	<MaarchCapture>
+		<testIt>false</testIt>
+		<specific>
+			<pathToMaarchCapture>/produit/maarch/maarch_scripts/maarch_capture/</pathToMaarchCapture>
+		</specific>
+	</MaarchCapture>
+	<notifications_sendmail>
+		<testIt>false</testIt>
+		<specific>
+			<sendmailTo>dev@maarch.org</sendmailTo>
+			<sendmailConfPath>/etc/ssmtp/ssmtp.conf</sendmailConfPath>
+		</specific>
+	</notifications_sendmail>
+</ROOT>

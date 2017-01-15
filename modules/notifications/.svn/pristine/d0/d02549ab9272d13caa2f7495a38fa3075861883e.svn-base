@@ -1,0 +1,63 @@
+<validationRules>
+	<validationRule name="manage_notifications_controler" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="mode" type="mode" />
+		<parameter name="id" type="identifier" />
+		<parameter name="notif_submit" type="string" />
+		<parameter name="what" type="string" />
+		<parameter name="order" type="order" />
+		<parameter name="order_field" type="order" />
+		<parameter name="notification_sid" type="integer" />
+		<parameter name="notification_id" type="identifier" />
+		<parameter name="description" type="string" />
+		<parameter name="event_id" type="integer" />
+		<parameter name="notification_mode" type="string" />
+		<parameter name="rss_url_template" type="string" />
+		<parameter name="template_id" type="integer" />
+		<parameter name="is_enabled" type="YN" />
+		<parameter name="diffusion_type" type="string" />
+		<parameter name="attachfor_type" type="string" />
+		<parameter name="attach_for_type" type="identifier" />
+		<parameter name="attachfor_values" type="identifier" />
+		<parameter name="diffusion_properties" type="string" />
+		<parameter name="attachfor_properties" type="string" />
+		<parameter name="statuseslist" type="identifier" />
+		<parameter name="event_id" type="string" />
+		<parameter name="is_enabled" type="boolean" />
+		<parameter name="order_field" type="string" />
+		<parameter name="diffusion_values" type="string" />
+		<parameter name="Submit" type="string" />
+	</validationRule>
+	<validationRule name="manage_notifs_list_by_name" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="what" type="string" />
+	</validationRule>
+	<validationRule name="load_diffusiontype_formcontent" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="id_type" type="identifier" />
+		<parameter name="origin" type="identifier" />
+	</validationRule>
+	<validationRule name="load_attachfortype_formcontent" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="id_type" type="identifier" />
+		<parameter name="origin" type="identifier" />
+	</validationRule>
+	<validationRule name="schedule_notifications_controler" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="data" type="arrayOfStrings" />
+		<parameter name="save" type="string" />
+	</validationRule>
+	<validationRule name="load_diffusionproperties_formcontent" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="id_type" type="identifier" />
+	</validationRule>
+	<validationRule name="load_attachforproperties_formcontent" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="id_type" type="identifier" />
+	</validationRule>
+	<validationRule name="create_notif_script" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="notification_sid" type="integer" />
+		<parameter name="notification_id" type="identifier" />
+	</validationRule>
+</validationRules>

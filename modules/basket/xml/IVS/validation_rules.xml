@@ -1,0 +1,102 @@
+<validationRules>
+    <validationRule name="bk_ajax_nb_res" extends="standardForm" mode="error">
+      <parameter name="id_basket" type="string" />
+      <parameter name="template_content" type="string" />
+    </validationRule>
+    <validationRule name="bk_ajax_update_coll_action" extends="standardForm" mode="error">
+      <parameter name="coll_id" type="collection_list" />
+      <parameter name="is_reload_groups" type="boolean" />
+    </validationRule>
+    <validationRule name="bk_autocomplete_users_list" extends="standardForm" mode="error">
+      <parameter name="UserInput" type="string" />
+      <parameter name="baskets_owner" type="login" />
+    </validationRule>
+    <validationRule name="bk_basket" extends="standardForm" mode="error" />
+    <validationRule name="bk_basket_add" extends="standardForm" mode="error" />
+    <validationRule name="bk_basket_form" extends="standardForm" mode="error">
+      <parameter name="id" type="identifier" />
+      <parameter name="collection" type="collection_list" />
+      <parameter name="basketId" type="identifier" />
+      <parameter name="basketname" type="string" />
+      <parameter name="basketdesc" type="string" />
+      <parameter name="basketclause" type="string" />
+      <parameter name="Submit" type="string" />
+      <parameter name="is_visible" type="YN" />
+      <parameter name="is_visible_only_on_search" type="YN" />
+      <parameter name="is_folder_basket" type="YN" />
+      <parameter name="flag_notif" type="YN" />
+    </validationRule>
+    <validationRule name="bk_basket_del" extends="standardForm" mode="error">
+    	<parameter name="id" type="identifier" />
+    </validationRule>
+    <validationRule name="bk_basket_up" extends="standardForm" mode="error">
+    	<parameter name="id" type="identifier" />
+    </validationRule>
+    <validationRule name="bk_check_action" extends="standardForm" mode="error">
+    	<parameter name="id_action" type="identifier" />
+    </validationRule>
+    <validationRule name="bk_groupbasket_form" extends="standardForm" mode="error">
+      <parameter name="groupes" type="identifier" />
+    	<parameter name="remove" type="string" />
+    </validationRule>
+    <validationRule name="bk_groupbasket_popup" extends="standardForm" mode="error">
+      <parameter name="id" type="identifier" />
+    </validationRule>
+    <validationRule name="bk_manage_abs_mode" extends="standardForm" mode="error">
+      <parameter name="user_id" type="login" />
+      <parameter name="submit" type="string" />
+    </validationRule>
+    <validationRule name="bk_manage_cancel_abs" extends="standardForm" mode="error">
+      <parameter name="submit" type="string" />
+    </validationRule>
+    <validationRule name="bk_manage_group_basket" extends="standardForm" mode="error">
+      <parameter name="default_action_page" type="identifier" />
+      <parameter name="group" type="identifier" />
+      <parameter name="list_whrere_clause" type="string" />
+      <parameter name="result_page" type="identifier" />
+      <parameter name="sublist_whrere_clause" type="string" />
+      <parameter name="basketclause" type="string" />
+      <parameter name="Submit" type="string" />
+      <parameter name="old_group" type="identifier" />
+      <parameter name="actions" type="integer" />
+      <parameter name="action_*_page_use" type="YN" />
+      <parameter name="action_*_mass_use" type="YN" />
+      <parameter name="*_entitieslist" type="identifier" />
+      <parameter name="*_entities_chosen" type="identifier" />
+      <parameter name="*_usersentities_chosen" type="identifier" />
+      <parameter name="*_difflist_types_chosen" type="identifier" />
+      <parameter name="*_difflist_typeslist" type="identifier" />
+      <parameter name="*_statuseslist" type="identifier" />
+      <parameter name="*_statuses_chosen" type="identifier" />
+      <parameter name="*_roles_chosen" type="identifier" />
+      <parameter name="whereclause_*" type="string" />
+      <parameter name="cancel" type="string" />
+    </validationRule>
+    <validationRule name="bk_manage_redirect_my_basket" extends="standardForm" mode="error">
+      <parameter name="baskets_owner" type="login" />
+      <parameter name="basket_*" type="identifier" />
+      <parameter name="originalowner_*" type="login" />
+      <parameter name="user_*" type="string" />
+      <parameter name="virtual_*" type="YN" />
+    </validationRule>
+    <validationRule name="bk_manage_user_baskets_secondary" extends="standardForm" mode="error">
+      <parameter name="baskets_owner" type="login" />
+      <parameter name="basketId" type="string" />
+    </validationRule>
+    <validationRule name="bk_view_baskets" extends="standardForm" mode="lax">
+      <parameter name="baskets" type="string" />
+      <parameter name="extension" type="identifier" />
+      <parameter name="taille_fichier" type="integer" />
+      <parameter name="md5" type="string" />
+      <parameter name="Ftp_File" type="string" />
+      <parameter name="scan_user" type="string" />
+      <parameter name="scan_wkstation" type="string" />
+      <parameter name="tmp_file" type="filename" />
+      <parameter name="noinit" type="identifier" />
+      <parameter name="reinit" type="identifier" />
+      <parameter name="id" type="identifier" />
+      <parameter name="resid" type="integer" />
+      <parameter name="directLinkToAction" type="identifier" />
+      <parameter name="origin" type="identifier" />
+    </validationRule>
+</validationRules>

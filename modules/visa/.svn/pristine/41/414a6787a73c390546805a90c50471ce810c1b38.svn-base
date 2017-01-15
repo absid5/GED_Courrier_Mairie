@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<SERVICE>
+	   <id>config_visa_workflow</id> <!-- if servicetype = menu, this id must be equal to the id of the menu item -->
+	   <name>_CONFIG_VISA_WORKFLOW</name>
+	   <comment>_CONFIG_VISA_WORKFLOW_DESC</comment>
+	   <servicepage></servicepage>
+	   <servicetype>use</servicetype>
+	   <system_service>false</system_service>
+	   <enabled>true</enabled>
+	</SERVICE>
+
+	<SERVICE>
+	   <id>config_visa_workflow_in_detail</id> <!-- if servicetype = menu, this id must be equal to the id of the menu item -->
+	   <name>_CONFIG_VISA_WORKFLOW_IN_DETAIL</name>
+	   <comment>_CONFIG_VISA_WORKFLOW_IN_DETAIL_DESC</comment>
+	   <servicepage></servicepage>
+	   <servicetype>use</servicetype>
+	   <system_service>false</system_service>
+	   <enabled>true</enabled>
+	</SERVICE>
+	
+	<SERVICE>
+	   <id>visa_documents</id> <!-- if servicetype = menu, this id must be equal to the id of the menu item -->
+	   <name>_VISA_ANSWERS</name>
+	   <comment>_VISA_ANSWERS_DESC</comment>
+	   <servicepage></servicepage>
+	   <servicetype>use</servicetype>
+	   <system_service>false</system_service>
+	   <enabled>true</enabled>
+	</SERVICE>
+	
+	<SERVICE>
+	   <id>sign_document</id> <!-- if servicetype = menu, this id must be equal to the id of the menu item -->
+	   <name>_SIGN_DOCS</name>
+	   <comment>_SIGN_DOCS</comment>
+	   <servicepage></servicepage>
+	   <servicetype>use</servicetype>
+	   <system_service>false</system_service>
+	   <enabled>true</enabled>
+	</SERVICE>
+	
+	<SERVICE>
+	   <id>print_folder_doc</id> <!-- if servicetype = menu, this id must be equal to the id of the menu item -->
+	   <name>_PRINT_FOLDER_DOC</name>
+	   <comment>_PRINT_FOLDER_DOC</comment>
+	   <servicepage></servicepage>
+	   <servicetype>use</servicetype>
+	   <system_service>false</system_service>
+	   <enabled>true</enabled>
+	</SERVICE>
+</root>

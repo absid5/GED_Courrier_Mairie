@@ -1,0 +1,32 @@
+<validationRules>
+	<validationRule name="tag_manage_add" extends="standardForm" mode="error">
+		<parameter name="id" type="string" />
+		<parameter name="tag_label" type="string" />
+		<parameter name="tag_submit" type="string" />
+		<parameter name="tagfusion" type="string" />
+		<parameter name="collection" type="collection_list" />
+	</validationRule>
+
+	<validationRule name="tag_fusion_tag" extends="standardForm" mode="error">
+		<parameter name="a_search_tag" type="string" />
+		<parameter name="a_new_tag" type="string" />
+	</validationRule>
+
+	<validationRule name="aj_add_this_tags" extends="standardForm" mode="error">
+		<parameter name="p_input_value" type="string" />
+	</validationRule>
+
+	<validationRule name="aj_delete_this_tag" extends="standardForm" mode="error">
+		<parameter name="p_tag_label" type="string" />
+	</validationRule>
+
+	<validationRule name="autocomplete_tags" extends="standardForm" mode="error">
+		<parameter name="Input" type="string" />
+	</validationRule>
+
+	<validationRule name="templates_tag_ui" extends="standardForm" mode="error">
+		<parameter name="p_res_id" type="integer" />
+	</validationRule>
+
+</validationRules>
+

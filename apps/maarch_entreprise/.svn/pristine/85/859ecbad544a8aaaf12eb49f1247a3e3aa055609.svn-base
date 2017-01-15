@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<inputValidation xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  
+  <!--
+    Request definitions
+    Used to identify the request and bind a validation rule set
+  -->
+  <requestDefinitions>
+    <requestDefinition method="GET" path="/maarchIVS/example.php" validationRule="example">
+      <parameter name="param1" />
+    </requestDefinition>
+  </requestDefinitions>
+  <!--
+    Validation rule sets
+    Each gives a set of request parameters that can be checked
+    with a type name that refers to defined types or an inline definition
+  -->
+  <validationRules>
+    <validationRule name="example" extends="baseExample">
+      <parameter name="param2" type="short_word" />
+      <parameter name="param3" type="integer">
+        <totalDigit value="3" />
+      </parameter>
+      <parameter name="param4" type="arrayOfStrings" />
+    </validationRule>
+    <validationRule name="baseExample" extends="includedExample">
+      <parameter name="param1" type="string" />
+    </validationRule>
+    
+    <xi:include href="includedRules.xml"/>
+  </validationRules>
+  <!--
+    Validation rule sets
+    Each gives a set of request parameters that can be checked
+    with a type name that refers to defined types or an inline definition
+  -->
+  <dataTypes>
+    <dataType name="short_word" base="word">
+      <pattern value="/^\w{1,5}$/" />
+    </dataType>
+    <dataType name="word" base="string">
+      <pattern value="/^\w+$/" />
+    </dataType>
+    <dataType name="arrayOfStrings" base="name" />
+  </dataTypes>
+</inputValidation>

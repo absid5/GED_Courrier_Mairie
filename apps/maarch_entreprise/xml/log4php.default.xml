@@ -1,0 +1,33 @@
+<log4php:configuration xmlns:log4php="http://logging.apache.org/log4php/"
+    threshold="all" debug="false">
+    <appender name="appenderFonctionnel" class="LoggerAppenderRollingFile">
+        <layout class="LoggerLayoutTTCC" />
+        <param name="file" value="./fonctionnel.log" />
+        <param name="maxFileSize" value="10MB" />
+        <param name="maxBackupIndex" value="10" />
+        <layout class="LoggerLayoutPattern">
+            <param name="ConversionPattern" value="[%d{d/m/Y H:i:s}] %-5p [%t] %m%n" />
+        </layout>
+    </appender>
+    <appender name="appenderTechnique" class="LoggerAppenderRollingFile">
+        <layout class="LoggerLayoutTTCC" />
+        <param name="file" value="./technique.log" />
+        <param name="maxFileSize" value="10MB" />
+        <param name="maxBackupIndex" value="10" />
+        <layout class="LoggerLayoutPattern">
+            <param name="ConversionPattern" value="[%d{d/m/Y H:i:s}] %-5p [%t] %m%n" />
+        </layout>
+    </appender>
+    <root>
+        <level value="ERROR" />
+        <appender_ref ref="fonctionnel,technique" />
+    </root>
+    <logger name="loggerFonctionnel" additivity="true">
+        <level value="ERROR" />
+        <appender_ref ref="appenderFonctionnel" />
+    </logger>
+    <logger name="loggerTechnique" additivity="true">
+        <level value="ERROR" />
+        <appender_ref ref="appenderTechnique" />
+    </logger>
+</log4php:configuration>

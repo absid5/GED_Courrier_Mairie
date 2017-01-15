@@ -1,0 +1,14 @@
+
+source_files: src/js
+destination: doc
+index_page: home.html
+src_code_href: 
+pretty_urls: false
+name: Maarch.js Library
+short_name: maarch.js
+home_url: http://www.maarch.org/
+doc_url: http://www.maarch.org/
+version: 0.1.0
+syntax_highlighter: pygments
+copyright_notice: 
+

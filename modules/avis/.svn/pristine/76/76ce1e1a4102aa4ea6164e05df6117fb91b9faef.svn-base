@@ -1,0 +1,51 @@
+<validationRules>
+	<validationRule name="saveAvisWF" extends="standardForm" mode="error">
+		<parameter name="res_id" type="integer" />
+    	<parameter name="coll_id" type="collection_list" />
+    	<parameter name="dates" type="string" />
+    	<parameter name="id_list" type="string" />
+    	<parameter name="title" type="string" />
+    	<parameter name="conseillers" type="string" />
+    	<parameter name="consignes" type="string" />
+        <parameter name="list_sign" type="string" />
+        <parameter name="fromDetail" type="YN" />
+		<parameter name="cons_empty" type="boolean" />
+	</validationRule>
+	<validationRule name="resetAvisWF" extends="standardForm" mode="error">
+		<parameter name="res_id" type="integer" />
+    	<parameter name="coll_id" type="collection_list" />
+    	<parameter name="dates" type="string" />
+    	<parameter name="id_list" type="string" />
+    	<parameter name="title" type="string" />
+    	<parameter name="conseillers" type="string" />
+    	<parameter name="consignes" type="string" />
+        <parameter name="list_sign" type="string" />
+        <parameter name="fromDetail" type="YN" />
+		<parameter name="cons_empty" type="boolean" />
+	</validationRule>
+	<validationRule name="load_listmodel_Avis" extends="standardForm" mode="error">
+    	<parameter name="objectType" type="identifier" />
+		<parameter name="objectId" type="identifier" />
+    </validationRule>
+    <validationRule name="getAvisModelByTitle" extends="standardForm" mode="error">
+    	<parameter name="title" type="string" />
+    </validationRule>
+    <validationRule name="saveAvisModel" extends="standardForm" mode="error">
+    	<parameter name="id_list" type="string" />
+    	<parameter name="title" type="string" />
+    	<parameter name="conseillers" type="string" />
+    	<parameter name="consignes" type="string" />
+		<parameter name="list_sign" type="string" />
+    </validationRule>
+    <validationRule name="update_AvisPage" extends="standardForm" mode="error">
+    	<parameter name="res_id" type="integer" />
+    	<parameter name="coll_id" type="collection_list" />
+    	<parameter name="action" type="string" />
+    </validationRule>
+    <validationRule name="view_pdf_attachement" extends="standardForm" mode="error">
+    	<parameter name="res_id_master" type="integer" />
+    	<parameter name="id" type="integer" />
+    </validationRule>
+
+</validationRules>
+

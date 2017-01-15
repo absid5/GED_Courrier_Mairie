@@ -1,0 +1,59 @@
+CREATE SEQUENCE NOTES_SEQ
+  START WITH 1
+  MAXVALUE 999999999999999999999999999
+  MINVALUE 1
+  NOCYCLE
+  NOCACHE
+  NOORDER;
+  
+  CREATE TABLE NOTES
+(
+  ID          NUMBER                            NOT NULL,
+  IDENTIFIER  NUMBER                            NOT NULL,
+  TABLENAME   VARCHAR2(50 BYTE),
+  USER_ID     VARCHAR2(50 BYTE)                 NOT NULL,
+  DATE_NOTE  DATE                              NOT NULL,
+  NOTE_TEXT   CLOB                             ,
+  COLL_ID     VARCHAR2(50 BYTE)
+)
+PCTUSED    0
+PCTFREE    10
+INITRANS   1
+MAXTRANS   255
+STORAGE    (
+            INITIAL          64K
+            MINEXTENTS       1
+            MAXEXTENTS       2147483645
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+           )
+LOGGING 
+NOCOMPRESS 
+NOCACHE
+NOPARALLEL
+MONITORING;
+
+
+CREATE OR REPLACE TRIGGER t_notes_ins
+   BEFORE INSERT
+   ON notes
+   REFERENCING NEW AS NEW OLD AS OLD
+   FOR EACH ROW
+BEGIN
+   SELECT notes_seq.NEXTVAL
+     INTO :NEW.id
+     FROM DUAL;
+  
+  
+EXCEPTION
+   WHEN OTHERS
+   THEN
+      RAISE;
+END  t_notes_ins;
+/
+SHOW ERRORS;
+
+ALTER TABLE NOTES ADD (
+  CONSTRAINT NOTES_PKEY
+ PRIMARY KEY
+ (ID));

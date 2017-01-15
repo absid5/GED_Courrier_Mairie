@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ROOT>
+	<LIFE_CYCLE>
+		<PROCESS>
+			<MODE>NONE</MODE>
+			<MODE>COPY</MODE>
+			<MODE>PURGE</MODE>
+		</PROCESS>
+	</LIFE_CYCLE>
+</ROOT>

@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Arizonia';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Arizonia'), local('Arizonia-Regular'), url('fonts/Arizona.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Contrail One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Arizonia'), local('Arizonia-Regular'), url('fonts/contrailOne.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Sonsie One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Arizonia'), local('Arizonia-Regular'), url('fonts/sonsieOne.woff') format('woff');
+}

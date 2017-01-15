@@ -1,0 +1,275 @@
+<validationRules>
+	<validationRule name="users_list" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="what" type="string" />
+    </validationRule>
+    <validationRule name="users_entities_up" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="id" type="identifier" />
+    </validationRule>
+    <validationRule name="set_primary_entity" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="entities" type="ajax_ids" />
+    </validationRule>
+    <validationRule name="select_listmodels" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="objectType" type="string" />
+		<parameter name="returnElementType" type="string" />
+    </validationRule>
+    <validationRule name="save_list_diff" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="mode" type="entities_table_list" />
+		<parameter name="table" type="entities_table_list" />
+		<parameter name="collId" type="collection_list" />
+		<parameter name="resId" type="integer" />
+		<parameter name="concatList" type="integer" />
+		<parameter name="onlyCC" type="boolean" />
+		<parameter name="userId" type="login" />
+		<parameter name="opt" type="identifier" />
+    </validationRule>
+    <validationRule name="remove_user_entities" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="entities" type="ajax_ids" />
+    </validationRule>
+    <validationRule name="print_sep_mlb" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="entitieslist" type="arrayOfStrings" />
+		<parameter name="typeBarcode" type="identifier" />
+		<parameter name="submit" type="string" />
+		<parameter name="try" type="string" />
+		<parameter name="print_generic" type="string" />
+    </validationRule>
+    <validationRule name="entity_ban" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="id" type="identifier" />
+    </validationRule>
+    <validationRule name="manage_entities" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="Submit" type="string" />
+		<parameter name="selectedObject" type="identifier" />
+    </validationRule>
+    <validationRule name="entity_allow" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="id" type="identifier" />
+    </validationRule>
+    <validationRule name="entity_form" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="id" type="identifier" />
+		<parameter name="Submit" type="identifier" />
+		<parameter name="adrs1" type="string" />
+		<parameter name="adrs2" type="string" />
+		<parameter name="adrs3" type="string" />
+		<parameter name="zcode" type="integer" />
+		<parameter name="business" type="string" />
+		<parameter name="city" type="string" />
+		<parameter name="country" type="string" />
+		<parameter name="email" type="email" />
+		<parameter name="entityId" type="identifier" />
+		<parameter name="id" type="string" />
+		<parameter name="label" type="string" />
+		<parameter name="mode" type="mode" />
+		<parameter name="parententity" type="identifier" />
+		<parameter name="short_label" type="string" />
+		<parameter name="type" type="string" />
+    </validationRule>
+    <validationRule name="entity_del" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="id" type="identifier" />
+		<parameter name="valid" type="identifier" />
+		<parameter name="doc_entity_id" type="string" />
+    </validationRule>
+    <validationRule name="choose_tree" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="tree_id" type="identifier" />
+    </validationRule>
+    <validationRule name="get_tree_childs" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="branch" type="string" />
+		<parameter name="branch_id" type="identifier" />
+		<parameter name="tree_id" type="identifier" />
+    </validationRule>
+    <validationRule name="admin_difflist_types" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="id" type="identifier" />
+		<parameter name="mode" type="mode" />
+    </validationRule>
+    <validationRule name="admin_difflist_type_validate" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="difflist_type_id" type="identifier" />
+		<parameter name="difflist_type_label" type="string" />
+		<parameter name="difflist_type_roles" type="string" />
+		<parameter name="allow_entities" type="string" />
+		<parameter name="mode" type="mode" />
+    </validationRule>
+    <validationRule name="admin_listmodels" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+    </validationRule>
+    <validationRule name="admin_listmodel" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="id" type="string" />
+		<parameter name="mode" type="mode" />
+    </validationRule>
+    <validationRule name="admin_listmodel_setObjectId" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="objectId" type="string" />
+		<parameter name="objectType" type="string" />
+		<parameter name="mode" type="mode" />
+    </validationRule>
+    <validationRule name="admin_listmodel_validateHeader" extends="standardForm" mode="error">
+		<parameter name="description" type="string" />
+		<parameter name="objectId" type="string" />
+		<parameter name="objectType" type="string" />
+		<parameter name="title" type="string" />
+    </validationRule>
+    <validationRule name="admin_listmodel_save" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="objectId" type="string" />
+		<parameter name="objectType" type="string" />
+		<parameter name="description" type="string" />
+		<parameter name="title" type="string" />
+    </validationRule>
+    <validationRule name="admin_listmodel_setObjectType" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="objectType" type="identifier" />
+    </validationRule>
+    <validationRule name="load_listmodel" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="objectType" type="string" />
+		<parameter name="objectId" type="string" />
+		<parameter name="category" type="string" />
+		<parameter name="origin" type="identifier" />
+    </validationRule>
+    <validationRule name="check_user_entities" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="form_values" type="string" />
+    </validationRule>
+    <validationRule name="choose_entity" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="entityid" type="identifier" />
+    </validationRule>
+    <validationRule name="entity_late_mail" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="arguments" type="ajax_ids_2" />
+    </validationRule>
+    <validationRule name="entity_process_delay" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="arguments" type="ajax_ids_2" />
+		<parameter name="period_type" type="identifier" />
+    </validationRule>
+    <validationRule name="get_entity_process_delay" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="date_fin" type="datefr" />
+		<parameter name="date_start" type="datefr" />
+		<parameter name="entities_chosen" type="string" />
+		<parameter name="id_report" type="string" />
+		<parameter name="period_type" type="identifier" />
+		<parameter name="report_type" type="identifier" />
+		<parameter name="the_month" type="mois" />
+		<parameter name="the_year" type="annee" />
+    </validationRule>
+    <validationRule name="get_entity_vol" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="date_fin" type="datefr" />
+		<parameter name="date_start" type="datefr" />
+		<parameter name="entities_chosen" type="string" />
+		<parameter name="id_report" type="string" />
+		<parameter name="period_type" type="identifier" />
+		<parameter name="report_type" type="identifier" />
+		<parameter name="the_month" type="mois" />
+		<parameter name="the_year" type="annee" />
+    </validationRule>
+    <validationRule name="get_entity_late_mail" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="entities_chosen" type="string" />
+		<parameter name="report_type" type="identifier" />
+		<parameter name="period_type" type="identifier" />
+		
+    </validationRule>
+    <validationRule name="entity_vol_stat" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="arguments" type="ajax_ids_2" />
+    </validationRule>
+    <validationRule name="entity_up" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="id" type="identifier" />
+    </validationRule>
+
+    <validationRule name="manage_listinstance" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="origin" type="identifier" />
+		<parameter name="what_services" type="string" />
+		<parameter name="what_users" type="string" />
+		<parameter name="action" type="string" />
+		<parameter name="id" type="login" />
+		<parameter name="role" type="identifier" />
+		<parameter name="no_filter" type="string" />
+		<parameter name="rank" type="integer" />
+		<parameter name="auto_filter" type="string" />
+		<parameter name="specific_role" type="string" />
+		<parameter name="cat" type="string" />
+    </validationRule>
+
+    <validationRule name="loadDiffList" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="res_id" type="integer" />
+    </validationRule>
+
+    <validationRule name="loadDiffListHistory" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="listinstance_history_id" type="integer" />
+    </validationRule>
+    <validationRule name="load_listinstance" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="origin" type="string" />
+		<parameter name="objectType" type="string" />
+		<parameter name="load_from_model" type="string" />
+		<parameter name="mandatory" type="string" />
+		<parameter name="objectId" type="identifier" />
+		<parameter name="collId" type="collection_list" />
+		<parameter name="category" type="string" />
+		<parameter name="specific_role" type="string" />
+    </validationRule>
+
+    <validationRule name="load_listmodel" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="origin" type="string" />
+		<parameter name="objectType" type="identifier" />
+		<parameter name="objectId" type="identifier" />
+    </validationRule>
+
+    <validationRule name="manage_listmodel" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="origin" type="integer" />
+		<parameter name="action" type="identifier" />
+		<parameter name="rank" type="integer" />
+		<parameter name="role" type="identifier" />
+		<parameter name="what_services" type="identifier" />
+		<parameter name="what_users" type="identifier" />
+		<parameter name="id" type="login" />
+		<parameter name="valid" type="identifier" />
+		<parameter name="no_filter" type="string" />
+		<parameter name="objectType" type="identifier" />
+		<parameter name="objectId" type="identifier" />
+    </validationRule>
+
+    <validationRule name="manage_user_entities" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="form_values" type="string" />
+    </validationRule>
+
+    <validationRule name="param_index_difflist_types" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="group" type="identifier" />
+		<parameter name="old_group" type="identifier" />
+    </validationRule>
+
+    <validationRule name="param_templates_entities" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="entities_chosen" type="identifier" />
+    </validationRule>
+
+    <validationRule name="entities_list_by_label" extends="standardForm" mode="error"/>
+
+    <validationRule name="entity_add" extends="standardForm" mode="error" />
+
+</validationRules>

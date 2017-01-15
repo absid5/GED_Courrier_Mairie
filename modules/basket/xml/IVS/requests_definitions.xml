@@ -1,0 +1,82 @@
+<requestDefinitions>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="bk_ajax_nb_res" >
+      <parameter name="module" value="basket"/>
+      <parameter name="page" value="ajaxNbResInBasket"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="bk_ajax_update_coll_action" >
+      <parameter name="module" value="basket"/>
+      <parameter name="page" value="ajaxUpdateCollidAndActions"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="bk_autocomplete_users_list" >
+      <parameter name="module" value="basket"/>
+      <parameter name="page" value="autocomplete_users_list"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="bk_basket" >
+      <parameter name="module" value="basket"/>
+      <parameter name="page" value="basket"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="bk_basket_add" >
+      <parameter name="module" value="basket"/>
+      <parameter name="page" value="basket_add"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="bk_basket_form" >
+      <parameter name="module" value="basket"/>
+      <parameter name="page" value="basket_add_db"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="bk_basket_del" >
+      <parameter name="module" value="basket"/>
+      <parameter name="page" value="basket_del"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="admin_ajax_search" >
+      <parameter name="module" value="basket"/>
+      <parameter name="page" value="basket_list_by_name"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="bk_basket_up" >
+      <parameter name="module" value="basket"/>
+      <parameter name="page" value="basket_up"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="bk_basket_form" >
+      <parameter name="module" value="basket"/>
+      <parameter name="page" value="basket_up_db"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="bk_check_action" >
+      <parameter name="module" value="basket"/>
+      <parameter name="page" value="check_action"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="bk_groupbasket_form" >
+      <parameter name="module" value="basket"/>
+      <parameter name="page" value="groupbasket_form"/>
+      <parameter name="display" value="true"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="bk_groupbasket_popup" >
+      <parameter name="module" value="basket"/>
+      <parameter name="page" value="groupbasket_popup"/>
+      <parameter name="display" value="true"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="bk_manage_abs_mode" >
+      <parameter name="module" value="basket"/>
+      <parameter name="page" value="manage_abs_mode"/>
+      <parameter name="display" value="true"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="bk_manage_cancel_abs" >
+      <parameter name="module" value="basket"/>
+      <parameter name="page" value="manage_cancel_abs"/>
+      <parameter name="display" value="true"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="bk_manage_group_basket" >
+      <parameter name="module" value="basket"/>
+      <parameter name="page" value="manage_group_basket"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="bk_manage_redirect_my_basket" >
+      <parameter name="module" value="basket"/>
+      <parameter name="page" value="manage_redirect_my_basket"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="bk_manage_user_baskets_secondary" >
+      <parameter name="module" value="basket"/>
+      <parameter name="page" value="manage_user_baskets_secondary"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="bk_view_baskets" >
+      <parameter name="module" value="basket"/>
+      <parameter name="page" value="view_baskets"/>
+    </requestDefinition>
+</requestDefinitions>

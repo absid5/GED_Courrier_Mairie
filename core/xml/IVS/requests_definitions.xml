@@ -1,0 +1,7 @@
+<requestDefinitions>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="ajax_core_values" >
+        <parameter name="page" value="manage_action"/>
+        <parameter name="module" value="core"/>
+        <parameter name="display" value="true"/>
+    </requestDefinition>
+</requestDefinitions>

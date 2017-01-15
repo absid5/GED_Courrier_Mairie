@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<CONFIG>
+		<name>cases</name>
+		<comment>_CASES_COMMENT</comment>
+		<file_prefix>cases</file_prefix>
+		<loaded>true</loaded>
+	</CONFIG>
+	<TABLENAME>
+		<cases>cases</cases>
+		<cases_res>cases_res</cases_res>
+	</TABLENAME>
+	<HISTORY>
+		<casesup>true</casesup>
+		<casesadd>true</casesadd>
+		<casesdel>true</casesdel>
+		<caseslink>true</caseslink>
+		<casesunlink>true</casesunlink>
+	</HISTORY>
+</root>

@@ -1,0 +1,87 @@
+<requestDefinitions>
+
+	<requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="attachments_content" >
+	  <parameter name="module" type="identifier" />
+	  <parameter name="display" value="true"/>
+      <parameter name="page" value="attachments_content"/>
+    </requestDefinition>
+
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="get_chrono_attachment" >
+	  <parameter name="module" type="identifier" />
+	  <parameter name="display" value="true"/>
+      <parameter name="page" value="get_chrono_attachment"/>
+    </requestDefinition>
+
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="get_chrono_attachment" >
+	  <parameter name="module" type="identifier" />
+	  <parameter name="display" value="true"/>
+      <parameter name="page" value="get_chrono_attachment"/>
+    </requestDefinition>
+
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="frame_list_attachments" >
+	  <parameter name="module" type="identifier" />
+	  <parameter name="display" value="true"/>
+      <parameter name="page" value="frame_list_attachments"/>
+    </requestDefinition>
+
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="frame_list_attachments" >
+	  <parameter name="module" type="identifier" />
+	  <parameter name="display" value="true"/>
+      <parameter name="page" value="frame_list_attachments"/>
+    </requestDefinition>
+
+	<requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="choose_attachment" >
+	  <parameter name="module" type="identifier" />
+	  <parameter name="display" value="true"/>
+      <parameter name="page" value="choose_attachment"/>
+    </requestDefinition>
+
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="choose_attachment" >
+	  <parameter name="module" type="identifier" />
+	  <parameter name="display" value="true"/>
+      <parameter name="page" value="choose_attachment"/>
+    </requestDefinition>
+
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="previous_attachments" >
+	  <parameter name="module" type="identifier" />
+	  <parameter name="display" value="true"/>
+      <parameter name="page" value="previous_attachments"/>
+    </requestDefinition>
+
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="del_attachment" >
+	  <parameter name="module" type="identifier" />
+	  <parameter name="display" value="true"/>
+      <parameter name="page" value="del_attachment"/>
+    </requestDefinition>
+
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="get_other_chrono_attachment">
+	  <parameter name="module" type="identifier" />
+	  <parameter name="display" value="true"/>
+      <parameter name="page" value="get_other_chrono_attachment"/>
+    </requestDefinition>
+
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="get_other_chrono_attachment">
+	  <parameter name="module" type="identifier" />
+	  <parameter name="display" value="true"/>
+      <parameter name="page" value="get_other_chrono_attachment"/>
+    </requestDefinition>
+
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="setFinalVersion" >
+	  <parameter name="module" type="identifier" />
+	  <parameter name="display" value="true"/>
+      <parameter name="page" value="setFinalVersion"/>
+    </requestDefinition>
+
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="view_attachment" >
+	  <parameter name="module" type="identifier" />
+	  <parameter name="display" value="true"/>
+      <parameter name="page" value="view_attachment"/>
+    </requestDefinition>
+
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="view_attachment" >
+	  <parameter name="module" type="identifier" />
+	  <parameter name="display" value="true"/>
+      <parameter name="page" value="view_attachment"/>
+    </requestDefinition>
+
+</requestDefinitions>

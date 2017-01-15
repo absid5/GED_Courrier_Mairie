@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<inputValidation xmlns:xi="http://www.w3.org/2001/XInclude">
+<requestDefinitions>
+
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="reports" >
+      <parameter name="reinit" value="true"/>
+      <parameter name="module" value="reports"/>
+      <parameter name="page" value="reports"/> 
+    </requestDefinition>
+
+
+
+	<requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="list_reports" >
+		<parameter name="module" value="reports"/>
+		<parameter name="display" value="true"/>
+		<parameter name="page" value="list_reports"/> 
+	</requestDefinition>
+
+	<requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="groupreports_up_db" >
+		<parameter name="module" value="reports"/>
+		<parameter name="display" value="true"/>
+		<parameter name="page" value="groupreports_up_db"/> 
+	</requestDefinition>
+
+	<requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="admin_reports" >
+		<parameter name="module" value="reports"/>
+		<parameter name="page" value="admin_reports"/> 
+	</requestDefinition>
+
+</requestDefinitions>
+</inputValidation>

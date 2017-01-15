@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ROOT>
+	<WEB_SSO_URL>http://192.168.21.26/websso/</WEB_SSO_URL>
+	<USER_ID>nigend</USER_ID> <!-- user_id dans maarch -->
+	<USER_NAME> <!-- nom, prenom dans maarch -->
+		<FULL_NAME>uid</FULL_NAME>
+		<SEP_TOKEN>.</SEP_TOKEN>
+	</USER_NAME>
+	<EMAIL>codeunite</EMAIL> <!-- email de l'utilisateur dans maarch -->
+	<GROUPS> <!-- groupes dans maarch -->
+		<GROUP_ID>qualification</GROUP_ID>
+		<SEP_TOKEN>,</SEP_TOKEN>
+	</GROUPS>
+	<ENTITIES> <!-- entites dans maarch (position dans l'organigramme -->
+		<ENTITY_ID>departement_uid</ENTITY_ID>
+		<SEP_TOKEN>,</SEP_TOKEN>
+	</ENTITIES>
+</ROOT>

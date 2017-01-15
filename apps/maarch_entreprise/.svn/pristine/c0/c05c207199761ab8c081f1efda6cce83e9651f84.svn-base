@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ROOT>
+    <!-- 
+        options 
+    -->
+    <CSVOPTIONS>
+        <DELIMITER>;</DELIMITER> <!-- 1 charcater, default for MSExcel ';' && default other ',' -->
+        <ENCLOSURE>"</ENCLOSURE> <!-- 1 charcater, default for all '"' -->
+        <IS_UTF8>FALSE</IS_UTF8>
+    </CSVOPTIONS>
+    <!--
+        letterbox_coll
+    -->
+    <letterbox_coll>
+        <FIELD>
+            <LIBELLE>Num GED</LIBELLE>
+            <DATABASE_FIELD>res_view_letterbox.res_id</DATABASE_FIELD>
+        </FIELD>
+        <FIELD>
+            <LIBELLE>Date d'arrivée</LIBELLE>
+            <DATABASE_FIELD>doc_date</DATABASE_FIELD>
+        </FIELD>
+        <FIELD>
+            <LIBELLE>Prénom de l'expéditeur</LIBELLE>
+            <DATABASE_FIELD>contact_firstname</DATABASE_FIELD>
+        </FIELD>
+        <FIELD>
+            <LIBELLE>Nom de l'expéditeur</LIBELLE>
+            <DATABASE_FIELD>contact_lastname</DATABASE_FIELD>
+        </FIELD>
+        <FIELD>
+            <LIBELLE>Société de l'expéditeur</LIBELLE>
+            <DATABASE_FIELD>contact_society</DATABASE_FIELD>
+        </FIELD>
+        <FIELD>
+            <LIBELLE>Service destinataire</LIBELLE>
+            <DATABASE_FIELD>destination</DATABASE_FIELD>
+        </FIELD>        
+		<FIELD>
+            <LIBELLE>Destinataire</LIBELLE>
+            <DATABASE_FIELD>dest_user</DATABASE_FIELD>
+        </FIELD>
+        <FIELD>
+            <LIBELLE>Objet</LIBELLE>
+            <DATABASE_FIELD>subject</DATABASE_FIELD>
+        </FIELD>
+        <FIELD>
+            <LIBELLE>Type de courrier</LIBELLE>
+            <DATABASE_FIELD>type_label</DATABASE_FIELD>
+        </FIELD>
+        <FUNCTIONS>
+            <FUNCTION>
+                <LIBELLE>Statut</LIBELLE>
+                <CALL>get_status</CALL>
+            </FUNCTION>
+            <FUNCTION>
+                <LIBELLE>Priorité</LIBELLE>
+                <CALL>get_priority</CALL>
+            </FUNCTION>
+            <FUNCTION>
+                <LIBELLE>Services en copie</LIBELLE>
+                <CALL>retrieve_copies</CALL>
+            </FUNCTION>
+            <FUNCTION>
+                <LIBELLE>Page détail</LIBELLE>
+                <CALL>makeLink_detail</CALL>
+            </FUNCTION>
+
+<!--             <FUNCTION>
+                <LIBELLE>Thème</LIBELLE>
+                <CALL>get_parent_folder</CALL>
+            </FUNCTION>
+            <FUNCTION>
+                <LIBELLE>Service destinataire</LIBELLE>
+                <CALL>get_entity_dest_short_label</CALL>
+            </FUNCTION>
+            <FUNCTION>
+                <LIBELLE>Type de contact</LIBELLE>
+                <CALL>get_contact_type</CALL>
+            </FUNCTION>
+            <FUNCTION>
+                <LIBELLE>Civilité du contact</LIBELLE>
+                <CALL>get_contact_civility</CALL>
+            </FUNCTION>
+            <FUNCTION>
+                <LIBELLE>Mots clés</LIBELLE>
+                <CALL>get_tags</CALL>
+            </FUNCTION>
+            <FUNCTION>
+                <LIBELLE>Nature de la réponse</LIBELLE>
+                <CALL>get_answer_nature</CALL>
+            </FUNCTION>
+            <FUNCTION>
+                <LIBELLE>Signataire</LIBELLE>
+                <CALL>get_signatory_name</CALL>
+            </FUNCTION>
+            <FUNCTION>
+                <LIBELLE>Date de signature</LIBELLE>
+                <CALL>get_signatory_date</CALL>
+            </FUNCTION> -->
+        </FUNCTIONS>
+        <EMPTYS>
+            <EMPTY>
+                <LIBELLE>Commentaire</LIBELLE>
+                <COLNAME>comments</COLNAME> <!-- no spaces in the COLNAME -->
+            </EMPTY>
+        </EMPTYS>
+    </letterbox_coll>
+</ROOT>

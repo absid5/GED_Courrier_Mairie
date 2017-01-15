@@ -1,0 +1,55 @@
+<validationRules>
+	<validationRule name="detail_index_cases" extends="standardForm" mode="error">
+		<parameter name="case_label" type="string" />
+		<parameter name="case_description" type="string" />
+		<parameter name="id" type="integer" />
+		<parameter name="update" type="boolean" />
+		<parameter name="submit_index_doc" type="string" />
+		<parameter name="module" type="identifier" />
+    </validationRule>
+    <validationRule name="create_case" extends="standardForm" mode="error">
+		<parameter name="case_label" type="string" />
+		<parameter name="case_description" type="string" />
+		<parameter name="module" type="identifier" />
+		<parameter name="searched_item" type="searched_item" />
+		<parameter name="searched_value" type="integer" />
+    </validationRule>
+    <validationRule name="list_results_mlb_frame" extends="standardForm" mode="error">
+    	<parameter name="module" type="identifier" />
+        <parameter name="template" type="identifier" />
+        <parameter name="searched_item" type="searched_item" />
+		<parameter name="searched_value" type="integer" />
+    </validationRule>
+    <validationRule name="cases_list" extends="standardForm" mode="error">
+    	<parameter name="module" type="identifier" />
+        <parameter name="origin" type="string" />
+        <parameter name="template" type="identifier" />
+		<parameter name="url" type="url" />
+    </validationRule>
+    <validationRule name="details" extends="standardForm" mode="error">
+    	<parameter name="module" type="identifier" />
+        <parameter name="id" type="integer" />
+        <parameter name="action" type="string" />
+		<parameter name="coll_id" type="collection_list" />
+    </validationRule>
+    <validationRule name="execute_attachement" extends="standardForm" mode="error">
+    	<parameter name="module" type="identifier" />
+    	<parameter name="searched_item" type="searched_item" />
+		<parameter name="searched_value" type="integer" />
+		<parameter name="field" type="integer" />
+    </validationRule>
+    <validationRule name="unlink_case" extends="standardForm" mode="error">
+    	<parameter name="module" type="identifier" />
+    	<parameter name="case_id" type="integer" />
+		<parameter name="res_id" type="integer" />
+    </validationRule>
+    <validationRule name="db_close_case" extends="standardForm" mode="error">
+    	<parameter name="module" type="identifier" />
+    	<parameter name="case_id" type="integer" />
+    </validationRule>
+    <validationRule name="search_adv_for_cases" extends="standardForm" mode="error">
+        <parameter name="searched_item" type="searched_item" />
+        <parameter name="searched_value" type="integer" />
+        <parameter name="schema" type="string" />
+    </validationRule>
+</validationRules>

@@ -1,0 +1,111 @@
+.errorVisa{
+	color: #ea0000;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.4em;
+}
+#visa_listDoc{
+	border:1px solid black;
+	height:95%;
+	width:15%;
+	float: left;
+}
+
+
+#visa_left{
+	/*border:1px solid blue;*/
+	height:95%;
+	width:41%;
+	margin-left:1%;
+	float: left;
+}
+
+#tabricatorLeft{
+	height:99.5%;
+	min-width:0;
+	width:99.5%;
+	margin-bottom:0px;
+}
+
+#visa_right{
+	/*border:1px solid green;*/
+	height:95%;
+	width:41%;
+	margin-left:1%;
+	float: left;
+}
+
+#tabricatorRight{
+	height:90%;
+	min-width:0;
+	width:99.5%;
+}
+
+#visa_listDoc .toolbar{
+	height: 4%;
+	width: 100%;
+}
+
+#visa_listDoc .toolbar table{
+	text-align:center;
+	width:100%;
+}
+
+#modalPIN{
+	padding-top:50px;
+	z-index: 1050;
+	width: 300px;
+	height: 80px;
+	border: 2px solid #000;
+	display: none;
+	position: absolute;
+	background-color: #DEEDF3;
+	left: 40%;
+	top: 40%;
+	text-align: center;
+}
+
+#modalSaveVisaModel{
+	padding-top:20px;
+	z-index: 1050;
+	width: 300px;
+	height: 80px;
+	border: 2px solid #000;
+	display: none;
+	position: absolute;
+	background-color: #DEEDF3;
+	left: 40%;
+	top: 10%;
+	text-align: center;
+}
+
+.listDocsBasket{
+	border-collapse: collapse;
+	height: 96%;
+	width: 100%;
+	overflow-y: scroll;
+	overflow-x: none;
+}
+
+.listDocsBasket div{
+	width:100%;
+	/*height:15%;*/
+	border-bottom: thin solid black;
+}
+
+.unselectedId{
+	background-color:#DEEDF3;
+}
+
+.selectedId{
+	background-color:#FDD16C;
+}
+
+
+.listDocsBasket li{
+	padding:5px;
+}
+
+#tab_visaSetWorkflow td{
+	white-space: pre;
+}

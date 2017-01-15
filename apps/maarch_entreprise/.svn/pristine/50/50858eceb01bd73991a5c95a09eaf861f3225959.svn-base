@@ -1,0 +1,348 @@
+/*!
+ *  Font Maarch 4.3.0 by @davegandy - http://fontmaarch.io - @fontmaarch
+ *  License - http://fontmaarch.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontMaarch';
+  src: url('../fonts/fontmaarch-webfont.eot?v=4.3.0');
+  src: url('../fonts/fontmaarch-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('../fonts/fontmaarch-webfont.woff2?v=4.3.0') format('woff2'), url('../fonts/fontmaarch-webfont.woff?v=4.3.0') format('woff'), url('../fonts/fontmaarch-webfont.ttf?v=4.3.0') format('truetype'), url('../fonts/fontmaarch-webfont.svg?v=4.3.0#fontmaarchregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.fm {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontMaarch;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+/* makes the font 33% larger relative to the icon container */
+.fm-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.fm-2x {
+  font-size: 2em;
+}
+.fm-3x {
+  font-size: 3em;
+}
+.fm-4x {
+  font-size: 4em;
+}
+.fm-5x {
+  font-size: 5em;
+}
+.fm-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+.fm-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+}
+.fm-ul > li {
+  position: relative;
+}
+.fm-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center;
+}
+.fm-li.fm-lg {
+  left: -1.85714286em;
+}
+.fm-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.fm.pull-left {
+  margin-right: .3em;
+}
+.fm.pull-right {
+  margin-left: .3em;
+}
+.fm-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+.fm-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8);
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+.fm-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.fm-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.fm-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.fm-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.fm-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+:root .fm-rotate-90,
+:root .fm-rotate-180,
+:root .fm-rotate-270,
+:root .fm-flip-horizontal,
+:root .fm-flip-vertical {
+  filter: none;
+}
+.fm-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+.fm-stack-1x,
+.fm-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.fm-stack-1x {
+  line-height: inherit;
+}
+.fm-stack-2x {
+  font-size: 2em;
+}
+.fm-inverse {
+  color: #ffffff;
+}
+/* Font Maarch uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+
+.fm-contact:before {
+  content: "\f000";
+}
+.fm-contact-add:before {
+  content: "\f001";
+}
+.fm-contact-search:before {
+  content: "\f002";
+}
+.fm-contact-type:before {
+  content: "\f003";
+}
+.fm-contact-denomination:before {
+  content: "\f004";
+}
+.fm-tree:before {
+  content: "\f005";
+}
+.fm-classification-plan:before {
+  content: "\f006";
+}
+.fm-classification-plan-l1:before {
+  content: "\f007";
+}
+.fm-classification-plan-l2:before {
+  content: "\f008";
+}
+.fm-doctypes:before {
+  content: "\f009";
+}
+.fm-status:before {
+  content: "\f00a";
+}
+.fm-actions:before {
+  content: "\f00b";
+}
+.fm-letter-reopen:before {
+  content: "\f00c";
+}
+.fm-docserver:before {
+  content: "\f00d";
+}
+.fm-docserver-location:before {
+  content: "\f00e";
+}
+.fm-docserver-type:before {
+  content: "\f010";
+}
+.fm-letter:before {
+  content: "\f011";
+}
+.fm-letter-add:before {
+  content: "\f012";
+}
+.fm-letter-search:before {
+  content: "\f013";
+}
+.fm-letter-del:before {
+  content: "\f014";
+}
+.fm-letter-incoming:before {
+  content: "\f015";
+}
+.fm-letter-outgoing:before {
+  content: "\f016";
+}
+.fm-letter-internal:before {
+  content: "\f017";
+}
+.fm-letter-status-new:before {
+  content: "\f018";
+}
+.fm-letter-status-wait:before {
+  content: "\f019";
+}
+.fm-letter-status-inprogress:before {
+  content: "\f01a";
+}
+.fm-letter-status-validated:before {
+  content: "\f01b";
+}
+.fm-letter-status-rejected:before {
+  content: "\f01c";
+}
+.fm-letter-status-end:before {
+  content: "\f01d";
+}
+.fm-letter-status-newmail:before {
+  content: "\f01e";
+}
+.fm-letter-status-info:before {
+  content: "\f021";
+}
+.fm-letter-status-attr:before {
+  content: "\f022";
+}
+.fm-letter-status-arev:before {
+  content: "\f023";
+}
+.fm-letter-status-aval:before {
+  content: "\f024";
+}
+.fm-letter-status-aimp:before {
+  content: "\f025";
+}
+.fm-letter-status-imp:before {
+  content: "\f026";
+}
+.fm-letter-status-aenv:before {
+  content: "\f027";
+}
+.fm-letter-status-acla:before {
+  content: "\f028";
+}
+.fm-letter-status-aarch:before {
+  content: "\f029";
+}
+.fm-doc:before {
+  content: "\f02a";
+}
+.fm-doc-add:before {
+  content: "\f02b";
+}
+.fm-doc-search:before {
+  content: "\f02c";
+}
+.fm-doc-del:before {
+  content: "\f02d";
+}
+.fm-archive:before {
+  content: "\f02e";
+}
+.fm-archive-add:before {
+  content: "\f02f";
+}
+.fm-archive-search:before {
+  content: "\f030";
+}
+.fm-archive-del:before {
+  content: "\f031";
+}
+.fm-file-size:before {
+  content: "\f032";
+}
+.fm-file-format:before {
+  content: "\f032";
+}
+.fm-file-fingerprint:before {
+  content: "\f033";
+}
+.fm-folder-type:before {
+  content: "\f034";
+}
+.fm-folder-add:before {
+  content: "\f035";
+}
+.fm-folder-search:before {
+  content: "\f036";
+}
+.fm-folder-view:before {
+  content: "\f037";
+}
+.fm-life-cycle-policy:before {
+  content: "\f038";
+}
+.fm-life-cycle:before {
+  content: "\f039";
+}
+.fm-life-cycle-step:before {
+  content: "\f03a";
+}
+.fm-file-model:before {
+  content: "\f03b"	; 
+} 
+
+

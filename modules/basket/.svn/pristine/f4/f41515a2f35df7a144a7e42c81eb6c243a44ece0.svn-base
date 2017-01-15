@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <CONFIG>
+        <name>basket</name>
+        <comment>_BASKETS_COMMENT</comment>
+        <file_prefix>bask</file_prefix>
+        <loaded>true</loaded>
+        <reserving_time>60</reserving_time> <!-- in minutes -->
+    </CONFIG>
+    <TABLENAME>
+        <bask_baskets>baskets</bask_baskets>
+        <bask_groupbasket>groupbasket</bask_groupbasket>
+        <bask_actions_groupbaskets>actions_groupbaskets</bask_actions_groupbaskets>
+        <bask_users_abs>user_abs</bask_users_abs>
+    </TABLENAME>
+    <HISTORY>
+        <basketadd>true</basketadd>
+        <basketup>true</basketup>
+        <basketdel>true</basketdel>
+        <userabs>true</userabs>
+    </HISTORY>
+    <KEYWORDS>
+        <id>ABS</id>
+        <label>_ABSENCE</label>
+    </KEYWORDS>
+    <KEYWORDS>
+        <id>RET</id>
+        <label>_BASK_BACK</label>
+    </KEYWORDS>
+</root>

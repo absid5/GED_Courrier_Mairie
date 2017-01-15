@@ -1,0 +1,5 @@
+<dataTypes>
+	<dataType name="searched_item" base="graph">
+		<pattern value="/(res_id)|(res_id_in_process)|(case)/" />
+	</dataType>
+</dataTypes>

@@ -1,0 +1,27 @@
+#fullWrapper {
+	width: 960px;
+    box-shadow: 1px 1px 12px rgba(75, 75, 75, 1);
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.line {
+    height: 1px;
+    width: 910px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+h6 {
+	color: #777;
+	font-style: italic;
+}
+
+
+
+
+#titleLink {
+	color: #777;
+    font-size: 1em;
+    font-weight: normal;
+    padding-bottom: 0em;
+}
+

@@ -1,0 +1,144 @@
+<!--
+
+* basket_list and search_adv_list template
+*
+*
+* @package  Maarch LetterBox 3.0
+* @version 3.0
+* @since 10/2005
+* @license GPL
+* @author  Loïc Vinet  <dev@maarch.org>
+*
+
+
+
+
+Parts :
+    ##HEAD< : Begining of the head part
+    ##HEAD> : End of the head part
+
+    ##RESULT< : Begining of result list
+    ##RESULT> : End fo result list
+
+Functions :
+    ##load_css|arg1## : load css style - arg1= name of this class
+    ##css_line|coll|nonecoll## : load css style for line arg1,arg2 : switch beetwin style on line one or line two
+    ##css_line_reload## : reload last css style loaded by css_line
+    ##order_link|arg1|arg2## : reload list and change order;  arg1=type; arg2=sort
+
+    ##url_docview## : open view of document;
+    ##url_docdetail## : open detail of document;
+    ##url_download## : download document;
+
+    ##load_img|arg1## : show loaded image; arg1= name of img file
+
+    ##load_value|arg|##: load value in the db; arg1= column's value  identifier
+
+
+
+Mods :
+
+    ##func_bool_radio_form## : Activate bool_radio_form in class_list_show.php
+    ##func_bool_check_form## : Activate bool_check_form in class_list_show.php
+    ##func_bool_view_doc## : Activate func to view documents
+    ##func_bool_detail_doc## : Activate func to view documents detail's page
+    ##func_include_by_module|arg1## : Include template from specific module (arg1 : module id)
+    ##func_load_external_script## : Load an external script in this template (arg1: module_id, arg2: php file)
+
+Defines :
+    _NAME_OF_LANG_INSTANCE : u se constant define in lang.php
+
+
+
+-->
+
+
+#!#TABLE
+
+<table border="0" cellspacing="0" class="##load_css|listing spec zero_padding ##" id='search_cases'  style = "width: 100%; min-width: 900px; margin: 0;">
+
+
+#!#HEAD
+             <thead border ="1">
+                <tr>
+                                    <th  width="100%" colspan="3">
+                                    <div align="center" style="border:1px solid; height:20px;margin-bottom:10px;padding-top:10px;vertical-align:middle;">
+
+                                    ##define_lang|_SORT_BY## :
+                                                ##define_lang|_NUM_CASE##
+                                                <a href="##order_link|cases.case_id|desc##" title="##define_lang|_DESC_SORT##"><i class="fa fa-angle-down fa-2x" title="##define_lang|_DESC_SORT##"></i> </a> <a href="##order_link|cases.case_id|asc##" title="##define_lang|_ASC_SORT##"> <i class="fa fa-angle-up fa-2x" title="##define_lang|_ASC_SORT##"></i></a>
+                                                &nbsp;
+                                                ##define_lang|_CASE_LABEL##
+                                                <a href="##order_link|cases.case_label|desc##" title="##define_lang|_DESC_SORT##"><i class="fa fa-angle-down fa-2x" title="##define_lang|_DESC_SORT##"></i> </a> <a href="##order_link|cases.case_label|asc##" title="##define_lang|_ASC_SORT##"> <i class="fa fa-angle-up fa-2x" title="##define_lang|_ASC_SORT##"></i></a>
+                                                &nbsp;
+                                                ##define_lang|_CASE_DESCRIPTION##
+                                                <a href="##order_link|cases.case_description|desc##" title="##define_lang|_DESC_SORT##"><i class="fa fa-angle-down fa-2x" title="##define_lang|_DESC_SORT##"></i> </a> <a href="##order_link|cases.case_description|asc##" title="##define_lang|_ASC_SORT##"> <i class="fa fa-angle-up fa-2x" title="##define_lang|_ASC_SORT##"></i></a>
+                                                &nbsp;
+                                                ##define_lang|_CASE_CREATION_DATE##
+                                                <a href="##order_link|cases.case_creation_date|desc##" title="##define_lang|_DESC_SORT##"><i class="fa fa-angle-down fa-2x" title="##define_lang|_DESC_SORT##"></i> </a> <a href="##order_link|cases.case_creation_date|asc##" title="##define_lang|_ASC_SORT##"> <i class="fa fa-angle-up fa-2x" title="##define_lang|_ASC_SORT##"></i></a>
+                                                &nbsp;
+                                                ##define_lang|_CASE_TYPIST##
+                                                <a href="##order_link|cases.case_typist|desc##" title="##define_lang|_DESC_SORT##"><i class="fa fa-angle-down fa-2x" title="##define_lang|_DESC_SORT##"></i> </a> <a href="##order_link|cases.case_typist|asc##" title="##define_lang|_ASC_SORT##"> <i class="fa fa-angle-up fa-2x" title="##define_lang|_ASC_SORT##"></i></a>
+                                    </div>
+                                </th>
+                    </tr>
+            </thead>
+
+            <tbody>
+#!#RESULT
+<!-- ------------------------------------------------------------------------->
+
+               <tr  class="##css_line|col| ##" >
+
+                    <td width="10%" align="center"style="text-align:center"  >
+                        <h2>##func_bool_radio_form## ##load_value|case_id##</h2>
+                        <!--<div align="center">##load_value|status##</div>-->
+                    </td>
+
+
+                                    <td width="70%"   style="font-size:12px;"><b><!--##define_lang|_SUBJECT## :--></b><b>##load_value|case_label##</b> </td>
+                                    <td width="20%" style="text-align:right">
+                                    ##load_value|case_closing_date##    ##define_lang|_CASE_CREATION_DATE## : ##load_value|case_creation_date##
+
+
+                    </td>
+                </tr>
+                <tr class="##css_line_reload##">
+                        <td style="text-align:center" style="font-size:13px;">
+                            <div align="center">
+                                <i class="fa fa-briefcase fa-2x" title="##loadValue|status##" ></i>             
+                            </div>
+                        </td>
+                        <td style="text-align:left">
+                                <em>##load_value|case_description##</em>
+                        </td>
+                        <td><p align="right">
+
+                            <i class="fa fa-angle-down fa-2x case_img" onclick="new Effect.toggle('info##load_value|case_id##', 'blind');" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='auto';" id="h23"></i>
+                            &nbsp;&nbsp;&nbsp;##func_include_by_module|cases##
+                            </p>
+                        </td>
+                </tr >
+                <tr  class="##css_line_reload##"  >
+                <td colspan="3" class="white">
+                <div class="more_ressources" id="info##load_value|case_id##" style="display:none">
+                    ##func_load_external_script|cases|case_extend_list.php##
+                </div>
+                </td>
+                </tr>
+                <tr><td colspan="6" style="background-color: white;">&nbsp;</td></tr>
+
+
+
+ #!#FOOTER
+ <!--   ------------------------------------------------------------------------->
+            </tbody>
+        </table>
+
+        <script type="text/javascript">
+            /*$$('.case_img').filter(function(el){
+                return !($(el).up('tr').next().down('.more_ressources').immediateDescendants().length);
+            }).each(function(el1){
+                el1.setStyle({display:'none'});
+            });*/
+        </script>

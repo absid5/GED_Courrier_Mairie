@@ -1,0 +1,124 @@
+<!--
+
+* case_basket_list template
+*
+*
+* @package  Maarch Enterprise 1.4
+* @version 1.0
+* @since 11/2012
+* @license GPL
+* @author  Yves Christian Kpakpo  <dev@maarch.org>
+*
+
+
+
+
+Parts :
+    ##HEAD< : Begining of the head part
+    ##HEAD> : End of the head part
+
+    ##RESULT< : Begining of result list
+    ##RESULT> : End fo result list
+
+Functions :
+
+
+    ##cssLine|arg1|arg2##                   : load css style for line. arg1,arg2 : switch beetwin style on line one or line two
+    ##cssLineReload##                       : reload last css style loaded by cssLine
+    ##sortColumn|arg##                      : sort list. arg = sort;
+    ##defineLang|arg##                      : show label. arg = constant define in lang.php;
+    ##loadImage|arg1|arg2##                 : show loaded image; arg1= name of img file, arg2 = name of the module (if image in module)
+    ##loadValue|arg##                       : load value in the db; arg= column's value  identifier
+    ##showActionIcon|arg1|arg2|arg3|arg4##  : action icon. arg1 = label, arg2  = image , arg3 = action (javascript), arg4 = disabled rule
+    ##includeFile|arg1|arg2##               : include file. arg1 = name of the file, arg2  = name of the module (if file in module)
+    ##setListParameter|arg1|arg2##          : set parameter's value for actual list. arg1 = name of parameter, arg2  = new value
+    ##getListParameter|arg##                : get parameter's value for actual list. arg1 = name of parameter
+
+Mods 
+
+
+    ##radioButton##         : display radio
+    ##checkBox##            : display checkbox
+    ##clickOnLine##         : Action on click under the line
+    ##showIconDocument##    : View document icon
+    ##showIconDetails##     : View detail's page icon
+    ##getBusinessAppUrl##   : get buisiness app url
+   
+
+
+-->
+
+
+#!#TABLE
+<!-- ------------------------------------------------------------------------->
+<table border="0" cellspacing="0" class="listing spec zero_padding" id='case'  style = "padding: 0px;width:100%;">
+
+
+#!#HEAD
+<!-- ------------------------------------------------------------------------->
+             <thead border ="1">
+                <tr>
+                                    <th  width="100%" colspan="3">
+                                    <div align="center" style="border:1px solid; height:20px;margin-bottom:10px;padding-top:10px;vertical-align:middle;">
+
+                                    ##defineLang|_SORT_BY## : 
+                                                ##defineLang|_NUM_CASE##            ##sortColumn|case_id##&nbsp;
+                                                ##defineLang|_CASE_LABEL##          ##sortColumn|case_label## &nbsp;
+                                                ##defineLang|_CASE_DESCRIPTION##    ##sortColumn|case_description##&nbsp;
+                                                ##defineLang|_CASE_CREATION_DATE##  ##sortColumn|case_creation_date##&nbsp; 
+                                                ##defineLang|_CASE_TYPIST##         ##sortColumn|case_typist##
+                                    </div>
+                                </th>
+                    </tr>
+            </thead>
+
+            <tbody>
+#!#RESULT
+<!-- ------------------------------------------------------------------------->
+
+               <tr class="##cssLine|col| ##">
+
+                    <td width="10%" align="center"style="text-align:center"  >
+                        <h2>##radioButton## ##loadValue|case_id##</h2>
+                        <!--<div align="center">##loadValue|status##</div>-->
+                    </td>
+                    
+                    <td width="70%"   style="font-size:12px;"><b><!--##defineLang|_SUBJECT## :--></b><b>##loadValue|case_label##</b> </td>
+                    <td width="20%" style="text-align:right">
+                    ##loadValue|case_closing_date##    ##defineLang|_CASE_CREATION_DATE## : ##loadValue|case_creation_date##
+
+                    </td>
+                </tr>
+                <tr class="##cssLineReload##">
+                    <td style="text-align:center" style="font-size:13px;">
+                        <div align="center">
+                            ##func_load_case_status##
+                        </div>
+                    </td>
+                    <td style="text-align:left">
+                        <em>##loadValue|case_description##</em>
+                    </td>
+                    <td>
+                        <p align="right">
+                            ##showActionFA|#defineLang|_TOGGLE#|chevron-down|loadValueInDiv('#loadValue|case_id#', '#getBusinessAppUrl#index.php?module=cases&display=true&page=cases_details')##
+                            &nbsp;&nbsp;&nbsp;##showActionFA|#defineLang|_DETAILS_CASES#|info-circle|window.top.location='index.php?page=details_cases&module=cases&amp;id=#loadValue|case_id#'##
+                        </p>
+                    </td>
+                </tr>
+                 <tr  class="##cssLineReload##"  id="subList_##loadValue|case_id##" name="subList_##loadValue|case_id##" style="display: none;" >
+                    <td colspan="3" class="white">
+                        <div class="more_ressources" id="div_##loadValue|case_id##">
+
+                            <i class="fa fa-spinner fa-spin" title="loading..."></i><br />
+                            ##defineLang|_LOADING_INFORMATIONS##
+                        </div>
+                    </td>
+                </tr>
+
+
+
+ #!#FOOTER
+ <!--   ------------------------------------------------------------------------->
+            </tbody>
+        </table>
+

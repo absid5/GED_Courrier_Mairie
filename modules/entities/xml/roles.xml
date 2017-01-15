@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<ROLES>
+		<ROLE>
+			<id>avis</id>
+			<label>_AVIS_USER</label>
+		</ROLE>
+		<ROLE>
+			<id>avis_copy</id>
+			<label>_AVIS_USER_COPY</label>
+		</ROLE>
+		<ROLE>
+			<id>avis_info</id>
+			<label>_AVIS_USER_INFO</label>
+		</ROLE>
+		<ROLE>
+			<id>dest</id>
+			<label>_DEST_USER</label>
+		</ROLE>
+		<ROLE>
+			<id>copy</id>
+			<label>_TO_CC</label>
+		</ROLE>
+		<ROLE>
+			<id>visa</id>
+			<label>_VISA_USER</label>
+		</ROLE>	
+		<ROLE>
+			<id>sign</id>
+			<label>_TO_SIGN</label>
+		</ROLE>
+	</ROLES>
+</root>

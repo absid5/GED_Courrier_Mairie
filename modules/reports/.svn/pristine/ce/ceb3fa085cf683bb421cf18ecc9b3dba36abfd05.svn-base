@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ROOT>
+	<REPORT>
+		<ID>folder_view_stat</ID>
+		<LABEL>_FOLDER_VIEW_STAT</LABEL>
+		<DESCRIPTION>_FOLDER_VIEW_STAT_DESC</DESCRIPTION>
+		<URL>folder_view_stats</URL>
+		<IN_MENU_REPORTS>true</IN_MENU_REPORTS><!--  the report can be accessed by the menu report -->
+		<ENABLED>true</ENABLED>
+		<ORIGIN>module</ORIGIN> <!-- apps or module -->
+		<MODULE>folder</MODULE>
+		<MODULE_LABEL>_FOLDERS_COMMENT</MODULE_LABEL>
+	</REPORT>
+	<REPORT>
+		<ID>entity_vol_stat</ID>
+		<LABEL>_ENTITY_VOL_STAT</LABEL>
+		<DESCRIPTION>_ENTITY_VOL_STAT_DESC</DESCRIPTION>
+		<URL>entity_vol_stat</URL>
+		<IN_MENU_REPORTS>true</IN_MENU_REPORTS>
+		<ENABLED>true</ENABLED>
+		<ORIGIN>module</ORIGIN> <!-- apps or module -->
+		<MODULE>entities</MODULE>
+		<MODULE_LABEL>_ENTITIES</MODULE_LABEL>
+	</REPORT>
+	<REPORT>
+		<ID>entity_late_mail</ID>
+		<LABEL>_ENTITY_LATE_MAIL</LABEL>
+		<DESCRIPTION>_ENTITY_LATE_MAIL</DESCRIPTION>
+		<URL>entity_late_mail</URL>
+		<IN_MENU_REPORTS>true</IN_MENU_REPORTS>
+		<ENABLED>true</ENABLED>
+		<ORIGIN>module</ORIGIN> <!-- apps or module -->
+		<MODULE>entities</MODULE>
+		<MODULE_LABEL>_ENTITIES</MODULE_LABEL>
+	</REPORT>
+	<REPORT>
+		<ID>entity_process_delay</ID>
+		<LABEL>_ENTITY_PROCESS_DELAY</LABEL>
+		<DESCRIPTION>_ENTITY_PROCESS_DELAY</DESCRIPTION>
+		<URL>entity_process_delay</URL>
+		<IN_MENU_REPORTS>true</IN_MENU_REPORTS>
+		<ENABLED>true</ENABLED>
+		<ORIGIN>module</ORIGIN> <!-- apps or module -->
+		<MODULE>entities</MODULE>
+		<MODULE_LABEL>_ENTITIES</MODULE_LABEL>
+	</REPORT>
+	<REPORT>
+		<ID>users_logs</ID>
+		<LABEL>_USERS_LOGS</LABEL>
+		<DESCRIPTION>_USERS_LOGS_DESC</DESCRIPTION>
+		<URL>users_logs</URL>
+		<IN_MENU_REPORTS>true</IN_MENU_REPORTS>
+		<ENABLED>true</ENABLED>
+		<ORIGIN>apps</ORIGIN> <!-- apps or module -->
+		<MODULE>application</MODULE>
+		<MODULE_LABEL>_APPS_COMMENT</MODULE_LABEL>
+	</REPORT>
+	<REPORT>
+		<ID>process_delay</ID>
+		<LABEL>_PROCESS_DELAY_REPORT</LABEL>
+		<DESCRIPTION>_PROCESS_DELAY_REPORT_DESC</DESCRIPTION>
+		<URL>report_by_period&amp;id=process_delay</URL>
+		<IN_MENU_REPORTS>true</IN_MENU_REPORTS>
+		<ENABLED>true</ENABLED>
+		<ORIGIN>apps</ORIGIN> <!-- apps or module -->
+		<MODULE>application</MODULE>
+		<MODULE_LABEL>_APPS_COMMENT</MODULE_LABEL>
+	</REPORT>
+	<REPORT>
+		<ID>process_delay_generic_evaluation</ID>
+		<LABEL>_PROCESS_DELAY_GENERIC_EVALUATION_REPORT</LABEL>
+		<DESCRIPTION>_PROCESS_DELAY_GENERIC_EVALUATION_REPORT_DESC</DESCRIPTION>
+		<URL>report_by_period&amp;id=process_delay_generic_evaluation</URL>
+		<IN_MENU_REPORTS>true</IN_MENU_REPORTS>
+		<ENABLED>true</ENABLED>
+		<ORIGIN>apps</ORIGIN> <!-- apps or module -->
+		<MODULE>application</MODULE>
+		<MODULE_LABEL>_APPS_COMMENT</MODULE_LABEL>
+	</REPORT>
+	<REPORT>
+		<ID>mail_typology</ID>
+		<LABEL>_MAIL_TYPOLOGY_REPORT</LABEL>
+		<DESCRIPTION>_MAIL_TYPOLOGY_REPORT_DESC</DESCRIPTION>
+		<URL>report_by_period&amp;id=mail_typology</URL>
+		<IN_MENU_REPORTS>true</IN_MENU_REPORTS>
+		<ENABLED>true</ENABLED>
+		<ORIGIN>apps</ORIGIN> <!-- apps or module -->
+		<MODULE>application</MODULE>
+		<MODULE_LABEL>_APPS_COMMENT</MODULE_LABEL>
+	</REPORT>
+	<REPORT>
+		<ID>mail_vol_by_cat</ID>
+		<LABEL>_MAIL_VOL_BY_CAT_REPORT</LABEL>
+		<DESCRIPTION>_MAIL_VOL_BY_CAT_REPORT_DESC</DESCRIPTION>
+		<URL>report_by_period&amp;id=mail_vol_by_cat</URL>
+		<IN_MENU_REPORTS>true</IN_MENU_REPORTS>
+		<ENABLED>true</ENABLED>
+		<ORIGIN>apps</ORIGIN> <!-- apps or module -->
+		<MODULE>application</MODULE>
+		<MODULE_LABEL>_APPS_COMMENT</MODULE_LABEL>
+	</REPORT>
+</ROOT>

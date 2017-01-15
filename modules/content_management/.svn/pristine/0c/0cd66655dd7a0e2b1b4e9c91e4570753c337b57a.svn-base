@@ -1,0 +1,25 @@
+<validationRules>
+	<validationRule name="cm_applet_controller" extends="standardForm" mode="error">
+    	<parameter name="action" type="identifier" />
+    	<parameter name="objectType" type="identifier" />
+		<parameter name="objectTable" type="cm_table_list" />
+		<parameter name="objectId" type="identifier" />
+		<parameter name="transmissionNumber" type="identifier" />
+		<parameter name="fileContent" type="string" />
+		<parameter name="fileExtension" type="filename_extension" />
+		<parameter name="pdfContent" type="string" />
+    </validationRule>
+    <validationRule name="cm_applet_launcher" extends="standardForm" mode="error">
+    	<parameter name="action" type="identifier" />
+    	<parameter name="transmissionNumber" type="identifier" />
+    	<parameter name="objectType" type="identifier" />
+    	<parameter name="attachType" type="identifier" />
+		<parameter name="objectTable" type="cm_table_list" />
+		<parameter name="objectId" type="identifier" />
+		<parameter name="contactId" type="identifier" />
+		<parameter name="addressId" type="identifier" />
+		<parameter name="chronoAttachment" type="string" />
+		<parameter name="titleAttachment" type="string" />
+		<parameter name="resMaster" type="identifier" />
+    </validationRule>
+</validationRules>

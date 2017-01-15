@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<SERVICE>
+	   <id>config_avis_workflow</id> <!-- if servicetype = menu, this id must be equal to the id of the menu item -->
+	   <name>_CONFIG_AVIS_WORKFLOW</name>
+	   <comment>_CONFIG_AVIS_WORKFLOW_DESC</comment>
+	   <servicepage></servicepage>
+	   <servicetype>use</servicetype>
+	   <system_service>false</system_service>
+	   <enabled>true</enabled>
+	</SERVICE>
+	<SERVICE>
+	   <id>config_avis_workflow_in_detail</id> <!-- if servicetype = menu, this id must be equal to the id of the menu item -->
+	   <name>_CONFIG_AVIS_WORKFLOW_IN_DETAIL</name>
+	   <comment>_CONFIG_AVIS_WORKFLOW_IN_DETAIL_DESC</comment>
+	   <servicepage></servicepage>
+	   <servicetype>use</servicetype>
+	   <system_service>false</system_service>
+	   <enabled>true</enabled>
+	</SERVICE>
+	<SERVICE>
+	   <id>avis_documents</id> <!-- if servicetype = menu, this id must be equal to the id of the menu item -->
+	   <name>_AVIS_ANSWERS</name>
+	   <comment>_AVIS_ANSWERS_DESC</comment>
+	   <servicepage></servicepage>
+	   <servicetype>use</servicetype>
+	   <system_service>false</system_service>
+	   <enabled>true</enabled>
+	</SERVICE>
+</root>

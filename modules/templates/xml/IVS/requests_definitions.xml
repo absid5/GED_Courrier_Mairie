@@ -1,0 +1,62 @@
+<requestDefinitions>
+<!-- 	<requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="template_manage_list" >
+        <parameter name="page" value="templates_management_controler"/>
+        <parameter name="module" value="templates"/>
+    </requestDefinition> -->
+	<requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="template_manage_add" >
+        <parameter name="page" value="templates_management_controler"/>
+        <parameter name="module" value="templates"/>
+        <parameter name="display" value="true"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="template_manage_add" >
+        <parameter name="page" value="templates_management_controler"/>
+        <parameter name="module" value="templates"/>
+        <parameter name="display" value="true"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="template_manage_add" >
+        <parameter name="page" value="templates_management_controler"/>
+        <parameter name="module" value="templates"/>
+    </requestDefinition>
+	<requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="templates_ajax_content_for_mails" >
+        <parameter name="page" value="templates_ajax_content_for_mails"/>
+        <parameter name="module" value="templates"/>
+        <parameter name="display" value="true"/>
+    </requestDefinition>
+	<requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="templates_ajax_content_for_notes" >
+        <parameter name="page" value="templates_ajax_content_for_notes"/>
+        <parameter name="module" value="templates"/>
+        <parameter name="display" value="true"/>
+    </requestDefinition>
+	<requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="select_templates" >
+        <parameter name="page" value="select_templates"/>
+        <parameter name="module" value="templates"/>
+        <parameter name="display" value="true"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="admin_change_templates" >
+        <parameter name="page" value="change_template_style"/>
+        <parameter name="module" value="templates"/>
+        <parameter name="display" value="false"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="template_list" >
+        <parameter name="page" value="templates_list_by_label"/>
+        <parameter name="module" value="templates"/>
+        <parameter name="display" value="false"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="generate_attachment_html" >
+        <parameter name="page" value="generate_attachment_html"/>
+        <parameter name="module" value="templates"/>
+        <parameter name="display" value="false"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="param_templates_doctypes" >
+        <parameter name="page" value="param_templates_doctypes"/>
+        <parameter name="module" value="templates"/>
+        <parameter name="display" value="false"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="file_iframe" >
+        <parameter name="page" value="file_iframe"/>
+        <parameter name="module" value="templates"/>
+        <parameter name="display" value="true"/>
+        <parameter name="model_id"/>
+    </requestDefinition>
+
+</requestDefinitions>

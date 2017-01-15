@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<datasource>
+		<id>letterbox_attachment</id>
+		<label>[réponse] Informations du courrier entrant</label>
+		<script>modules/templates/datasources/letterbox_attachment.php</script>
+	</datasource>
+	<datasource>
+		<id>notif_events</id>
+		<label>[notification] Informations événements systèmes</label>
+		<script>modules/templates/datasources/notif_events.php</script>
+	</datasource>
+	<datasource>
+		<id>letterbox_events</id>
+		<label>[notification] Informations du courrier traité</label>
+		<script>modules/templates/datasources/letterbox_events.php</script>
+	</datasource>
+	<datasource>
+		<id>notes</id>
+		<label>[notification] Informations sur notes associées au courrier</label>
+		<script>modules/templates/datasources/mlb_notes_content.php</script>
+	</datasource>
+</root>

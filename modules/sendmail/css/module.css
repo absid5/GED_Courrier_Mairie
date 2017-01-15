@@ -1,0 +1,65 @@
+/* Sendmail module */
+/* menu */
+
+#menunav li#emails span span {
+	background-image: url(static.php?module=sendmail&filename=emails_off.gif);
+	text-align:left;
+}
+#menunav li#emails.on span span {
+	background-image: url(static.php?module=sendmail&filename=emails_on.gif);
+	text-align:left;
+}
+
+td#emails {
+  background: url(static.php?module=sendmail&filename=emails_off.gif) no-repeat;
+}
+
+.emailInput {
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    background-color: white;
+    background-color: -moz-field;
+    border: 1px solid darkgray;
+    box-shadow: 1px 1px 1px 0 lightgray inset;  
+    font: -moz-field;
+    font: -webkit-small-control;
+    margin-top: 2px;
+    padding: 2px 2px;
+    width: 700px;
+    min-height: 13px;    
+}
+
+textarea.emailInput {
+    width: 770px;
+}
+
+input.emailInput {
+    width: 700px;
+}
+
+input.emailSelect {
+    width: 250px;
+}
+
+.email_element {
+	display:inline-block; 
+	margin:3px;
+    padding: 1px 3px 2px 3px;
+	/*color:white;*/
+    font-size: .9em;
+	background-color: #BAD1E2;
+	border-radius: 5px;
+}
+
+.email_delete_button {
+	color:grey;
+	display:inline;
+	padding: 1px 1px 2px 1px;
+	background-color:#BAD1E2;
+	font-weight:bold; 
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.email_delete_button:hover {
+    background-image: url(static.php?filename=black_0.1.png);
+}

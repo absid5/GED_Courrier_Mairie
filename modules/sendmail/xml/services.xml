@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<SERVICE>
+		<id>sendmail</id>
+		<name>_SENDMAIL_COMMENT</name>
+		<comment>_SENDMAIL_COMMENT</comment>
+		<servicepage>sendmail&amp;load</servicepage>
+		<servicetype>use</servicetype>
+		<system_service>false</system_service>
+		<enabled>true</enabled>
+		<WHEREAMIUSED>
+			<page>details</page>
+			<nature>frame</nature>
+			<frame_id>sendmail_iframe</frame_id>
+			<width>99%</width>
+			<height>570px</height>
+			<scrolling>no</scrolling>
+			<border>0</border>
+			<style></style>
+		</WHEREAMIUSED>
+	</SERVICE>
+	<SERVICE>
+	    <id>use_mail_services</id>
+	    <name>_USE_MAIL_SERVICES</name>
+	    <comment>_USE_MAIL_SERVICES_DESC</comment>
+	    <servicetype>use</servicetype>
+	    <system_service>false</system_service>
+	    <enabled>true</enabled>
+	   <WHEREAMIUSED>
+	        <page>mail_form.php</page>
+	    </WHEREAMIUSED>
+	</SERVICE>
+</root>

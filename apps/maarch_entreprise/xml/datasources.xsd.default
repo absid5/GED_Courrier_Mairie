@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+  xmlns:das="maarch:DataAccessService"  
+  elementFormDefault="qualified"  
+  >
+  <xsd:annotation>
+    <xsd:appinfo>
+      <das:source 
+        name='maarch_entreprise' 
+        type='database' 
+        driver='postgresql' 
+        host='##databaseserver##' 
+        port='##databaseserverport##' 
+        dbname='##databasename##' 
+        user='##databaseuser##' 
+        password='##databasepassword##' />
+    </xsd:appinfo>
+  </xsd:annotation>
+</xsd:schema>

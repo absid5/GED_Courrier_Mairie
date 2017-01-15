@@ -1,0 +1,12 @@
+#voir le document
+curl -X GET -ubblier:maarch "http://127.0.0.1/maarch_entreprise/ws_server.php?REST/res/101"
+#recherche avancée de documents
+curl -X POST -ubblier:maarch "http://127.0.0.1/maarch_entreprise/ws_server.php?REST/res" -d atomFileContent=thexmlcontentfilebase64encode
+#consulter le dossier
+curl -X GET -ubblier:maarch "http://127.0.0.1/maarch_entreprise/ws_server.php?REST/folder/RH"
+#créer un dossier
+curl -X POST -ubblier:maarch "http://127.0.0.1/maarch_entreprise/ws_server.php?REST/folder" -d atomFileContent=thexmlcontentfilebase64encode
+#voir la liste des corbeilles
+curl -X GET -ubblier:maarch "http://127.0.0.1/maarch_entreprise/ws_server.php?REST/basket"
+#Liste des documents d'une corbeille
+curl -X GET -ubblier:maarch "http://127.0.0.1/maarch_entreprise/ws_server.php?REST/basket/MesCourriersATraiter"

@@ -1,0 +1,76 @@
+<!--
+
+* basket_list and search_adv_list template
+*
+*
+* @package  Maarch LetterBox 3.0
+* @version 3.0
+* @since 10/2005
+* @license GPL
+* @author  Loïc Vinet  <dev@maarch.org>
+*
+
+
+
+
+Parts : 
+	##HEAD< : Begining of the head part
+	##HEAD> : End of the head part
+	
+	##RESULT< : Begining of result list
+	##RESULT> : End fo result list
+	
+Functions : 
+	##load_css|arg1## : load css style - arg1= name of this class
+	##css_line|coll|nonecoll## : load css style for line arg1,arg2 : switch beetwin style on line one or line two
+	##css_line_reload## : reload last css style loaded by css_line
+	##order_link|arg1|arg2## : reload list and change order;  arg1=type; arg2=sort
+	
+	##url_docview## : open view of document; 
+	##url_docdetail## : open detail of document; 
+	##url_download## : download document;
+	
+	##load_img|arg1## : show loaded image; arg1= name of img file
+	
+	##load_value|arg|##: load value in the db; arg1= column's value  identifier
+	
+	
+	
+Mods :
+
+	##func_bool_radio_form## : Activate bool_radio_form in class_list_show.php
+	##func_bool_check_form## : Activate bool_check_form in class_list_show.php
+	##func_bool_view_doc## : Activate func to view documents
+	##func_bool_detail_doc## : Activate func to view documents detail's page
+
+
+Added by module : 
+	##func_bool_detail_case##
+
+
+
+Defines :  
+	_NAME_OF_LANG_INSTANCE : u se constant define in lang.php
+	
+	
+	 
+-->
+
+
+#!#TABLE
+<!-- ------------------------------------------------------------------------->
+
+
+
+#!#HEAD
+<!-- ------------------------------------------------------------------------->
+		
+
+#!#RESULT
+<!-- ------------------------------------------------------------------------->
+	##func_bool_detail_case##
+				
+ 
+ #!#FOOTER        
+ <!-- 	------------------------------------------------------------------------->
+

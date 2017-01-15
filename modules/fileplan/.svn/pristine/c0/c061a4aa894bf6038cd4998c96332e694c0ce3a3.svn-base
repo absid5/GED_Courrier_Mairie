@@ -1,0 +1,61 @@
+<validationRules>
+	<validationRule name="fileplan_admin" extends="standardForm" mode="error">
+		<parameter name="url" type="url" />
+		<parameter name="module" type="identifier" />
+	</validationRule>
+	<validationRule name="fileplan_admin_managment" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="fileplan_id" type="integer" />
+		<parameter name="url" type="url" />
+	</validationRule>
+	<validationRule name="fileplan_admin_positions" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="fileplan_id" type="integer" />
+	</validationRule>
+	<validationRule name="fileplan_ajax_script" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="id" type="identifierAt" />
+		<parameter name="actual_position_id" type="integer" />
+		<parameter name="fileplan_id" type="integer" />
+		<parameter name="fileplan_label" type="string" />
+		<parameter name="origin" type="string" />
+		<parameter name="mode" type="string" />
+		<parameter name="valid" type="string" />
+		<parameter name="cancel" type="string" />
+		<parameter name="position_label" type="string" />
+		<parameter name="url" type="url" />
+		<parameter name="parent_id" type="identifier_fileplan" />
+		<parameter name="values" type="arrayOfStrings" />
+		<parameter name="is_serial" type="YN" />
+		<parameter name="coll_id" type="collection_list" />
+		<parameter name="template" type="identifier" />
+		<parameter name="value" type="integer" />
+		<parameter name="checked" type="boolean" />
+		<parameter name="res_id" type="identifierAt" />
+		<parameter name="position" type="arrayOfStrings" />
+	</validationRule>
+	<validationRule name="positions_list_autocompletion" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="fileplan_id" type="integer" />
+	</validationRule>
+	<validationRule name="positions_checked_list_autocompletion" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="fileplan_id" type="integer" />
+		<parameter name="res_id" type="identifierAt" />
+		<parameter name="fileplan_id" type="integer" />
+		<parameter name="url" type="url" />
+		<parameter name="param" type="string" />
+	</validationRule>
+	<validationRule name="positions_documents_list" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="id" type="identifierAt" />
+		<parameter name="url" type="url" />
+	</validationRule>
+	<validationRule name="fileplan_list_autocompletion" extends="standardForm" mode="error"/>
+	<validationRule name="positions_tree_childs" extends="standardForm" mode="error">
+		<parameter name="branch" type="string" />
+		<parameter name="branch_id" type="identifierAt" />
+		<parameter name="fileplan_id" type="integer" />
+		<parameter name="tree_id" type="identifier" />
+	</validationRule>
+</validationRules>

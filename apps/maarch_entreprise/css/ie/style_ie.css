@@ -1,0 +1,266 @@
+.addforms {
+width: 420px;
+}
+
+input.small {
+    width: 17px;
+
+}
+
+#frmuser{
+width: 230px;
+}
+
+#frmtype{
+width: 400px;
+}
+ #indexation{
+width: 480px;
+}
+
+input.button {
+    padding: 0.2em 0 0.2em 0.5em 0.9em;
+}
+
+.forms p.buttons {
+    /*margin-left: 41.7%;*/
+    margin-left: 10%;
+}
+#frmuser p.buttons {
+    /*margin-left: 41.7%;*/
+    margin-left: 0%;
+}
+#doctype {
+    height: 10em;
+}
+
+#logo {
+    margin: 0 0 20px 10px;
+}
+
+#help {
+    margin-top: 42px;
+    padding-bottom: 10px;
+}
+
+#content h1 {
+    color: #16ADEB;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.7em;
+    text-align: left;
+    letter-spacing: 0.1em;
+    height: 1.6em;
+    position: absolute;
+    padding: 0;
+    top: 29px;
+    left: 190px;
+}
+
+
+#content h1 img {
+    margin-top: .4em;
+}
+
+#formlogin {
+    width: 275px;
+}
+
+#formlogin input {
+    width: 128px;
+}
+
+#formlogin .nota, #formlogin p.buttons {
+    margin-right: 12px;
+}
+
+#formlogin select {
+    width: 134px;
+}
+
+#post #content {
+    padding-top: 0;
+}
+
+#post_indexing input.textbox {
+    width: 155px;
+}
+
+#post_indexing input.small {
+    width: 17px;
+}
+
+#post_indexing div label {
+    margin-right: 1px;
+}
+
+#post_indexing div ul {
+    width: 30%;
+}
+
+#post_indexing .buttons {
+    padding-right: 11px;
+}
+
+#post #pdf iframe {
+    height: 665px;
+}
+
+#titless {
+    margin-left: 5px;
+}
+
+
+#menunav {
+    padding: 0px;
+
+}
+
+#menunav li {
+    float: left;
+    width: 220px;
+}
+
+#menunav li ol {
+    margin-bottom: 6px;
+}
+#list .file li.on li {
+    background-image: url(static.php?filename=case_ins_on.gif);
+    background-position: top left;
+    padding: 4px 0 4px 35px;
+    margin-left: 5px;
+}
+
+#list .file a.no_doc {
+padding-left :0px;
+    background: none;
+
+}
+
+ #group_box, #type_box{
+
+    width: 380px;
+    margin: 0 0 0 0;
+    padding: 10px 10px;
+
+}
+
+.frameform3 {
+    height: 400px;
+    width: 430px;
+
+}
+
+#loginpage {
+    margin-top: 30px;
+
+}
+
+
+#summary {
+padding-bottom: 150px;
+}
+
+
+#gestion_rep .listing
+{
+    width: 410px;
+    margin: 0px 0px 0 0px;
+}
+#gestion_rep .listing .file_name
+{
+    width: 100px;
+}
+
+.form_desc
+{
+    text-align: right;
+    width: 45%;
+    float: right;
+    padding-right: 30px;
+
+}
+
+.listing .date {
+    width: 80px;
+
+}
+/*
+#validleft
+{
+    width: 47%;
+}
+#validright
+{
+    width: 48%;
+}*/
+h2
+{
+    font-size: 16px;
+}
+
+#loginpage {
+    width: 300px;
+    height: 350px;
+    margin-left: -150px;
+    margin-top: 0px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+}
+
+
+input[type="checkbox"] , input[type="radio"], .check
+{
+    border: none;
+    width: 20px;
+}
+.forms .check, .check
+{
+    width: 20px;
+    border: none;
+}
+
+ a{
+color:#FFFFFF;
+
+}
+
+
+.img_upload_doc
+{
+    position:absolute;
+    margin-left:0px;
+}
+
+/*
+#menunav li {
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+#menunav li.on {
+    padding-left: 0px;
+}*/
+
+#menu{ z-index: 3000;}
+
+.listing, .spec {
+    margin: 10px 0px 0;
+    width: 970px;
+}
+
+.listingIndex {
+    margin: 0px 0px 0;
+    width: 400px;
+}
+
+#validright
+{
+    /*width: 47%;*/
+    padding-left: 5px;
+    padding-right: 5px;
+    vertical-align:top;
+    float: left;
+    /*margin: 0 0 1em 2em;*/
+    position: relative;
+}

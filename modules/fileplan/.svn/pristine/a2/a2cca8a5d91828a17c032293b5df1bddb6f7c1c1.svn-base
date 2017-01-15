@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ROOT>
+    <CONFIG>
+        <name>fileplan</name>
+        <comment>_FILEPLAN</comment>
+        <file_prefix>fp</file_prefix>
+        <loaded>true</loaded>
+    </CONFIG>
+    <HISTORY>
+        <fileplanadd>true</fileplanadd>
+        <fileplanup>true</fileplanup>
+        <fileplandel>true</fileplandel>
+    </HISTORY>
+</ROOT>

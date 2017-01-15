@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Chrono number Class
+
+ Contains all the specific functions of chrono number
+
+ @package  Maarch LetterBox 3.0
+ @version 3.0
+ @since 06/2007
+ @license GPL
+ @author  Loïc Vinet  <dev@maarch.org>
+##################################
+
+Used model for all chrono number
+
+Parameters :
+
+id : chrono id, must be the same in the php code (define_mail_categories.php)
+
+separator : if the value is not empty, each elements in the chrono number is cut by the separator
+
+maarch_var : var used in php code
+
+date : return date Y m or d
+                                - year
+                                - month
+                                - day
+                                - full date (return day.month.year)
+maarch_functions:
+                                - chr_global : execute new chrono  number for each ressources, this number is restored when the next year began
+                                - chr_by_entity : execute new chrono number for each ressources by entity
+                                - category_char : return a signle letter -> E for incoming, S for outgoing
+                                - chr_by_category : execute new chrono number for each ressources by category
+                                - chr_by_folder : execute new chrono number for each ressources by folder (if folder is empty, a global chrono is used)
+                                - chr_by_res_id : execute new chrono number for each ressources by res_id
+
+
+text : return string element writted in value tag
+
+##################################
+For developper :
+- How can I use the class_chrono?
+
+    Just use this code by exemple:
+                                    require_once($_SESSION['config']['businessapppath']."class".DIRECTORY_SEPARATOR."class_chrono.php");
+                                    $chrono_x = new chrono();
+                                    $my_vars = array("entity_id"=>'DGS', "type_id"=>"type", "category_id"=>"incoming");
+                                    $my_function = $chrono_x->generate_chrono('chrono_id', $my_vars);
+
+-->
+<root>
+    <CHRONO>
+        <id>incoming</id>
+        <separator></separator>
+        <ELEMENT>
+            <type>text</type>
+            <value>MAARCH</value>
+        </ELEMENT>
+        <ELEMENT>
+            <type>text</type>
+            <value>/</value>
+        </ELEMENT>
+        <ELEMENT>
+            <type>date</type>
+            <value>year</value>
+        </ELEMENT>
+        <ELEMENT>
+            <type>maarch_functions</type>
+            <value>category_char</value>
+        </ELEMENT>
+        <ELEMENT>
+            <type>maarch_functions</type>
+            <value>chr_by_category</value>
+        </ELEMENT>
+    </CHRONO>
+
+    <CHRONO>
+        <id>outgoing</id>
+        <separator></separator>
+        <ELEMENT>
+            <type>text</type>
+            <value>MAARCH</value>
+        </ELEMENT>
+        <ELEMENT>
+            <type>text</type>
+            <value>/</value>
+        </ELEMENT>
+        <ELEMENT>
+            <type>date</type>
+            <value>year</value>
+        </ELEMENT>
+        <ELEMENT>
+            <type>maarch_functions</type>
+            <value>category_char</value>
+        </ELEMENT>
+        <ELEMENT>
+            <type>maarch_functions</type>
+            <value>chr_by_category</value>
+        </ELEMENT>
+    </CHRONO>
+
+    <CHRONO>
+        <id>market_document</id>
+        <separator>/</separator>
+        <ELEMENT>
+            <type>text</type>
+            <value>market</value>
+        </ELEMENT>
+        <ELEMENT>
+            <type>date</type>
+            <value>full_date</value>
+        </ELEMENT>
+        <ELEMENT>
+            <type>maarch_functions</type>
+            <value>chr_by_category</value>
+        </ELEMENT>
+    </CHRONO>
+
+    <CHRONO>
+        <id>internal</id>
+        <separator>/</separator>
+        <ELEMENT>
+            <type>text</type>
+            <value>internal</value>
+        </ELEMENT>
+        <ELEMENT>
+            <type>date</type>
+            <value>full_date</value>
+        </ELEMENT>
+        <ELEMENT>
+            <type>maarch_functions</type>
+            <value>chr_by_category</value>
+        </ELEMENT>
+    </CHRONO>
+
+</root>

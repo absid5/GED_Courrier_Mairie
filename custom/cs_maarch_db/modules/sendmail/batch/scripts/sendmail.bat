@@ -1,0 +1,2 @@
+cd C:\xampp\htdocs\maarch_courrier\modules\sendmail\
+"C:\xampp\htdocs\maarch_courrier\..\..\php\php.exe" C:\xampp\htdocs\maarch_courrier\modules\sendmail\batch\process_emails.php -c C:\xampp\htdocs\maarch_courrier\custom/cs_maarch_db\modules\sendmail\batch\config\config.xml

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ROOT>
+    <mail_natures>
+        <nature with_reference="false">
+            <id>simple_mail</id>
+            <label>_SIMPLE_MAIL</label>
+        </nature>
+        <nature with_reference="false">
+            <id>email</id>
+            <label>_EMAIL</label>
+        </nature>
+        <nature with_reference="false">
+            <id>fax</id>
+            <label>_FAX</label>
+        </nature>
+        <nature with_reference="true">
+            <id>chronopost</id>
+            <label>_CHRONOPOST</label>
+        </nature>
+        <nature with_reference="true">
+            <id>fedex</id>
+            <label>_FEDEX</label>
+        </nature>
+        <nature with_reference="true">
+            <id>registered_mail</id>
+            <label>_REGISTERED_MAIL</label>
+        </nature>
+        <nature with_reference="false">
+            <id>courier</id>
+            <label>_COURIER</label>
+        </nature>
+        <nature with_reference="false">
+            <id>other</id>
+            <label>_OTHER</label>
+        </nature>
+        <default_nature>simple_mail</default_nature>
+    </mail_natures>
+    <attachment_types>
+        <type show="true" with_chrono="true" attach_in_mail="true">
+            <id>response_project</id>
+            <label>_RESPONSE_PROJECT</label>
+            <process_mode></process_mode>
+        </type>
+        <type show="true" with_chrono="true">
+            <id>transmission</id>
+            <label>Transmission</label>
+            <process_mode></process_mode>
+        </type>
+		<type show="false" with_chrono="true" attach_in_mail="true">
+            <id>signed_response</id>
+            <label>_SIGNED_RESPONSE</label>
+            <process_mode></process_mode>
+        </type>
+        <type show="true" with_chrono="true">
+            <id>outgoing_mail_signed</id>
+            <label>_OUTGOING_MAIL_SIGNED</label>
+            <process_mode></process_mode>
+        </type>
+        <type show="true" with_chrono="false">
+            <id>simple_attachment</id>
+            <label>_A_PJ</label>
+            <process_mode></process_mode>
+        </type>
+        <type show="true" with_chrono="true" get_chrono="response_project">
+            <id>waybill</id>
+            <label>_WAYBILL</label>
+            <process_mode></process_mode>
+        </type>
+	<type show="false" with_chrono="true">
+            <id>routing</id>
+            <label>_ROUTING</label>
+            <process_mode></process_mode>
+        </type>
+		<type show="true" with_chrono="true">
+            <id>outgoing_mail</id>
+            <label>_OUTGOING_MAIL</label>
+            <process_mode></process_mode>
+        </type>
+	<type show="false" with_chrono="false">
+            <id>converted_pdf</id>
+            <label>_CONVERTED_PDF</label>
+            <process_mode></process_mode>
+        </type>
+	<type show="false" with_chrono="false">
+            <id>print_folder</id>
+            <label>_PRINT_FOLDER</label>
+            <process_mode></process_mode>
+        </type>
+        <type show="true" with_chrono="false">
+            <id>sva</id>
+            <label>_SVA</label>
+            <process_mode>SVA</process_mode>
+        </type>
+        <type show="true" with_chrono="false">
+            <id>svr</id>
+            <label>_SVR</label>
+            <process_mode>SVR</process_mode>
+        </type>
+    </attachment_types>
+    <process_modes>
+        <process_mode>
+            <label>NORMAL</label>
+            <process_mode_priority>2</process_mode_priority>
+        </process_mode>
+        <process_mode>
+            <label>SVA</label>
+            <process_mode_priority>3</process_mode_priority>
+        </process_mode>
+        <process_mode>
+            <label>SVR</label>
+            <process_mode_priority>3</process_mode_priority>
+        </process_mode>
+    </process_modes>
+    <priorities>
+        <!-- Tag working_days "true" = Jours ouvrés // "false" = Jours calendaires -->
+        <priority color="red" with_delay="4" working_days="true">Très urgent</priority> <!-- 0 -->
+        <priority color="orange" with_delay="8" working_days="true">Urgent</priority> <!-- 1 -->
+        <priority color="" with_delay="false" working_days="true">Normal</priority> <!-- 2 -->
+        <priority color="orange" with_delay="false" working_days="true">SVA/SVR</priority> <!-- 3 -->
+        <default_priority>2</default_priority>
+    </priorities>
+    <contact_check>
+        <check_days_before>5</check_days_before> <!-- 0 if you want to disabled -->
+    </contact_check>
+    <titles>
+        <title>
+            <id>title1</id>
+            <label>Monsieur</label>
+        </title>
+        <title>
+            <id>title2</id>
+            <label>Madame</label>
+        </title>
+        <title>
+            <id>title3</id>
+            <label>Mademoiselle</label>
+        </title>
+        <title>
+            <id>title4</id>
+            <label>Avocat</label>
+        </title>
+        <title>
+            <id>title5</id>
+            <label>Notaire</label>
+        </title>
+        <title>
+            <id>title6</id>
+            <label>Mairie</label>
+        </title>
+        <title>
+            <id>title7</id>
+            <label>Ecole</label>
+        </title>
+        <title>
+            <id>title8</id>
+            <label>Madame et Monsieur</label>
+        </title>
+        <title>
+            <id>title9</id>
+            <label>Messieurs</label>
+        </title>
+        <default_title/>
+    </titles>
+</ROOT>

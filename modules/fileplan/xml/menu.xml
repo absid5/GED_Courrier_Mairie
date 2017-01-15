@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<MENU>
+		<id>fileplan</id>
+		<libconst>_FILEPLAN_SHORT</libconst>
+		<url>index.php?page=fileplan&amp;module=fileplan</url>
+		<style>fa fa-files-o</style>
+	</MENU>
+</root>

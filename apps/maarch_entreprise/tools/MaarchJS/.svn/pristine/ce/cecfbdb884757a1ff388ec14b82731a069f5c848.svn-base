@@ -1,0 +1,10 @@
+#results th, #results td {
+	width: 70px;
+	height: 70px;
+	border: black solid 1px;
+	text-align: center;
+	vertical-align: middle;
+	margin: 0;
+	border-spacing: 0;
+	padding: 0;
+}

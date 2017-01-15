@@ -1,0 +1,237 @@
+<!--
+
+* list attachments
+*
+*
+* @package  Maarch Entreprise 1.5
+* @version 1.5
+* @since 11/2014
+* @license GPL
+*
+
+
+
+Parts :
+    ##HEAD< : Begining of the head part
+    ##HEAD> : End of the head part
+
+    ##RESULT< : Begining of result list
+    ##RESULT> : End fo result list
+
+Functions :
+
+
+    ##cssLine|arg1|arg2##                   : load css style for line. arg1,arg2 : switch beetwin style on line one or line two
+    ##cssLineReload##                       : reload last css style loaded by cssLine
+    ##sortColumn|arg##                      : sort list. arg = sort;
+    ##defineLang|arg##                      : show label. arg = constant define in lang.php;
+    ##loadImage|arg1|arg2##                 : show loaded image; arg1= name of img file, arg2 = name of the module (if image in module)
+    ##loadValue|arg##                       : load value in the db; arg= column's value  identifier
+    ##showActionIcon|arg1|arg2|arg3|arg4##  : action icon. arg1 = label, arg2  = image , arg3 = action (javascript), arg4 = disabled rule
+    ##includeFile|arg1|arg2##               : include file. arg1 = name of the file, arg2  = name of the module (if file in module)
+    ##setListParameter|arg1|arg2##          : set parameter's value for actual list. arg1 = name of parameter, arg2  = new value
+    ##getListParameter|arg##                : get parameter's value for actual list. arg1 = name of parameter
+    ##ifStatement|arg1|arg2|arg3|arg4##     : allow conditional execution . arg1=condition, arg2= statement 1, arg3 = statement 2
+    ##isModuleLoaded|arg##                  : test if module is loaded. arg = module id
+
+Mods 
+
+
+    ##radioButton##         : display radio
+    ##checkBox##            : display checkbox
+    ##checkUncheckAll##     : display checkbox for check/uncheck All
+    ##clickOnLine##         : action on click under the line
+    ##showIconDocument##    : view document icon
+    ##showIconDetails##     : view detail's page icon
+    ##getBusinessAppUrl##   : get business app url
+    
+
+-->
+
+
+#!#TABLE
+<!-- ----------------------------------------------------------------------- -->
+        <table border="0" cellspacing="0" class="listing spec zero_padding" id='test'  style="width: 100%; margin: 0;">
+
+#!#HEAD
+<!-- ----------------------------------------------------------------------- -->
+             <thead border ="1">
+                <tr>
+                    <th width="100%" colspan="2" style="clear:both;">
+                    <div style="border:1px solid; height:20px;margin-bottom:10px;padding:10px;padding-top:0px;vertical-align:middle;">
+                        <div style="white-space: nowrap;display: table-cell;text-align: center;float:left;">
+                            ##defineLang|_CHRONO_NUMBER##
+                            <br/>
+                            ##sortColumn|identifier##
+                        </div>
+                        <div style="white-space: nowrap;display: table-cell;text-align: center;padding-left: 10px;float:left;">
+                            ##defineLang|_TYPES##
+                            <br/>
+                            ##sortColumn|attachment_type##
+                        </div>
+                        <div style="white-space: nowrap;display: table-cell;text-align: center;padding-left: 10px;float:left;">
+                            ##defineLang|_OBJECT##
+                            <br/>
+                            ##sortColumn|title##
+                        </div>
+                        <div style="white-space: nowrap;display: table-cell;text-align: center;padding-left: 10px;float:left;">
+                            ##defineLang|_DEST##
+                            <br/>
+                            ##sortColumn|dest_contact_id##
+                        </div>
+                        <div style="white-space: nowrap;display: table-cell;text-align: center;padding-left: 10px;float:left;">
+                            ##defineLang|_CREATION_DATE##
+                            <br/>
+                            ##sortColumn|creation_date##
+                        </div>
+                        <div style="white-space: nowrap;display: table-cell;text-align: center;padding-left: 10px;float:left;">
+                            ##defineLang|_UPDATED_DATE##
+                            <br/>
+                            ##sortColumn|doc_date##
+                        </div>
+                        <div style="white-space: nowrap;display: table-cell;text-align: center;padding-left: 10px;float:left;">
+                            ##defineLang|_MODIFY_BY##
+                            <br/>
+                            ##sortColumn|updated_by##
+                        </div>
+                        <div style="white-space: nowrap;display: table-cell;text-align: center;padding-left: 10px;float:left;">
+                            ##defineLang|_BACK_DATE##
+                            <br/>
+                            ##sortColumn|validation_date##
+                        </div>
+                        <div style="white-space: nowrap;display: table-cell;text-align: center;padding-left: 10px;float:right;">
+                            ##defineLang|_FORMAT##
+                            <br/>
+                            ##sortColumn|format##
+                        </div>
+                        <div style="white-space: nowrap;display: table-cell;text-align: center;padding-left: 10px;float:right;">
+                            ##defineLang|_TYPIST##
+                            <br/>
+                            ##sortColumn|typist##
+                        </div>
+                        </div>
+                    </th>
+                    <!--<th  width="100%" colspan="2">
+                        <div align="center" style="border:1px solid; height:20px;margin-bottom:10px;padding-top:10px;vertical-align:middle;">
+                                ##defineLang|_CHRONO_NUMBER##
+                                ##sortColumn|identifier##
+                                &nbsp;
+                                ##defineLang|_STATUS##
+                                ##sortColumn|status##
+                                &nbsp;
+                                ##defineLang|_ATTACHMENT_TYPES##
+                                ##sortColumn|attachment_type##
+                                &nbsp;
+                                ##defineLang|_OBJECT##
+                                ##sortColumn|title##
+                                &nbsp;
+                                ##defineLang|_DEST##
+                                ##sortColumn|dest_contact_id##
+                                &nbsp;
+                                ##defineLang|_BACK_DATE##
+                                ##sortColumn|validation_date##
+                                &nbsp;
+                                ##defineLang|_CREATION_DATE##
+                                ##sortColumn|creation_date##
+                                &nbsp;
+                                ##defineLang|_BBY##
+                                ##sortColumn|typist##
+                                &nbsp;
+                                ##defineLang|_UPDATED_DATE##
+                                ##sortColumn|doc_date##
+                                &nbsp;
+                                ##defineLang|_BBY##
+                                ##sortColumn|updated_by##
+                                &nbsp;
+                                ##defineLang|_FORMAT##
+                                ##sortColumn|format##
+                                &nbsp;
+                        </div> -->
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody>
+#!#RESULT
+<!-- ----------------------------------------------------------------------- -->
+
+               <tr  class="##cssLine|col|white ##" >
+                    <td width="15%" style="text-align:center">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+                            <tr>
+                                <!--<td style="text-align:center;width:25px"><b title="##defineLang|_VERSION##">##loadValue|relation##</b></td>-->
+                                <td style="text-align:center;width:100px">
+                                <b title="##defineLang|_CHRONO_NUMBER##">##loadValue|identifier##</b><br/>
+                                <i style="font-size:10px;color:#16ADEB;" title="##defineLang|_ATTACHMENT_TYPES##">##loadValue|attachment_type##</i>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="85%" align="center" style="padding : 0px" >
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+                                <tr>
+                                    <td style="text-align:left;" width="55%">
+                                        <i title="##defineLang|_CONTACT##" style="font-size:10px;cursor: pointer;float:left">Pour : ##loadValue|dest_contact_id## ##loadValue|dest_user##</i>
+                                        <i title="##defineLang|_TYPIST##" style="font-size:10px;cursor: pointer;float: right;">De : ##loadValue|typist##</i>
+                                        <br/>
+                                        <b title="##defineLang|_OBJECT##">##loadValue|title##</b>
+
+
+                                    </td>
+                                    <!--<td style="text-align:left" width="8%">##loadValue|validation_date##</td>-->
+                                    <td style="text-align:center;vertical-align: top;" width="3%" title="##defineLang|_FORMAT##"> <i style="font-size:10px;color:#16ADEB;">##loadValue|format##</i><br/>
+                                        <i style="color:#16ADEB;">##func_previous_version##</i>
+                                    </td>
+                                </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="##cssLineReload##">
+                    <td width="15%" style="text-align:center">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+                            <tr>
+                                <td>##showIconDocument##</td>
+                                <td><i style="font-size:10px;color:#16ADEB;" title="##defineLang|_VERSION##">##loadValue|relation##</i></td>
+                                <td style="text-align:center;font-size:13px;width:100px" title="##defineLang|_STATUS##"><i>##loadValue|status##</i></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="85%" style="text-align:center">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+                            <tr>
+                                <!--<td style="text-align:left">
+                                    <table>
+                                        <td width="27%">##func_delete##</td>
+                                        <td width="27%">##func_modify##</td>
+                                        <td width="35%">##func_final_version##</td>
+                                        <td width="11%" style="text-align:right">##func_previous_version##</td>
+                                    </table>
+                                </td>-->
+                                <td style="text-align:left;width:20%;" title="##defineLang|_CREATION_DATE##"><i class="fa fa-calendar"></i>
+ ##loadValue|creation_date##</td>
+                                <td style="text-align:left;width:20%;" title="##defineLang|_UPDATED_DATE##"><i class="fa fa-calendar-check-o"></i>
+ ##loadValue|doc_date##<i title="##defineLang|_MODIFY_BY##" style="font-size:10px;cursor: pointer;">&nbsp;##defineLang|_MODIFY_BY## : ##loadValue|updated_by##</i></td>
+                                <!--<td style="text-align:left" width="17%" title="##defineLang|_TYPIST##">##loadValue|typist##</td>-->
+                                <!--<td style="text-align:center" width="10%">##loadValue|doc_date##</td>-->
+                                <td style="text-align:left;width:20%;" title="##defineLang|_BACK_DATE##"><i class="fa fa-calendar-times-o"></i>
+ ##loadValue|validation_date##</td>
+                                <td style="text-align:right;width:200px;">##func_final_version##
+ ##func_modify## ##func_delete##</td>
+                                <!--<td style="text-align:left" width="17%">##loadValue|updated_by##</td>-->
+                            </tr>
+                        </table>
+                    </td>
+                </tr >
+                <tr id="attachList_##loadValue|res_id##" name="attachList_##loadValue|res_id##" style="display: none; border-bottom: solid 1px black; background-color: #FFF;" width="100%">
+                    <td colspan="2" style="background-color: white;">
+                        <div id="divAttachList_##loadValue|res_id##" align="center" style="color: grey;">
+                            <i class="fa fa-spinner fa-2x"></i><br />
+                            ##defineLang|_LOADING_INFORMATIONS##
+                        </div>
+                    </td>
+                </tr>
+
+ #!#FOOTER
+ <!--   ----------------------------------------------------------------------- -->
+            </tbody>
+        </table>

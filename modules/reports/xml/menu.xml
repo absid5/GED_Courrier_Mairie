@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<MENU>
+		<id>reports</id>
+		<libconst>_REPORTS</libconst>
+		<url>index.php?page=reports&amp;module=reports</url>
+		<style>fa fa-area-chart</style>
+	</MENU>
+</root>

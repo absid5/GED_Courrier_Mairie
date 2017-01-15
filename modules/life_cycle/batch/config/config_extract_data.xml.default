@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ROOT>
+    <CONFIG>
+        <Lang>fr</Lang> <!-- fr, en-->
+        <MaarchDirectory>C:\xampp\htdocs\maarch_trunk\</MaarchDirectory>
+        <MaarchApps>maarch_entreprise</MaarchApps>
+        <customId>spm_miviludes</customId>
+        <LogLevel>INFO</LogLevel> <!-- DEBUG, INFO, NOTICE, WARNING, ERROR-->
+        <DisplayedLogLevel>INFO</DisplayedLogLevel> <!-- DEBUG, INFO, NOTICE, WARNING, ERROR-->
+        <StackSizeLimit>10000</StackSizeLimit> <!-- on doc -->
+        <ExportFolder>c:\xampp\htdocs\maarch_trunk\modules\life_cycle\batch\</ExportFolder>
+		<FromDate>18 months</FromDate> <!-- ex : 18 months, 20 days, ... -->
+    </CONFIG>
+    <CONFIG_BASE>
+        <databaseserver>127.0.0.1</databaseserver>
+        <databaseserverport>5432</databaseserverport>
+        <databasetype>POSTGRESQL</databasetype>
+        <databasename>SPM_0304</databasename>
+        <databaseuser>postgres</databaseuser>
+        <databasepassword>postgresql</databasepassword>
+    </CONFIG_BASE>
+    <COLLECTION>
+        <Id>letterbox_coll</Id>
+        <Table>res_letterbox</Table>
+        <View>res_view_letterbox</View>
+        <ExtTable>mlb_coll_ext</ExtTable>
+        <VersionTable>res_version_letterbox</VersionTable>
+        <Adr>adr_x</Adr>
+    </COLLECTION>
+    <LOG4PHP>
+        <enabled>true</enabled>
+        <Log4PhpLogger>loggerTechnique</Log4PhpLogger>
+        <Log4PhpBusinessCode>extract_data</Log4PhpBusinessCode>
+        <Log4PhpConfigPath>C:\xampp\htdocs\maarch_trunk\apps\maarch_entreprise\xml\log4php.xml</Log4PhpConfigPath>
+    </LOG4PHP>
+</ROOT>

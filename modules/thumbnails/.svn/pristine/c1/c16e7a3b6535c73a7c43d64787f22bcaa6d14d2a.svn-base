@@ -1,0 +1,9 @@
+<requestDefinitions>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="get_thumbnails" >
+      <parameter name="module" value="thumbnails"/>
+      <parameter name="page" value="doc_thumb"/>
+      <parameter name="res_id"/>
+      <parameter name="coll_id"/>
+      <parameter name="display" value="true"/>
+    </requestDefinition>
+</requestDefinitions>

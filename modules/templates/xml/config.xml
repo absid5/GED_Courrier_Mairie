@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <CONFIG>
+        <name>templates</name>
+        <comment>_TEMPLATES_COMMENT</comment>
+        <file_prefix>temp</file_prefix>
+        <loaded>true</loaded>
+    </CONFIG>
+    <TABLENAME>
+        <temp_templates>templates</temp_templates>
+        <temp_templates_doctype_ext>templates_doctype_ext</temp_templates_doctype_ext>
+        <temp_templates_association>templates_association</temp_templates_association>
+    </TABLENAME>
+    <HISTORY>
+        <templateadd>true</templateadd>
+        <templateup>true</templateup>
+        <templatedel>true</templatedel>
+    </HISTORY>
+</root>

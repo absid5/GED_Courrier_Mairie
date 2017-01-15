@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <CONFIG>
+        <name>content_management</name>
+        <comment>_CONTENT_MANAGEMENT_COMMENT</comment>
+        <file_prefix>cm</file_prefix>
+        <loaded>true</loaded>
+        <tmp_user_path>C:\maarch\tmp\</tmp_user_path>
+    </CONFIG>
+    <HISTORY>
+        <cmadd>true</cmadd>
+        <cmup>true</cmup>
+        <cmdel>true</cmdel>
+    </HISTORY>
+</root>

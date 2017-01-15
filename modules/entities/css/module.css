@@ -1,0 +1,87 @@
+
+/* admin modules board */
+#ent_manage_entities {
+	background: url(static.php?filename=manage_entities.gif&module=entities) no-repeat 2px top;
+}
+
+#admin_entities_sub {
+	background:  url(static.php?filename=manage_entities.gif&module=entities) no-repeat 2px top;
+}
+
+#admin_entities_tree_sub {
+	background:  url(static.php?filename=entity_tree.gif&module=entities) no-repeat 2px top;
+}
+
+#admin_users_entities_sub {
+	background:  url(static.php?filename=manage_users_entities.gif&module=entities) no-repeat 2px top;
+}
+
+#admin_listinstance_roles {
+	background:  url(static.php?filename=manage_users_entities.gif&module=entities) no-repeat 2px top;
+}
+
+#admin_difflist_types{
+	background:  url(static.php?filename=manage_groupe.gif) no-repeat 2px top;
+}
+#admin_listmodels{
+	background:  url(static.php?filename=manage_groupe.gif) no-repeat 2px top;
+}
+
+.entities_list
+{
+	width: 310px;
+}
+
+#listmodel_box {
+	border: 0px;
+	float: right;
+	width: 330px;
+	margin: 0 10px 0 13px;
+	height: 450px;
+
+}
+#listmodel_box .listingsmall
+{
+width: 320px;
+}
+#diff_list .listing
+{
+ width: 800px;
+}
+
+#chooseEntity select, #chooseEntity #role
+{
+	width: 280px;
+}
+
+#user_entities .tit {
+	/*color: #FFC200;*/
+	color: #1B99C4;
+}
+#user_entities{
+	border: 0px;
+	float: right;
+	margin: 0 10px 0 13px;
+	height: 350px;
+	width: 18%;
+}	
+
+span.change {
+	padding-left: 20px;
+    background: transparent url(static.php?filename=puce_prev.gif) 10px center no-repeat;
+    color: #16ADEB;
+	padding: 5px 0 5px 20px;
+    background-position: center left;
+	background-image: url(static.php?filename=picto_change.gif);
+    cursor: pointer;
+}
+	
+.entity_tree_element_ok
+{
+	display:inline-block; 
+	padding:1px; 
+	margin:1px; 
+	/*color:white;*/
+	background-color: #BAD1E2;
+	border-radius: 5px;
+}

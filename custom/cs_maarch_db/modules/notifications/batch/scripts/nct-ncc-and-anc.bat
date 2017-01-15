@@ -1,0 +1,6 @@
+cd C:\xampp\htdocs\maarch_courrier\modules\notifications\
+"C:\xampp\htdocs\maarch_courrier\..\..\php\php.exe" C:\xampp\htdocs\maarch_courrier\modules\notifications\batch\process_event_stack.php -c C:\xampp\htdocs\maarch_courrier\custom/cs_maarch_db\modules\notifications\batch\config\config.xml\ -n NCT
+"C:\xampp\htdocs\maarch_courrier\..\..\php\php.exe" C:\xampp\htdocs\maarch_courrier\modules\notifications\batch\process_event_stack.php -c C:\xampp\htdocs\maarch_courrier\custom/cs_maarch_db\modules\notifications\batch\config\config.xml\ -n NCC
+"C:\xampp\htdocs\maarch_courrier\..\..\php\php.exe" C:\xampp\htdocs\maarch_courrier\modules\notifications\batch\process_event_stack.php -c C:\xampp\htdocs\maarch_courrier\custom/cs_maarch_db\modules\notifications\batch\config\config.xml\ -n ANC
+"C:\xampp\htdocs\maarch_courrier\..\..\php\php.exe" C:\xampp\htdocs\maarch_courrier\modules\notifications\batch\process_event_stack.php -c C:\xampp\htdocs\maarch_courrier\custom/cs_maarch_db\modules\notifications\batch\config\config.xml\ -n AND
+"C:\xampp\htdocs\maarch_courrier\..\..\php\php.exe" C:\xampp\htdocs\maarch_courrier\modules\notifications\batch\process_event_stack.php -c C:\xampp\htdocs\maarch_courrier\custom/cs_maarch_db\modules\notifications\batch\config\config.xml\ -n RED

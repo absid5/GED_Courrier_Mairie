@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+ <SERVICE>
+   <id>admin_life_cycle</id>
+   <name>_ADMIN_LIFE_CYCLE</name>
+   <comment>_ADMIN_LIFE_CYCLE_DESC</comment>
+   <servicepage>index.php?page=life_cycle_administration&amp;module=life_cycle</servicepage>
+   <servicetype>admin</servicetype>
+   <system_service>false</system_service>
+   <style>fa fa-recycle</style>
+   <enabled>true</enabled>
+   <WHEREAMIUSED>
+     <page>admin.php</page>
+     <nature>listelement</nature>
+   </WHEREAMIUSED>
+ </SERVICE>
+</root>

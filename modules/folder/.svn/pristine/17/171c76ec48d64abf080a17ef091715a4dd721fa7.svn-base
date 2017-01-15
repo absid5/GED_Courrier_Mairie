@@ -1,0 +1,112 @@
+<requestDefinitions>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="fo_ajax_get_folder" >
+      <parameter name="module" value="folder"/>
+      <parameter name="page" value="ajax_get_folder"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="fo_ajax_get_project" >
+      <parameter name="module" value="folder"/>
+      <parameter name="page" value="ajax_get_project"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="fo_autocomplete_folders" >
+      <parameter name="module" value="folder"/>
+      <parameter name="page" value="autocomplete_folders"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="fo_choose_doctypes" >
+      <parameter name="module" value="folder"/>
+      <parameter name="page" value="choose_doctypes"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="fo_create_folder_get_folder_index" >
+      <parameter name="module" value="folder"/>
+      <parameter name="page" value="create_folder_get_folder_index"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="fo_documents_list_in_details" >
+      <parameter name="module" value="folder"/>
+      <parameter name="page" value="documents_list_in_details"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="fo_documents_list_in_folder" >
+      <parameter name="module" value="folder"/>
+      <parameter name="page" value="documents_list_in_folder"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="fo_folder_history" >
+      <parameter name="module" value="folder"/>
+      <parameter name="page" value="folder_history"/>
+    </requestDefinition>fo_folders_list_by_id
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="fo_folders_list_by_id" >
+      <parameter name="module" value="folder"/>
+      <parameter name="page" value="folders_list_by_id"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="fo_folders_list_by_name" >
+      <parameter name="module" value="folder"/>
+      <parameter name="page" value="folders_list_by_name"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="fo_foldertype_add" >
+      <parameter name="module" value="folder"/>
+      <parameter name="page" value="foldertype_add"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="fo_foldertype_form" >
+      <parameter name="module" value="folder"/>
+      <parameter name="page" value="foldertype_add_db"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="fo_foldertype_del" >
+      <parameter name="module" value="folder"/>
+      <parameter name="page" value="foldertype_del"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="fo_foldertype_list_by_name" >
+      <parameter name="module" value="folder"/>
+      <parameter name="page" value="foldertype_list_by_name"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="fo_foldertypes" >
+      <parameter name="module" value="folder"/>
+      <parameter name="page" value="foldertypes"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="fo_foldertype_up" >
+      <parameter name="module" value="folder"/>
+      <parameter name="page" value="foldertype_up"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="fo_foldertype_form" >
+      <parameter name="module" value="folder"/>
+      <parameter name="page" value="foldertype_up_db"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="fo_get_folder_search_index" >
+      <parameter name="module" value="folder"/>
+      <parameter name="page" value="get_folder_search_index"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="fo_get_foldertypes" >
+      <parameter name="module" value="folder"/>
+      <parameter name="page" value="get_foldertypes"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="fo_get_folder_view_stats_val" >
+      <parameter name="module" value="folder"/>
+      <parameter name="page" value="get_folder_view_stats_val"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="fo_get_tree_info" >
+      <parameter name="module" value="folder"/>
+      <parameter name="page" value="get_tree_info"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="fo_list_doc" >
+      <parameter name="module" value="folder"/>
+      <parameter name="page" value="list_doc"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="fo_manage_create_folder" >
+      <parameter name="module" value="folder"/>
+      <parameter name="page" value="manage_create_folder"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="fo_search_adv_folder_result" >
+      <parameter name="module" value="folder"/>
+      <parameter name="page" value="search_adv_folder_result"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="fo_select_user_report" >
+      <parameter name="module" value="folder"/>
+      <parameter name="page" value="select_user_report"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="fo_show_folder" >
+      <parameter name="module" value="folder"/>
+      <parameter name="page" value="show_folder"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="fo_show_folder" >
+      <parameter name="module" value="folder"/>
+      <parameter name="page" value="show_folder"/>
+    </requestDefinition>
+
+
+</requestDefinitions>

@@ -1,0 +1,91 @@
+<requestDefinitions>
+	<requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="vi_applet_controller" >
+        <parameter name="page" value="applet_controller"/>
+        <parameter name="module" value="visa"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="vi_applet_launcher" >
+        <parameter name="page" value="applet_launcher"/>
+        <parameter name="module" value="visa"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="vi_checkSignFile" >
+        <parameter name="page" value="checkSignFile"/>
+        <parameter name="module" value="visa"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="vi_checkSignFile" >
+        <parameter name="page" value="checkSignFile"/>
+        <parameter name="module" value="visa"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="vi_create_sep" >
+        <parameter name="page" value="create_sep"/>
+        <parameter name="module" value="visa"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="vi_create_sep" >
+        <parameter name="page" value="create_sep"/>
+        <parameter name="module" value="visa"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="vi_encodePinCode" >
+        <parameter name="page" value="encodePinCode"/>
+        <parameter name="module" value="visa"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="vi_encodePinCode" >
+        <parameter name="page" value="encodePinCode"/>
+        <parameter name="module" value="visa"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="vi_load_listmodel_visa" >
+        <parameter name="page" value="load_listmodel_visa"/>
+        <parameter name="module" value="visa"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="vi_load_listmodel_visa" >
+        <parameter name="page" value="load_listmodel_visa"/>
+        <parameter name="module" value="visa"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="vi_saveVisaModel" >
+        <parameter name="page" value="saveVisaModel"/>
+        <parameter name="module" value="visa"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="vi_saveVisaModel" >
+        <parameter name="page" value="saveVisaModel"/>
+        <parameter name="module" value="visa"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="vi_getVisaModelByTitle" >
+      <parameter name="display" value="true"/>
+      <parameter name="module" value="visa"/>
+      <parameter name="page" value="getVisaModelByTitle"/> 
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="vi_saveVisaWF" >
+        <parameter name="page" value="saveVisaWF"/>
+        <parameter name="module" value="visa"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="vi_resetVisaWF" >
+        <parameter name="page" value="resetVisaWF"/>
+        <parameter name="module" value="visa"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="vi_saveVisaWF" >
+        <parameter name="page" value="saveVisaWF"/>
+        <parameter name="module" value="visa"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="vi_sign_ans" >
+        <parameter name="page" value="sign_ans"/>
+        <parameter name="module" value="visa"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="vi_sign_ans" >
+        <parameter name="page" value="sign_ans"/>
+        <parameter name="module" value="visa"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="vi_update_visaPage" >
+        <parameter name="page" value="update_visaPage"/>
+        <parameter name="module" value="visa"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="vi_update_visaPage" >
+        <parameter name="page" value="update_visaPage"/>
+        <parameter name="module" value="visa"/>
+    </requestDefinition>
+    <requestDefinition method="POST" path="/apps/maarch_entreprise/index.php" validationRule="vi_view_pdf_attachement" >
+        <parameter name="page" value="view_pdf_attachement"/>
+        <parameter name="module" value="visa"/>
+    </requestDefinition>
+    <requestDefinition method="GET" path="/apps/maarch_entreprise/index.php" validationRule="vi_view_pdf_attachement" >
+        <parameter name="page" value="view_pdf_attachement"/>
+        <parameter name="module" value="visa"/>
+    </requestDefinition>
+</requestDefinitions>

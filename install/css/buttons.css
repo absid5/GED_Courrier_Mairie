@@ -1,0 +1,221 @@
+#buttons #next a {
+    /* background-color: #64b651; */
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #64b651), color-stop(100%, #4f953f));
+    background-image: -webkit-linear-gradient(top, #64b651, #4f953f);
+    background-image: -moz-linear-gradient(top, #64b651, #4f953f);
+    background-image: -o-linear-gradient(top, #64b651, #4f953f);
+    background-image: -ms-linear-gradient(top, #64b651, #4f953f);
+    background-image: linear-gradient(top, #64b651, #4f953f);
+    background-color: #64b651;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: inset 0px 1px 0px #4f953f, 0px 5px 0px 0px #325f28, 0px 10px 5px #999999;
+    -webkit-box-shadow: inset 0px 1px 0px #4f953f, 0px 5px 0px 0px #325f28, 0px 10px 5px #999999;
+    -o-box-shadow: inset 0px 1px 0px #4f953f, 0px 5px 0px 0px #325f28, 0px 10px 5px #999999;
+    box-shadow: inset 0px 1px 0px #4f953f, 0px 5px 0px 0px #325f28, 0px 10px 5px #999999;
+    padding: 10px 20px;
+    padding-right: 40px;
+}
+#buttons #next a:active {
+    top: 4px;
+    background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #64b651), color-stop(100%, #4f953f));
+    background-image: -webkit-linear-gradient(bottom, #64b651, #4f953f);
+    background-image: -moz-linear-gradient(bottom, #64b651, #4f953f);
+    background-image: -o-linear-gradient(bottom, #64b651, #4f953f);
+    background-image: -ms-linear-gradient(bottom, #64b651, #4f953f);
+    background-image: linear-gradient(bottom, #64b651, #4f953f);
+    background-color: #4f953f;
+    -moz-box-shadow: inset 0px 1px 0px #4f953f, 0px 1px 0px 0px #325f28, 0px 3px 5px #999999;
+    -webkit-box-shadow: inset 0px 1px 0px #4f953f, 0px 1px 0px 0px #325f28, 0px 3px 5px #999999;
+    -o-box-shadow: inset 0px 1px 0px #4f953f, 0px 1px 0px 0px #325f28, 0px 3px 5px #999999;
+    box-shadow: inset 0px 1px 0px #4f953f, 0px 1px 0px 0px #325f28, 0px 3px 5px #999999;
+}
+#buttons #next a:before {
+    background: url('../img/rightArrow.png') center center no-repeat #4f953f;
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    right: 10px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border-radius: 50%;
+    -moz-box-shadow: inset 0px 1px 0px #162a11, 0px 1px 0px #84c575;
+    -webkit-box-shadow: inset 0px 1px 0px #162a11, 0px 1px 0px #84c575;
+    -o-box-shadow: inset 0px 1px 0px #162a11, 0px 1px 0px #84c575;
+    box-shadow: inset 0px 1px 0px #162a11, 0px 1px 0px #84c575;
+}
+#buttons #next a:active:before {
+    margin-top: -14px;
+    -moz-box-shadow: inset 0px 1px 0px #84c575, 0px 4px 0px 0px #1f3c19, 0px 4px 5px #294d21;
+    -webkit-box-shadow: inset 0px 1px 0px #84c575, 0px 4px 0px 0px #1f3c19, 0px 4px 5px #294d21;
+    -o-box-shadow: inset 0px 1px 0px #84c575, 0px 4px 0px 0px #1f3c19, 0px 4px 5px #294d21;
+    box-shadow: inset 0px 1px 0px #84c575, 0px 4px 0px 0px #1f3c19, 0px 4px 5px #294d21;
+}
+
+/**/
+
+#buttons #previous a {
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b66451), color-stop(100%, #954f3f));
+    background-image: -webkit-linear-gradient(top, #b66451, #954f3f);
+    background-image: -moz-linear-gradient(top, #b66451, #954f3f);
+    background-image: -o-linear-gradient(top, #b66451, #954f3f);
+    background-image: -ms-linear-gradient(top, #b66451, #954f3f);
+    background-image: linear-gradient(top, #b66451, #954f3f);
+    background-color: #b66451;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: inset 0px 1px 0px #954f3f, 0px 5px 0px 0px #5f3228, 0px 10px 5px #999999;
+    -webkit-box-shadow: inset 0px 1px 0px #954f3f, 0px 5px 0px 0px #5f3228, 0px 10px 5px #999999;
+    -o-box-shadow: inset 0px 1px 0px #954f3f, 0px 5px 0px 0px #5f3228, 0px 10px 5px #999999;
+    box-shadow: inset 0px 1px 0px #954f3f, 0px 5px 0px 0px #5f3228, 0px 10px 5px #999999;
+    padding: 10px 20px;
+    padding-left: 40px;
+}
+#buttons #previous a:active {
+    top: 4px;
+    background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #b66451), color-stop(100%, #954f3f));
+    background-image: -webkit-linear-gradient(bottom, #b66451, #954f3f);
+    background-image: -moz-linear-gradient(bottom, #b66451, #954f3f);
+    background-image: -o-linear-gradient(bottom, #b66451, #954f3f);
+    background-image: -ms-linear-gradient(bottom, #b66451, #954f3f);
+    background-image: linear-gradient(bottom, #b66451, #954f3f);
+    background-color: #954f3f;
+    -moz-box-shadow: inset 0px 1px 0px #954f3f, 0px 1px 0px 0px #5f3228, 0px 3px 5px #999999;
+    -webkit-box-shadow: inset 0px 1px 0px #954f3f, 0px 1px 0px 0px #5f3228, 0px 3px 5px #999999;
+    -o-box-shadow: inset 0px 1px 0px #954f3f, 0px 1px 0px 0px #5f3228, 0px 3px 5px #999999;
+    box-shadow: inset 0px 1px 0px #954f3f, 0px 1px 0px 0px #5f3228, 0px 3px 5px #999999;
+}
+#buttons #previous a:before {
+    background: url('../img/leftArrow.png') center center no-repeat #954f3f;
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    left: 10px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border-radius: 50%;
+    -moz-box-shadow: inset 0px 1px 0px #2a1611, 0px 1px 0px #c58475;
+    -webkit-box-shadow: inset 0px 1px 0px #2a1611, 0px 1px 0px #c58475;
+    -o-box-shadow: inset 0px 1px 0px #2a1611, 0px 1px 0px #c58475;
+    box-shadow: inset 0px 1px 0px #2a1611, 0px 1px 0px #c58475;
+}
+#buttons #previous a:active:before {
+    margin-top: -14px;
+    -moz-box-shadow: inset 0px 1px 0px #c58475, 0px 4px 0px 0px #3c1f19, 0px 4px 5px #4d2921;
+    -webkit-box-shadow: inset 0px 1px 0px #c58475, 0px 4px 0px 0px #3c1f19, 0px 4px 5px #4d2921;
+    -o-box-shadow: inset 0px 1px 0px #c58475, 0px 4px 0px 0px #3c1f19, 0px 4px 5px #4d2921;
+    box-shadow: inset 0px 1px 0px #c58475, 0px 4px 0px 0px #3c1f19, 0px 4px 5px #4d2921;
+}
+
+/**/
+
+#buttons #start a {
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5164b6), color-stop(100%, #3f4f95));
+    background-image: -webkit-linear-gradient(top, #5164b6, #3f4f95);
+    background-image: -moz-linear-gradient(top, #5164b6, #3f4f95);
+    background-image: -o-linear-gradient(top, #5164b6, #3f4f95);
+    background-image: -ms-linear-gradient(top, #5164b6, #3f4f95);
+    background-image: linear-gradient(top, #5164b6, #3f4f95);
+    background-color: #5164b6;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: inset 0px 1px 0px #3f4f95, 0px 5px 0px 0px #28325f, 0px 10px 5px #999999;
+    -webkit-box-shadow: inset 0px 1px 0px #3f4f95, 0px 5px 0px 0px #28325f, 0px 10px 5px #999999;
+    -o-box-shadow: inset 0px 1px 0px #3f4f95, 0px 5px 0px 0px #28325f, 0px 10px 5px #999999;
+    box-shadow: inset 0px 1px 0px #3f4f95, 0px 5px 0px 0px #28325f, 0px 10px 5px #999999;
+    padding: 10px 20px;
+    padding-right: 40px;
+}
+#buttons #start a:active {
+    top: 4px;
+    background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #5164b6), color-stop(100%, #3f4f95));
+    background-image: -webkit-linear-gradient(bottom, #5164b6, #3f4f95);
+    background-image: -moz-linear-gradient(bottom, #5164b6, #3f4f95);
+    background-image: -o-linear-gradient(bottom, #5164b6, #3f4f95);
+    background-image: -ms-linear-gradient(bottom, #5164b6, #3f4f95);
+    background-image: linear-gradient(bottom, #5164b6, #3f4f95);
+    background-color: #3f4f95;
+    -moz-box-shadow: inset 0px 1px 0px #3f4f95, 0px 1px 0px 0px #28325f, 0px 3px 5px #999999;
+    -webkit-box-shadow: inset 0px 1px 0px #3f4f95, 0px 1px 0px 0px #28325f, 0px 3px 5px #999999;
+    -o-box-shadow: inset 0px 1px 0px #3f4f95, 0px 1px 0px 0px #28325f, 0px 3px 5px #999999;
+    box-shadow: inset 0px 1px 0px #3f4f95, 0px 1px 0px 0px #28325f, 0px 3px 5px #999999;
+}
+#buttons #start a:before {
+    background: url('../img/rightArrow.png') center center no-repeat #3f4f95;
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    right: 10px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border-radius: 50%;
+    -moz-box-shadow: inset 0px 1px 0px #11162a, 0px 1px 0px #7584c5;
+    -webkit-box-shadow: inset 0px 1px 0px #11162a, 0px 1px 0px #7584c5;
+    -o-box-shadow: inset 0px 1px 0px #11162a, 0px 1px 0px #7584c5;
+    box-shadow: inset 0px 1px 0px #11162a, 0px 1px 0px #7584c5;
+}
+#buttons #start a:active:before {
+    margin-top: -14px;
+    -moz-box-shadow: inset 0px 1px 0px #7584c5, 0px 4px 0px 0px #191f3c, 0px 4px 5px #21294d;
+    -webkit-box-shadow: inset 0px 1px 0px #7584c5, 0px 4px 0px 0px #191f3c, 0px 4px 5px #21294d;
+    -o-box-shadow: inset 0px 1px 0px #7584c5, 0px 4px 0px 0px #191f3c, 0px 4px 5px #21294d;
+    box-shadow: inset 0px 1px 0px #7584c5, 0px 4px 0px 0px #191f3c, 0px 4px 5px #21294d;
+}
+
+/**/
+
+#progressButton {
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5164b6), color-stop(100%, #3f4f95));
+    background-image: -webkit-linear-gradient(top, #5164b6, #3f4f95);
+    background-image: -moz-linear-gradient(top, #5164b6, #3f4f95);
+    background-image: -o-linear-gradient(top, #5164b6, #3f4f95);
+    background-image: -ms-linear-gradient(top, #5164b6, #3f4f95);
+    background-image: linear-gradient(top, #5164b6, #3f4f95);
+    background-color: #5164b6;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: inset 0px 1px 0px #3f4f95, 0px 5px 0px 0px #28325f, 0px 10px 5px #999999;
+    -webkit-box-shadow: inset 0px 1px 0px #3f4f95, 0px 5px 0px 0px #28325f, 0px 10px 5px #999999;
+    -o-box-shadow: inset 0px 1px 0px #3f4f95, 0px 5px 0px 0px #28325f, 0px 10px 5px #999999;
+    box-shadow: inset 0px 1px 0px #3f4f95, 0px 5px 0px 0px #28325f, 0px 10px 5px #999999;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: progress;
+}

@@ -1,0 +1,101 @@
+<!--
+
+* history_list_diff template
+*
+*
+* @package  Maarch Entreprise 1.5
+* @version 1.5
+* @since 02/2015
+* @license GPL
+* @author <dev@maarch.org>
+*
+
+
+
+Parts :
+    ##HEAD< : Begining of the head part
+    ##HEAD> : End of the head part
+
+    ##RESULT< : Begining of result list
+    ##RESULT> : End fo result list
+
+Functions :
+
+
+    ##cssLine|arg1|arg2##                   : load css style for line. arg1,arg2 : switch beetwin style on line one or line two
+    ##cssLineReload##                       : reload last css style loaded by cssLine
+    ##sortColumn|arg##                      : sort list. arg = sort;
+    ##defineLang|arg##                      : show label. arg = constant define in lang.php;
+    ##loadImage|arg1|arg2##                 : show loaded image; arg1= name of img file, arg2 = name of the module (if image in module)
+    ##loadValue|arg##                       : load value in the db; arg= column's value  identifier
+    ##showActionIcon|arg1|arg2|arg3|arg4##  : action icon. arg1 = label, arg2  = image , arg3 = action (javascript), arg4 = disabled rule
+    ##includeFile|arg1|arg2##               : include file. arg1 = name of the file, arg2  = name of the module (if file in module)
+    ##setListParameter|arg1|arg2##          : set parameter's value for actual list. arg1 = name of parameter, arg2  = new value
+    ##getListParameter|arg##                : get parameter's value for actual list. arg1 = name of parameter
+    ##ifStatement|arg1|arg2|arg3|arg4##     : allow conditional execution . arg1=condition, arg2= statement 1, arg3 = statement 2
+    ##isModuleLoaded|arg##                  : test if module is loaded. arg = module id
+
+Mods 
+
+
+    ##radioButton##         : display radio
+    ##checkBox##            : display checkbox
+    ##checkUncheckAll##     : display checkbox for check/uncheck All
+    ##clickOnLine##         : action on click under the line
+    ##showIconDocument##    : view document icon
+    ##showIconDetails##     : view detail's page icon
+    ##getBusinessAppUrl##   : get business app url
+	
+
+-->
+
+
+#!#TABLE
+<!-- ----------------------------------------------------------------------- -->
+<table border="0" cellspacing="0" class="listing spec zero_padding" id='test'  style = "padding: 0px;width: 100%; min-width: 900px; margin: 0;">
+
+
+#!#HEAD
+<!-- ----------------------------------------------------------------------- -->
+         <thead class="##cssLine|col|white ##">
+            <tr>
+                <td width="25%">##defineLang|_MODIFICATION_DATE##</td>
+                <td width="200px">##defineLang|_MODIFY_BY##</td>
+                <td></td>
+            </tr>
+        </thead>
+<br/>
+        <tbody>
+#!#RESULT
+<!-- ----------------------------------------------------------------------- -->
+
+           <tr  class="##cssLine|col|white ##" >
+                <td width ="25%">##loadValue|updated_date##</td>
+                <td width ="50%">##loadValue|updated_by_user##</td>
+                <td width="30px" style="font-size:10px;" >##showActionIcon|Voir le detail de la liste|#loadImage|gears fa-2x#|loadDiffListHistory('#loadValue|listinstance_history_id#')##</td>
+            </tr>
+
+            <tr id="diffListHistory_##loadValue|listinstance_history_id##" name="diffListHistory_##loadValue|listinstance_history_id##" style="display: none; border-bottom: solid 1px black; background-color: #FFF;">
+                <td colspan="3" style="background-color: white;">
+                    <div id="divDiffListHistory_##loadValue|listinstance_history_id##" style="color: grey;background: transparent; border: 1px dashed rgb(200, 200, 200);margin-left:10px;margin-right: 10px;padding-left:10px;padding-right: 10px;">
+                        <i class="fa fa-spinner fa-2x"></i><br />
+                        ##defineLang|_LOADING_INFORMATIONS##
+                    </div>
+                </td>
+            </tr>
+
+
+ #!#FOOTER
+ <!--   ----------------------------------------------------------------------- -->
+        </tbody>
+</table>
+
+<script>
+    $$('#container')[0].setAttribute('style', 'width: 90%; min-width: 1000px;');
+    $$('#content')[0].setAttribute('style', 'width: auto; min-width: 1000px;');
+    /*$$('#inner_content')[0].setAttribute('style', 'width: auto; min-width: 1000px;');*/
+    /*
+    // liste condensée
+    $$('table.listing')[0].setAttribute('style', 'width: 100%; min-width: 900px;');
+    */
+</script>

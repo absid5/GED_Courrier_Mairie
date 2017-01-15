@@ -1,0 +1,76 @@
+/* misc */
+
+
+html {
+    height: 100%;
+}
+.border_on
+{
+    border-style:solid;
+    border-color:#003399;
+    border-width:thin;
+    margin-top: 10px;
+}
+body {
+    color: #666;
+    /*background: white url(static.php?filename=bg_body.gif) top center repeat-y;*/
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.02em;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 99.9%;
+    height: 99%;
+}
+
+div, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h2
+{
+    font-size: 16px;
+    clear:both;
+}
+h3
+{
+    font-size: 14px;
+}
+
+table {
+    font-size: 1em;
+}
+
+th {
+	border: 1px;
+	background-color : #16ADEB;
+	text-align: center;
+    padding: 5px 10px 6px 20px;
+    vertical-align: middle;
+}
+td {
+	border: 1px;
+	background-color: #93D1E4;
+	text-align: left;
+    padding: 5px 10px 6px 20px;
+    vertical-align: middle;
+}
+
+img {
+    border: none;
+}
+
+a, a:link, a:visited, a:hover {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1B99C4;
+}
+
+

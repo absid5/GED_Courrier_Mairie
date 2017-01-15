@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ROOT>
+<!-- le nom du fichier doit etre config.xml ou config_{custom_id}.xml -->
+    <CONFIG>
+        <Lang>fr</Lang> <!-- fr, en-->
+        <MaarchDirectory>/var/www/html/maarch/</MaarchDirectory>
+        <customID></customID>
+        <MaarchUrl>http://localhost/maarch/</MaarchUrl>
+        <MaarchApps>maarch_entreprise</MaarchApps>
+        <TmpDirectory>/var/www/html/maarch/modules/notifications/batch/tmp/</TmpDirectory>
+        <debugmode>
+            <dontflag_mail>true</dontflag_mail>
+            <verbose_mode>false</verbose_mode>
+            <simulate_sendmail>false</simulate_sendmail>
+        </debugmode>
+        <maxsize>5</maxsize> <!--In Mo: Taille maximum pour envoyer le courrier en pièce jointe afin d’éviter les erreurs du serveur mail-->
+        <maxitem>90</maxitem> <!-- Nombre de pièce jointe maximum à envoyer si transfert en pièce jointe-->
+    </CONFIG>
+    <COLLECTION>
+        <Id>letterbox_coll</Id>
+        <Table>res_letterbox</Table>
+        <View>res_view_letterbox</View>
+        <Adr>adr_x</Adr>
+		<DoctypeExt>mlb_doctype_ext</DoctypeExt>
+		<Extension>mlb_coll_ext</Extension>
+    </COLLECTION>
+    <CONFIG_BASE>
+        <databaseserver>127.0.0.1</databaseserver>
+        <databaseserverport>5432</databaseserverport>
+        <databasetype>POSTGRESQL</databasetype>
+        <databasename>maarch</databasename>
+        <databaseuser>postgres</databaseuser>
+        <databasepassword>maarch</databasepassword>
+    </CONFIG_BASE>
+    <MAILER>
+        <path_to_mailer>/apps/maarch_entreprise/tools/mails/htmlMimeMail.php</path_to_mailer>
+        <path_to_phpmailer>PHPMailer_v5.1</path_to_phpmailer>
+        <type>smtp</type><!-- mail (default), smtp, sendmail, qmail -->
+        <smtp_host>smtp.yourdomain.com</smtp_host><!-- smtp1.example.com:25;smtp2.example.com -->
+        <smtp_port>25</smtp_port><!-- smtp1.example.com:25;smtp2.example.com -->
+        <smtp_user>notif@yourdomain.com</smtp_user>
+        <smtp_password></smtp_password>
+		<smtp_auth>true</smtp_auth>
+        <smtp_secure>tls</smtp_secure><!-- tls ou ssl -->
+        <charset>utf-8</charset><!-- Default : iso-8859-1 -->
+        <domains></domains><!-- Rewrite Recipient with config->adminmail if mailfrom and mailto is out of the domains -->
+        <x-mailer></x-mailer><!-- Rewrite X-Mailer header,  default : PHP/[phpversion] -->
+        <mailfrom>notifications@maarch.fr</mailfrom>
+    </MAILER>
+    <LOG4PHP>
+        <enabled>true</enabled>
+        <Log4PhpLogger>loggerTechnique</Log4PhpLogger>
+        <Log4PhpBusinessCode>notifications</Log4PhpBusinessCode>
+        <Log4PhpConfigPath>/var/www/html/maarch/apps/maarch_entreprise/xml/log4php.xml</Log4PhpConfigPath>
+    </LOG4PHP>
+</ROOT>

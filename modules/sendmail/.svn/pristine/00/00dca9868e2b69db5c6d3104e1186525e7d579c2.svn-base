@@ -1,0 +1,55 @@
+<validationRules>
+	<validationRule name="sendmail_ajax_content" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="id" type="integer" />
+		<parameter name="identifier" type="integer" />
+		<parameter name="origin" type="identifier" />
+		<parameter name="coll_id" type="collection_list" />
+		<parameter name="size" type="size" />
+		<parameter name="url" type="url" />
+		<parameter name="for" type="identifier" />
+		<parameter name="email" type="email" />
+		<parameter name="field" type="identifier" />
+		<parameter name="index" type="identifier" />
+		<parameter name="is_html" type="YN" />
+		<parameter name="add" type="string" />
+		<parameter name="target" type="identifier" />
+		<parameter name="body_from_html" type="string" />
+		<parameter name="body_from_raw" type="string" />
+		<parameter name="cancel" type="identifier" />
+		<parameter name="join_attachment" type="identifier" />
+		<parameter name="join_file" type="identifier" />
+		<parameter name="notes" type="string" />
+		<parameter name="object" type="string" />
+		<parameter name="valid" type="string" />
+		<parameter name="sender_email" type="string" />
+		<parameter name="templateMail" type="integer" />
+		<parameter name="selectSignatures" type="string" />
+		<parameter name="action" type="string" />
+	</validationRule>
+
+	<validationRule name="mail_form" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="identifier" type="integer" />
+		<parameter name="origin" type="identifier" />
+		<parameter name="coll_id" type="collection_list" />
+		<parameter name="id" type="integer" />
+		<parameter name="size" type="size" />
+	</validationRule>
+
+	<validationRule name="sendmail" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="coll_id" type="collection_list" />
+		<parameter name="identifier" type="integer" />
+		<parameter name="origin" type="identifier" />
+		<parameter name="size" type="size" />
+		<parameter name="url" type="url" />
+	</validationRule>
+	
+	<validationRule name="adress_autocomletion" extends="standardForm" mode="error">
+
+	</validationRule>
+
+</validationRules>
+
+

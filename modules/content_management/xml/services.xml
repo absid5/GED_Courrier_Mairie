@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <SERVICE>
+        <id>add_new_version</id>
+        <name>_ADD_NEW_VERSION</name>
+        <comment>_ADD_NEW_VERSION</comment>
+        <servicepage>none.php</servicepage>
+        <servicetype>use</servicetype>
+        <system_service>false</system_service>
+        <enabled>true</enabled>
+        <WHEREAMIUSED>
+            <page>details.php</page>
+            <nature>include</nature>
+        </WHEREAMIUSED>
+        <WHEREAMIUSED>
+            <page>process.php</page>
+            <nature>include</nature>
+        </WHEREAMIUSED>
+    </SERVICE>
+</root>

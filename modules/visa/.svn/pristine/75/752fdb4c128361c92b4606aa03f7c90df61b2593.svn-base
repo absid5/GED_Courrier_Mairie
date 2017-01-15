@@ -1,0 +1,88 @@
+<validationRules>
+	<validationRule name="vi_applet_controller" extends="standardForm" mode="error">
+    	<parameter name="action" type="identifier" />
+    	<parameter name="objectType" type="identifier" />
+		<parameter name="objectTable" type="cm_table_list" />
+		<parameter name="objectId" type="identifier" />
+		<parameter name="fileContent" type="string" />
+		<parameter name="fileExtension" type="filename_extension" />
+		<parameter name="pdfContent" type="string" />
+		<parameter name="errorCode" type="string" />
+    </validationRule>
+    <validationRule name="vi_applet_launcher" extends="standardForm" mode="error">
+    	<parameter name="action" type="identifier" />
+    	<parameter name="objectType" type="identifier" />
+    	<parameter name="attachType" type="identifier" />
+		<parameter name="objectTable" type="cm_table_list" />
+		<parameter name="objectId" type="identifier" />
+		<parameter name="contactId" type="identifier" />
+		<parameter name="chronoAttachment" type="string" />
+		<parameter name="resMaster" type="identifier" />
+		<parameter name="modeSign" type="string" />
+    </validationRule>
+    <validationRule name="vi_checkSignFile" extends="standardForm" mode="error">
+    	<parameter name="res_id" type="integer" />
+    </validationRule>
+    <validationRule name="vi_create_sep" extends="standardForm" mode="error">
+    	<parameter name="service" type="string" />
+    	<parameter name="path" type="string" />
+    	<parameter name="label" type="string" />
+    </validationRule>
+    <validationRule name="vi_encodePinCode" extends="standardForm" mode="error">
+    	<parameter name="pinCode" type="string" />
+    </validationRule>
+    <validationRule name="vi_load_listmodel_visa" extends="standardForm" mode="error">
+    	<parameter name="objectType" type="identifier" />
+		<parameter name="objectId" type="identifier" />
+    </validationRule>
+    <validationRule name="vi_getVisaModelByTitle" extends="standardForm" mode="error">
+        <parameter name="title" type="string" />
+    </validationRule>
+    <validationRule name="vi_saveVisaModel" extends="standardForm" mode="error">
+    	<parameter name="id_list" type="string" />
+    	<parameter name="title" type="string" />
+    	<parameter name="conseillers" type="string" />
+    	<parameter name="consignes" type="string" />
+		<parameter name="list_sign" type="string" />
+    </validationRule>
+    <validationRule name="vi_saveVisaWF" extends="standardForm" mode="error">
+    	<parameter name="res_id" type="integer" />
+    	<parameter name="coll_id" type="collection_list" />
+    	<parameter name="dates" type="string" />
+    	<parameter name="id_list" type="string" />
+    	<parameter name="title" type="string" />
+    	<parameter name="conseillers" type="string" />
+    	<parameter name="consignes" type="string" />
+        <parameter name="list_sign" type="string" />
+        <parameter name="fromDetail" type="YN" />
+		<parameter name="cons_empty" type="boolean" />
+    </validationRule>
+    <validationRule name="vi_resetVisaWF" extends="standardForm" mode="error">
+        <parameter name="res_id" type="integer" />
+        <parameter name="coll_id" type="collection_list" />
+        <parameter name="dates" type="string" />
+        <parameter name="id_list" type="string" />
+        <parameter name="title" type="string" />
+        <parameter name="conseillers" type="string" />
+        <parameter name="consignes" type="string" />
+        <parameter name="list_sign" type="string" />
+        <parameter name="fromDetail" type="YN" />
+        <parameter name="cons_empty" type="boolean" />
+    </validationRule>
+    <validationRule name="vi_sign_ans" extends="standardForm" mode="error">
+    	<parameter name="id" type="string" />
+    	<parameter name="collId" type="collection_list" />
+    	<parameter name="modeSign" type="string" />
+    	<parameter name="isVersion" type="string" />
+		<parameter name="isOutgoing" type="string" />
+    </validationRule>
+    <validationRule name="vi_update_visaPage" extends="standardForm" mode="error">
+    	<parameter name="res_id" type="integer" />
+    	<parameter name="coll_id" type="collection_list" />
+    	<parameter name="action" type="string" />
+    </validationRule>
+    <validationRule name="vi_view_pdf_attachement" extends="standardForm" mode="error">
+    	<parameter name="res_id_master" type="integer" />
+    	<parameter name="id" type="integer" />
+    </validationRule>
+</validationRules>

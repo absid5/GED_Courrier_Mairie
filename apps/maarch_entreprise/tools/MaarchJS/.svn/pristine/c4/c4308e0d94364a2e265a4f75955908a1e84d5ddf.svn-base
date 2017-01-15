@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>Maarch.js Unit Test Runner</title>
+	<link rel="stylesheet" href="runner.css" type="text/css"/>
+	<script type="text/javascript" src="common.js"></script>
+	<script type="text/javascript">
+		function getResult(res){
+            runner.getResult(res);
+        }
+		function execOnLoad(){
+			runner = new Runner("results", suites, toTest);
+			runner.run();
+		}
+	</script>
+  </head>
+  <body onload="execOnLoad()">
+    <h1>Maarch.js Unit Test Runner</h1>
+	<div id="results"></div>
+	<div id="tests"></div>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<validationRules>
+	<!-- validationRule name="template_manage_list" extends="standardForm" mode="error">
+		<parameter name="what" type="string" />
+	</validationRule -->
+	<validationRule name="template_manage_add" extends="standardForm" mode="error">
+		<parameter name="id" type="integer" />
+		<parameter name="module" type="identifier" />
+		<parameter name="what" type="string" />
+		<parameter name="template_label" type="string" />
+		<parameter name="template_comment" type="string" />
+		<parameter name="template_target" type="identifier" />
+		<parameter name="template_attachment_type" type="identifier" />
+		<parameter name="template_type" type="identifier" />
+		<parameter name="template_datasource" type="identifier" />
+		<parameter name="template_content" type="string" />
+		<parameter name="template_content_txt" type="string" />
+		<parameter name="template_style" type="document_id" />
+		<parameter name="entities_chosen" type="identifier" />
+		<parameter name="submit" type="identifier" />
+		<parameter name="Submit" type="string" />
+		<parameter name="template_file_name" type="docserver_file" />
+		<parameter name="template_path" type="docserver_path" />
+		<parameter name="entitieslist" type="identifier" />
+	</validationRule>
+	
+	<validationRule name="templates_ajax_content_for_mails" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="id" type="integer" />
+		<parameter name="templateId" type="integer" />
+	</validationRule>
+
+	<validationRule name="templates_ajax_content_for_notes" extends="standardForm" mode="error">
+		<parameter name="module" type="identifier" />
+		<parameter name="templateId" type="integer" />
+	</validationRule>
+
+	<validationRule name="select_templates" extends="standardForm" mode="error">
+		<parameter name="attachment_type" type="identifier" />
+		<parameter name="module" type="identifier" />
+	</validationRule>
+
+	<validationRule name="admin_change_templates" extends="standardForm" mode="error">
+		<parameter name="template_style" type="document_id" />
+		<parameter name="module" type="identifier" />
+	</validationRule>
+	
+	<validationRule name="template_list" extends="standardForm" mode="error">
+    	<parameter name="template_id" type="document_id" />
+    	<parameter name="module" type="identifier" />
+    </validationRule>
+	
+	<validationRule name="generate_attachment_html" extends="standardForm" mode="error">
+    	<parameter name="coll_id" type="collection_list" />
+    	<parameter name="res_id" type="identifier" />
+    	<parameter name="module" type="identifier" />
+    </validationRule>
+    
+    <validationRule name="param_templates_doctypes" extends="standardForm" mode="error">
+    	<parameter name="templates" type="identifier" />
+    	<parameter name="e_file" type="YN" />
+    	<parameter name="module" type="identifier" />
+    </validationRule>
+    
+    <validationRule name="file_iframe" extends="standardForm" mode="error">
+    	<parameter name="model_id" type="integer" />
+    	<parameter name="module" type="identifier" />
+    </validationRule>
+
+</validationRules>

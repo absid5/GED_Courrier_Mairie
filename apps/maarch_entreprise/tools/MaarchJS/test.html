@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+</head>
+    <body>
+        <div id="test"></div>
+        <script type="text/javascript" src="lib/prototype-1.7.js"></script>
+        <script type="text/javascript" src="src/js/maarch.js"></script>
+
+        <script type="text/javascript">
+        //$(document).on("maarch:tree:branchselect", "li", function(evt, elt){
+        //    alert(elt.ancestors().filter(function(el){
+        //        return el.match("ul");
+        //    }).size());
+        //});
+
+        /*var branches_values = [
+            {'id' : '1', 'label' :'1', 'toolTip' : 'toolTip 1'},
+            {'id' : '2', 'label' :'2', 'toolTip' : 'toolTip 2'}
+        ];*/
+
+        var branches_values = [
+            {'id' : '1', 'label' :'Branch 1', 'toolTip' : 'test 1', 'children' : [
+                {'id' : '1_1', 'label' :'Branch 1.1', 'children' : [
+                    {'id' : '1_1_1', 'label' : 'Branch 1.1.1'}]},
+                {'id' : '1_2', 'label' :'Branch 1.2'},
+                {'id' : '1_3', 'label' :'Branch 1.3',  'children' : []}]},
+            {'id' : '2', 'label' :'Branch 2', 'children' :  [
+                {'id' : '2_1', 'label' :'Branch 2.1'}]}
+        ];
+
+        //var li_struct = '<ul><li id="1" title="test tooltip">blah1<ul><li id="1.1">1_1<ul><li id="1.1.1">1.1.1</li></ul></li><li id="1.2">1_2</li><li id="1.3">1_3</li></ul></li><li id="2">2<ul><li id="2.1">2.1</li></ul></li></ul>';
+
+        Maarch.cssPath = "../../dist/css/";
+        Maarch.require('treeview', function(){
+            var params = {'treeId' : 'test', 'treeLabel' : 'test', 'img.path':'src/img/', 'initial_structure' : branches_values};
+            //var params = {'treeId' : 'test', 'treeLabel' : 'test', 'initial_structure' : li_struct, 'img.path':'src/img/'};
+            //Maarch.treeview.activateAjaxLoad('test.php');
+            Maarch.treeview.activateToolTip();
+            var tree = new Maarch.treeview.Tree('test', params);
+            //tree.insertBranches('<li id="1_4">branch 1.4</li>', tree.getBranchById("1"));
+        });
+        </script>
+    </body>
+</html>
